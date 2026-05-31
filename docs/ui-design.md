@@ -15,6 +15,7 @@
 | **`docs/ui-design.md`** (this file) | Shared components, form controls, tokens |
 | `docs/shopping-ui-design.md` | Shopping page grid, cards, images, toolbar |
 | `docs/travel-ui-design.md` | Travel page, type tabs, age-aware tip cards |
+| `docs/mom-care-ui-design.md` | Mom Care page, self-care topic tabs, tip cards |
 | `docs/month-detail-ui-design.md` | DIY & Care grids, detail modal |
 
 ---
@@ -32,9 +33,25 @@ Use `:root` tokens from `global.css`:
 
 Font: **General Sans** (Fontshare), app-wide.
 
-### Card accent (`.card-accent-top`)
+---
 
-Category-colored 3px top bar on DIY, Care, Shopping, Travel, and activity cards. Pass `--cat-color` inline from category config. No left border. See [`docs/design-system-2026.md`](design-system-2026.md#cards).
+## App shell
+
+Rendered once in `App.jsx` on every route:
+
+| Piece | Component | Notes |
+|-------|-----------|-------|
+| Header | `Header.jsx` | Sticky top; desktop nav + mobile bottom nav |
+| Main | `<main className="app-main">` | Route content; `flex: 1` |
+| Footer | `Footer.jsx` | Brand, nav links, disclaimer, copyright |
+
+Do not add page-specific footers — extend `Footer.jsx` or footer styles in `global.css`.
+
+Spec: [`docs/design-system-2026.md`](design-system-2026.md) — Site footer section.
+
+---
+
+Category-colored 3px top bar on DIY, Care, Shopping, Travel, Mom Care, and activity cards. Pass `--cat-color` inline from category config. No left border. See [`docs/design-system-2026.md`](design-system-2026.md#cards).
 
 **Exceptions:** Care clothes full-width card (no accent).
 

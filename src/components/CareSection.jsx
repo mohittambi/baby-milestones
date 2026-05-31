@@ -3,14 +3,15 @@ import DetailModal from './DetailModal';
 import { careTypeConfig } from './careTypeConfig';
 import shoppingAndCare from '../data/shoppingAndCare';
 import { interact } from '../utils/haptics';
+import Icon from './Icon';
 
 const FILTER_TABS = [
-  { id: 'all', label: 'All', icon: '🎯' },
-  { id: 'bath', label: 'Bath', icon: '🛁' },
-  { id: 'massage', label: 'Massage', icon: '✋' },
-  { id: 'hold', label: 'Hold & Play', icon: '🤲' },
-  { id: 'clothes', label: 'Clothes', icon: '👕' },
-  { id: 'pacifier', label: 'Pacifier', icon: '🍼' },
+  { id: 'all', label: 'All', icon: "target" },
+  { id: 'bath', label: 'Bath', icon: "bathtub" },
+  { id: 'massage', label: 'Massage', icon: "raised-hand" },
+  { id: 'hold', label: 'Hold & Play', icon: "palms-up" },
+  { id: 'clothes', label: 'Clothes', icon: "t-shirt" },
+  { id: 'pacifier', label: 'Pacifier', icon: "baby-bottle" },
 ];
 
 function CareGuideModalBody({ guide, type }) {
@@ -75,7 +76,7 @@ function CareGuideCard({ guide, type, isOpen, onOpen, onClose }) {
         style={{ '--cat-color': cfg.color, '--cat-bg': cfg.bg }}
       >
         <div className="content-card-media care-guide-media">
-          <span className="care-guide-icon" aria-hidden="true">{cfg.icon}</span>
+          <Icon name={cfg.icon} size={40} className="care-guide-icon" />
         </div>
         <div className="content-card-body">
           <span className="diy-cat-badge" style={{ background: cfg.bg, color: cfg.color }}>
@@ -120,7 +121,7 @@ function HoldingCard({ game, isOpen, onOpen, onClose }) {
         style={{ '--cat-color': cfg.color, '--cat-bg': cfg.bg }}
       >
         <div className="content-card-media care-guide-media">
-          <span className="care-guide-icon" aria-hidden="true">{game.icon}</span>
+          <Icon name={game.icon} size={40} className="care-guide-icon" />
         </div>
         <div className="content-card-body">
           <span className="diy-cat-badge" style={{ background: cfg.bg, color: cfg.color }}>
@@ -155,7 +156,7 @@ function ClothesCard({ clothes }) {
       style={{ '--cat-color': cfg.color, '--cat-bg': cfg.bg }}
     >
       <div className="content-card-media care-guide-media">
-        <span className="care-guide-icon" aria-hidden="true">{cfg.icon}</span>
+        <Icon name={cfg.icon} size={40} className="care-guide-icon" />
       </div>
       <div className="content-card-body">
         <span className="diy-cat-badge" style={{ background: cfg.bg, color: cfg.color }}>
@@ -219,7 +220,7 @@ function CareSection({ month }) {
             className={`diy-filter-btn ${activeFilter === tab.id ? 'active' : ''}`}
             onClick={() => { setActiveFilter(tab.id); interact('tap', 'selection'); }}
           >
-            {tab.icon} {tab.label}
+            <Icon name={tab.icon} size={16} /> {tab.label}
           </button>
         ))}
       </div>

@@ -1,16 +1,51 @@
 import { useState, useEffect, useCallback } from 'react';
+import { Routes, Route, Navigate, useLocation, useNavigate, useParams } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import MonthDetail from './pages/MonthDetail';
 import Dashboard from './pages/Dashboard';
 import Sources from './pages/Sources';
 import Shopping from './pages/Shopping';
 import Travel from './pages/Travel';
+import MomCare from './pages/MomCare';
+import Community from './pages/Community';
 import AssistantPanel from './components/AssistantPanel';
+import { ROUTES, isCommunityTab } from './routes';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
+function MonthDetailRoute({ checkedItems, toggleCheck, getCurrentWeek }) {
+  const { month: monthParam } = useParams();
+  const navigate = useNavigate();
+  const month = Number(monthParam);
+
+  if (!Number.isInteger(month) || month < 1 || month > 36) {
+    return <Navigate to={ROUTES.home} replace />;
+  }
+
+  return (
+    <MonthDetail
+      month={month}
+      checkedItems={checkedItems}
+      toggleCheck={toggleCheck}
+      onBack={() => navigate(ROUTES.home)}
+      onNavigate={(m) => navigate(ROUTES.month(m))}
+      currentWeek={getCurrentWeek()}
+    />
+  );
+}
 
 function App() {
-  const [page, setPage] = useState('home');
-  const [selectedMonth, setSelectedMonth] = useState(null);
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const [birthDate, setBirthDate] = useState(() => localStorage.getItem('babyBirthDate') || '');
   const [checkedItems, setCheckedItems] = useState(() => {
     const saved = localStorage.getItem('babyMilestoneChecks');
@@ -62,86 +97,112 @@ function App() {
   };
 
   const toggleCheck = useCallback((id) => {
-    setCheckedItems(prev => ({ ...prev, [id]: !prev[id] }));
+    setCheckedItems((prev) => ({ ...prev, [id]: !prev[id] }));
   }, []);
 
   const handleSelectMonth = useCallback((month) => {
-    setSelectedMonth(month);
-    setPage('detail');
-    window.scrollTo(0, 0);
-  }, []);
-
-  const handleNavigate = useCallback((month) => {
-    setSelectedMonth(month);
-    window.scrollTo(0, 0);
-  }, []);
-
-  const handleSetPage = useCallback((p) => {
-    setPage(p);
-    setSelectedMonth(null);
-    window.scrollTo(0, 0);
-  }, []);
+    navigate(ROUTES.month(month));
+  }, [navigate]);
 
   const handleToggleSound = useCallback(() => {
-    setSoundEnabled(prev => !prev);
+    setSoundEnabled((prev) => !prev);
   }, []);
+
+  const showAssistant =
+    location.pathname === ROUTES.home
+    || location.pathname.startsWith('/month/')
+    || location.pathname === ROUTES.travel;
 
   return (
     <div className="app">
+      <ScrollToTop />
       <Header
-        page={page}
-        setPage={handleSetPage}
         soundEnabled={soundEnabled}
         onToggleSound={handleToggleSound}
       />
-      {page === 'home' && (
-        <Home
-          birthDate={birthDate}
-          setBirthDate={setBirthDate}
-          currentMonth={getCurrentMonth()}
-          checkedItems={checkedItems}
-          onSelectMonth={handleSelectMonth}
+      <main className="app-main">
+        <Routes>
+        <Route
+          path={ROUTES.home}
+          element={(
+            <Home
+              birthDate={birthDate}
+              setBirthDate={setBirthDate}
+              currentMonth={getCurrentMonth()}
+              checkedItems={checkedItems}
+              onSelectMonth={handleSelectMonth}
+            />
+          )}
         />
-      )}
-      {page === 'detail' && selectedMonth && (
-        <MonthDetail
-          month={selectedMonth}
-          checkedItems={checkedItems}
-          toggleCheck={toggleCheck}
-          onBack={() => handleSetPage('home')}
-          onNavigate={handleNavigate}
-          currentWeek={getCurrentWeek()}
+        <Route
+          path="/month/:month"
+          element={(
+            <MonthDetailRoute
+              checkedItems={checkedItems}
+              toggleCheck={toggleCheck}
+              getCurrentWeek={getCurrentWeek}
+            />
+          )}
         />
-      )}
-      {page === 'shopping' && (
-        <Shopping
-          checkedItems={checkedItems}
-          toggleCheck={toggleCheck}
-          currentMonth={getCurrentMonth()}
+        <Route
+          path={ROUTES.shopping}
+          element={(
+            <Shopping
+              checkedItems={checkedItems}
+              toggleCheck={toggleCheck}
+              currentMonth={getCurrentMonth()}
+            />
+          )}
         />
-      )}
-      {page === 'travel' && (
-        <Travel
-          currentMonth={getCurrentMonth()}
-          onGoHome={() => handleSetPage('home')}
-          onGoShopping={() => handleSetPage('shopping')}
+        <Route
+          path={ROUTES.travel}
+          element={<Travel currentMonth={getCurrentMonth()} />}
         />
-      )}
-      {page === 'dashboard' && (
-        <Dashboard
-          checkedItems={checkedItems}
-          onSelectMonth={handleSelectMonth}
+        <Route
+          path={ROUTES.momCare}
+          element={<MomCare />}
         />
-      )}
-      {page === 'sources' && <Sources />}
-      {(page === 'home' || page === 'detail' || page === 'travel') && (
+        <Route path={ROUTES.community} element={<Navigate to={ROUTES.communityTab('feed')} replace />} />
+        <Route
+          path="/community/:tab"
+          element={(
+            <CommunityTabRoute currentMonth={getCurrentMonth()} />
+          )}
+        />
+        <Route
+          path={ROUTES.progress}
+          element={(
+            <Dashboard
+              checkedItems={checkedItems}
+              onSelectMonth={handleSelectMonth}
+            />
+          )}
+        />
+        <Route path={ROUTES.sources} element={<Sources />} />
+        <Route path="*" element={<Navigate to={ROUTES.home} replace />} />
+        </Routes>
+      </main>
+      <Footer />
+      {showAssistant && (
         <AssistantPanel
           currentMonth={getCurrentMonth()}
-          selectedMonth={page === 'detail' ? selectedMonth : null}
+          selectedMonth={
+            location.pathname.startsWith('/month/')
+              ? Number(location.pathname.split('/')[2])
+              : null
+          }
         />
       )}
     </div>
   );
+}
+
+function CommunityTabRoute({ currentMonth }) {
+  const { tab } = useParams();
+  if (!isCommunityTab(tab)) {
+    return <Navigate to={ROUTES.communityTab('feed')} replace />;
+  }
+  return <Community currentMonth={currentMonth} tab={tab} />;
 }
 
 export default App;

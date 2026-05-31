@@ -16,11 +16,11 @@ const milestones = [
       { id: "e1-4", text: "Prefers black and white patterns", tip: "Use high-contrast cards or books" }
     ],
     activities: [
-      { type: "physical", name: "Tummy Time", description: "Place baby on their tummy on a firm surface for 2-3 minutes, 3-4 times daily. Stay close and talk to encourage head lifting.", icon: "🤸" },
-      { type: "physical", name: "Gentle Bicycle Legs", description: "Gently move baby's legs in a cycling motion during diaper changes to strengthen leg muscles.", icon: "🚲" },
-      { type: "emotional", name: "Skin-to-Skin Contact", description: "Hold baby against your bare chest. This regulates their temperature, heartbeat, and builds deep bonding.", icon: "💕" },
-      { type: "emotional", name: "Narrate Your Day", description: "Talk to baby about what you're doing. 'Now I'm warming your bottle.' This builds language foundations.", icon: "🗣️" },
-      { type: "emotional", name: "Gentle Massage", description: "Use baby-safe oil and gently massage arms, legs, and tummy. Helps with digestion and bonding.", icon: "✋" }
+      { type: "physical", name: "Tummy Time", description: "Place baby on their tummy on a firm surface for 2-3 minutes, 3-4 times daily. Stay close and talk to encourage head lifting.", icon: "cartwheel" },
+      { type: "physical", name: "Gentle Bicycle Legs", description: "Gently move baby's legs in a cycling motion during diaper changes to strengthen leg muscles.", icon: "1f6b2" },
+      { type: "emotional", name: "Skin-to-Skin Contact", description: "Hold baby against your bare chest. This regulates their temperature, heartbeat, and builds deep bonding.", icon: "two-hearts" },
+      { type: "emotional", name: "Narrate Your Day", description: "Talk to baby about what you're doing. 'Now I'm warming your bottle.' This builds language foundations.", icon: "1f5e3" },
+      { type: "emotional", name: "Gentle Massage", description: "Use baby-safe oil and gently massage arms, legs, and tummy. Helps with digestion and bonding.", icon: "raised-hand" }
     ],
     watchFor: [
       "No response to loud sounds",
@@ -64,11 +64,11 @@ const milestones = [
       { id: "e2-4", text: "Follows objects with eyes", tip: "Slowly move a colorful toy across baby's field of vision" }
     ],
     activities: [
-      { type: "physical", name: "Extended Tummy Time", description: "Increase to 5-minute sessions. Get on the floor face-to-face with baby to encourage them.", icon: "🤸" },
-      { type: "physical", name: "Rattle Play", description: "Place a lightweight rattle in baby's hand. They'll start learning cause and effect as it makes sound.", icon: "🎵" },
-      { type: "emotional", name: "Mirror Play", description: "Hold baby in front of a mirror. They'll be fascinated by the face looking back at them.", icon: "🪞" },
-      { type: "emotional", name: "Conversation Time", description: "When baby coos, respond with words. Take turns like a real conversation. This teaches social interaction.", icon: "💬" },
-      { type: "emotional", name: "Singing Lullabies", description: "Sing the same songs repeatedly. Repetition helps baby feel secure and learn patterns.", icon: "🎶" }
+      { type: "physical", name: "Extended Tummy Time", description: "Increase to 5-minute sessions. Get on the floor face-to-face with baby to encourage them.", icon: "cartwheel" },
+      { type: "physical", name: "Rattle Play", description: "Place a lightweight rattle in baby's hand. They'll start learning cause and effect as it makes sound.", icon: "1f3b5" },
+      { type: "emotional", name: "Mirror Play", description: "Hold baby in front of a mirror. They'll be fascinated by the face looking back at them.", icon: "1fa9e" },
+      { type: "emotional", name: "Conversation Time", description: "When baby coos, respond with words. Take turns like a real conversation. This teaches social interaction.", icon: "speech-bubble" },
+      { type: "emotional", name: "Singing Lullabies", description: "Sing the same songs repeatedly. Repetition helps baby feel secure and learn patterns.", icon: "1f3b6" }
     ],
     watchFor: [
       "No social smiling by end of month 2",
@@ -112,11 +112,11 @@ const milestones = [
       { id: "e3-4", text: "Shows excitement with whole body", tip: "Notice and celebrate baby's excitement" }
     ],
     activities: [
-      { type: "physical", name: "Reaching Games", description: "Hold colorful toys just within reach to encourage stretching and grasping. Celebrate when they grab it!", icon: "🎯" },
-      { type: "physical", name: "Supported Sitting", description: "Prop baby in a seated position with pillows. This strengthens core muscles and gives a new perspective.", icon: "🪑" },
-      { type: "emotional", name: "Peek-a-Boo", description: "Cover your face with a cloth and reveal yourself. Baby is learning object permanence!", icon: "🙈" },
-      { type: "emotional", name: "Sound Exploration", description: "Introduce different sounds — crinkle paper, bells, music. Watch baby react and show preferences.", icon: "🔔" },
-      { type: "emotional", name: "Baby Airplane", description: "Lie on your back and hold baby above you like an airplane. Great for bonding and core strength!", icon: "✈️" }
+      { type: "physical", name: "Reaching Games", description: "Hold colorful toys just within reach to encourage stretching and grasping. Celebrate when they grab it!", icon: "target" },
+      { type: "physical", name: "Supported Sitting", description: "Prop baby in a seated position with pillows. This strengthens core muscles and gives a new perspective.", icon: "1fa91" },
+      { type: "emotional", name: "Peek-a-Boo", description: "Cover your face with a cloth and reveal yourself. Baby is learning object permanence!", icon: "1f648" },
+      { type: "emotional", name: "Sound Exploration", description: "Introduce different sounds — crinkle paper, bells, music. Watch baby react and show preferences.", icon: "1f514" },
+      { type: "emotional", name: "Baby Airplane", description: "Lie on your back and hold baby above you like an airplane. Great for bonding and core strength!", icon: "airplane" }
     ],
     watchFor: [
       "Doesn't grasp or hold objects",
@@ -160,11 +160,11 @@ const milestones = [
       { id: "e4-4", text: "Shows preference for certain toys", tip: "Rotate toys to keep baby interested" }
     ],
     activities: [
-      { type: "physical", name: "Rolling Practice", description: "Gently help baby practice rolling by placing a toy to one side. Cheer when they roll!", icon: "🔄" },
-      { type: "physical", name: "Grabbing Games", description: "Offer toys of different sizes. Baby is perfecting their grip and hand-eye coordination.", icon: "🤲" },
-      { type: "emotional", name: "Texture Books", description: "Read touchy-feely books together. Baby will love patting different textures.", icon: "📚" },
-      { type: "emotional", name: "Dance Party", description: "Hold baby and dance to music. They'll feel the rhythm and enjoy the movement and closeness.", icon: "💃" },
-      { type: "emotional", name: "Name That Feeling", description: "When baby is happy, sad, or frustrated, name the emotion: 'You seem frustrated!' This builds emotional vocabulary.", icon: "😊" }
+      { type: "physical", name: "Rolling Practice", description: "Gently help baby practice rolling by placing a toy to one side. Cheer when they roll!", icon: "1f504" },
+      { type: "physical", name: "Grabbing Games", description: "Offer toys of different sizes. Baby is perfecting their grip and hand-eye coordination.", icon: "palms-up" },
+      { type: "emotional", name: "Texture Books", description: "Read touchy-feely books together. Baby will love patting different textures.", icon: "books" },
+      { type: "emotional", name: "Dance Party", description: "Hold baby and dance to music. They'll feel the rhythm and enjoy the movement and closeness.", icon: "1f483" },
+      { type: "emotional", name: "Name That Feeling", description: "When baby is happy, sad, or frustrated, name the emotion: 'You seem frustrated!' This builds emotional vocabulary.", icon: "1f60a" }
     ],
     watchFor: [
       "Doesn't watch things as they move",
@@ -210,10 +210,10 @@ const milestones = [
     ],
     activities: [
       { type: "physical", name: "Sitting Practice", description: "Sit baby upright surrounded by pillows. Place toys in front to encourage them to stay balanced.", icon: "⬆️" },
-      { type: "physical", name: "Bouncing Fun", description: "Hold baby standing on your thighs and let them bounce. Great for leg strength and lots of laughs!", icon: "🦘" },
-      { type: "emotional", name: "Name Game", description: "Point to family members and say names. 'That's Daddy! That's Grandma!' Baby is learning to associate names.", icon: "👨‍👩‍👧" },
-      { type: "emotional", name: "Cause & Effect Toys", description: "Pop-up toys, musical buttons — baby loves learning that their actions create results!", icon: "🔘" },
-      { type: "emotional", name: "Outdoor Time", description: "Take baby outside to feel grass, see trees, hear birds. Nature is the best sensory playground.", icon: "🌳" }
+      { type: "physical", name: "Bouncing Fun", description: "Hold baby standing on your thighs and let them bounce. Great for leg strength and lots of laughs!", icon: "1f998" },
+      { type: "emotional", name: "Name Game", description: "Point to family members and say names. 'That's Daddy! That's Grandma!' Baby is learning to associate names.", icon: "1f468-200d-1f469-200d-1f467" },
+      { type: "emotional", name: "Cause & Effect Toys", description: "Pop-up toys, musical buttons — baby loves learning that their actions create results!", icon: "1f518" },
+      { type: "emotional", name: "Outdoor Time", description: "Take baby outside to feel grass, see trees, hear birds. Nature is the best sensory playground.", icon: "tree" }
     ],
     watchFor: [
       "Doesn't roll in either direction",
@@ -257,11 +257,11 @@ const milestones = [
       { id: "e6-4", text: "Knows familiar vs unfamiliar faces", tip: "Let baby see regular caregivers frequently" }
     ],
     activities: [
-      { type: "physical", name: "Pre-Crawl Encouragement", description: "Place baby on tummy with favorite toy just out of reach. They'll rock, scoot, and eventually crawl to get it!", icon: "🏃" },
-      { type: "physical", name: "First Foods Exploration", description: "If starting solids, let baby touch, squish, and explore pureed foods. Messy eating = learning!", icon: "🥄" },
-      { type: "emotional", name: "Peekaboo Variations", description: "Hide behind doors, under blankets, behind furniture. Each version teaches object permanence.", icon: "🙈" },
-      { type: "emotional", name: "Clapping Games", description: "Sing 'Pat-a-Cake' and help baby clap along. Great for coordination and social joy.", icon: "👏" },
-      { type: "emotional", name: "Read Together Daily", description: "Let baby hold and chew on board books. Point to pictures and name everything.", icon: "📖" }
+      { type: "physical", name: "Pre-Crawl Encouragement", description: "Place baby on tummy with favorite toy just out of reach. They'll rock, scoot, and eventually crawl to get it!", icon: "1f3c3" },
+      { type: "physical", name: "First Foods Exploration", description: "If starting solids, let baby touch, squish, and explore pureed foods. Messy eating = learning!", icon: "1f944" },
+      { type: "emotional", name: "Peekaboo Variations", description: "Hide behind doors, under blankets, behind furniture. Each version teaches object permanence.", icon: "1f648" },
+      { type: "emotional", name: "Clapping Games", description: "Sing 'Pat-a-Cake' and help baby clap along. Great for coordination and social joy.", icon: "1f44f" },
+      { type: "emotional", name: "Read Together Daily", description: "Let baby hold and chew on board books. Point to pictures and name everything.", icon: "1f4d6" }
     ],
     watchFor: [
       "Doesn't try to get things within reach",
@@ -306,11 +306,11 @@ const milestones = [
       { id: "e7-4", text: "Shows attachment to specific toys", tip: "Let baby have a comfort object (lovey)" }
     ],
     activities: [
-      { type: "physical", name: "Obstacle Course", description: "Create a mini obstacle course with cushions and pillows. Baby will climb, crawl over, and explore.", icon: "🏔️" },
-      { type: "physical", name: "Container Play", description: "Give baby containers and small objects to put in and take out. Builds fine motor skills.", icon: "📦" },
-      { type: "emotional", name: "Wave & Clap Songs", description: "Sing songs with actions: 'Wheels on the Bus,' 'Itsy Bitsy Spider.' Baby will start copying gestures.", icon: "👋" },
-      { type: "emotional", name: "Sensory Bins", description: "Fill a container with safe items of different textures: fabric, plastic, wood. Supervised exploration!", icon: "🧸" },
-      { type: "emotional", name: "Follow the Leader", description: "Crawl around with baby! They'll love chasing you and being chased (gently).", icon: "🐛" }
+      { type: "physical", name: "Obstacle Course", description: "Create a mini obstacle course with cushions and pillows. Baby will climb, crawl over, and explore.", icon: "1f3d4" },
+      { type: "physical", name: "Container Play", description: "Give baby containers and small objects to put in and take out. Builds fine motor skills.", icon: "1f4e6" },
+      { type: "emotional", name: "Wave & Clap Songs", description: "Sing songs with actions: 'Wheels on the Bus,' 'Itsy Bitsy Spider.' Baby will start copying gestures.", icon: "1f44b" },
+      { type: "emotional", name: "Sensory Bins", description: "Fill a container with safe items of different textures: fabric, plastic, wood. Supervised exploration!", icon: "1f9f8" },
+      { type: "emotional", name: "Follow the Leader", description: "Crawl around with baby! They'll love chasing you and being chased (gently).", icon: "1f41b" }
     ],
     watchFor: [
       "No attempts at any form of movement",
@@ -354,11 +354,11 @@ const milestones = [
       { id: "e8-4", text: "Enjoys games with rules (clapping, patting)", tip: "Play structured games that repeat the same pattern" }
     ],
     activities: [
-      { type: "physical", name: "Cruising Course", description: "Arrange sturdy furniture close enough for baby to cruise between pieces. They're almost walking!", icon: "🏄" },
-      { type: "physical", name: "Stacking & Nesting", description: "Stacking cups or nesting bowls. Baby will love knocking them down and trying to rebuild.", icon: "🏗️" },
-      { type: "emotional", name: "Point & Name", description: "Walk around the house pointing at objects and naming them clearly. Baby is building a mental dictionary.", icon: "👆" },
-      { type: "emotional", name: "Goodbye Practice", description: "Practice short separations — leave the room for 30 seconds, then return smiling. Builds trust.", icon: "👋" },
-      { type: "emotional", name: "Music & Instruments", description: "Give baby a drum, xylophone, or shaker. Making music is joyful and builds coordination.", icon: "🥁" }
+      { type: "physical", name: "Cruising Course", description: "Arrange sturdy furniture close enough for baby to cruise between pieces. They're almost walking!", icon: "1f3c4" },
+      { type: "physical", name: "Stacking & Nesting", description: "Stacking cups or nesting bowls. Baby will love knocking them down and trying to rebuild.", icon: "1f3d7" },
+      { type: "emotional", name: "Point & Name", description: "Walk around the house pointing at objects and naming them clearly. Baby is building a mental dictionary.", icon: "1f446" },
+      { type: "emotional", name: "Goodbye Practice", description: "Practice short separations — leave the room for 30 seconds, then return smiling. Builds trust.", icon: "1f44b" },
+      { type: "emotional", name: "Music & Instruments", description: "Give baby a drum, xylophone, or shaker. Making music is joyful and builds coordination.", icon: "1f941" }
     ],
     watchFor: [
       "No babbling or consonant sounds",
@@ -403,10 +403,10 @@ const milestones = [
     ],
     activities: [
       { type: "physical", name: "Pull-to-Stand Games", description: "Hold toys above baby's head level while they stand. Encourages standing and reaching.", icon: "⬆️" },
-      { type: "physical", name: "Puzzle Play", description: "Simple shape sorters or chunky puzzles. Baby is learning to problem-solve!", icon: "🧩" },
-      { type: "emotional", name: "Simple Instructions", description: "Ask baby to do simple things: 'Can you give me the cup?' Celebrate when they follow through!", icon: "🎯" },
-      { type: "emotional", name: "Social Play Dates", description: "If possible, arrange time with other babies. They may not play together yet but will observe and learn.", icon: "👶" },
-      { type: "emotional", name: "Photo Album Time", description: "Show baby photos of family members and name them. 'That's Grandma!' Builds recognition and vocabulary.", icon: "📷" }
+      { type: "physical", name: "Puzzle Play", description: "Simple shape sorters or chunky puzzles. Baby is learning to problem-solve!", icon: "1f9e9" },
+      { type: "emotional", name: "Simple Instructions", description: "Ask baby to do simple things: 'Can you give me the cup?' Celebrate when they follow through!", icon: "target" },
+      { type: "emotional", name: "Social Play Dates", description: "If possible, arrange time with other babies. They may not play together yet but will observe and learn.", icon: "baby" },
+      { type: "emotional", name: "Photo Album Time", description: "Show baby photos of family members and name them. 'That's Grandma!' Builds recognition and vocabulary.", icon: "1f4f7" }
     ],
     watchFor: [
       "Doesn't bear weight on legs when supported",
@@ -451,11 +451,11 @@ const milestones = [
       { id: "e10-4", text: "Explores cabinets, drawers, and containers", tip: "Designate one 'baby-safe' cabinet for exploration" }
     ],
     activities: [
-      { type: "physical", name: "Push Toy Walking", description: "Push toys (walker wagons) help baby practice walking with support and confidence.", icon: "🛒" },
-      { type: "physical", name: "Ball Play", description: "Roll a ball back and forth. Baby will try to roll it back — great coordination practice!", icon: "⚽" },
-      { type: "emotional", name: "Naming Everything", description: "Name every object baby touches or points at. They're understanding far more than they can say.", icon: "🏷️" },
-      { type: "emotional", name: "Hide & Seek (simple)", description: "Hide behind a curtain and call baby's name. They'll crawl to find you — peals of laughter!", icon: "🔍" },
-      { type: "emotional", name: "Kitchen Band", description: "Pots, pans, wooden spoons — make a drum set! Baby will bang away with pure joy.", icon: "🍳" }
+      { type: "physical", name: "Push Toy Walking", description: "Push toys (walker wagons) help baby practice walking with support and confidence.", icon: "shopping-cart" },
+      { type: "physical", name: "Ball Play", description: "Roll a ball back and forth. Baby will try to roll it back — great coordination practice!", icon: "26bd" },
+      { type: "emotional", name: "Naming Everything", description: "Name every object baby touches or points at. They're understanding far more than they can say.", icon: "1f3f7" },
+      { type: "emotional", name: "Hide & Seek (simple)", description: "Hide behind a curtain and call baby's name. They'll crawl to find you — peals of laughter!", icon: "1f50d" },
+      { type: "emotional", name: "Kitchen Band", description: "Pots, pans, wooden spoons — make a drum set! Baby will bang away with pure joy.", icon: "1f373" }
     ],
     watchFor: [
       "Doesn't cruise or pull to stand",
@@ -499,11 +499,11 @@ const milestones = [
       { id: "e11-4", text: "Shows empathy — pats someone who is sad", tip: "Name emotions: 'Mommy bumped her toe, ow!'" }
     ],
     activities: [
-      { type: "physical", name: "Barefoot Walking", description: "Let baby walk barefoot on different surfaces: carpet, grass, sand. Great for balance and sensory input!", icon: "🦶" },
-      { type: "physical", name: "Scribbling Art", description: "Thick crayons and large paper. Baby's first art! Display it proudly on the fridge.", icon: "🖍️" },
-      { type: "emotional", name: "Pretend Play", description: "Give baby a toy phone, pretend food, or a doll. Early pretend play develops imagination.", icon: "🎭" },
-      { type: "emotional", name: "Helper Time", description: "Let baby 'help' with simple tasks: put laundry in basket, wipe table. Builds confidence and belonging.", icon: "🧹" },
-      { type: "emotional", name: "Animal Sounds", description: "Point to animals in books and make their sounds. Baby will start imitating: 'Moo! Woof! Meow!'", icon: "🐄" }
+      { type: "physical", name: "Barefoot Walking", description: "Let baby walk barefoot on different surfaces: carpet, grass, sand. Great for balance and sensory input!", icon: "1f9b6" },
+      { type: "physical", name: "Scribbling Art", description: "Thick crayons and large paper. Baby's first art! Display it proudly on the fridge.", icon: "1f58d" },
+      { type: "emotional", name: "Pretend Play", description: "Give baby a toy phone, pretend food, or a doll. Early pretend play develops imagination.", icon: "1f3ad" },
+      { type: "emotional", name: "Helper Time", description: "Let baby 'help' with simple tasks: put laundry in basket, wipe table. Builds confidence and belonging.", icon: "1f9f9" },
+      { type: "emotional", name: "Animal Sounds", description: "Point to animals in books and make their sounds. Baby will start imitating: 'Moo! Woof! Meow!'", icon: "1f404" }
     ],
     watchFor: [
       "Not pulling to stand",
@@ -547,11 +547,11 @@ const milestones = [
       { id: "e12-4", text: "May have a favorite book and ask for it repeatedly", tip: "Read the favorite book every time — repetition builds learning" }
     ],
     activities: [
-      { type: "physical", name: "Walking Adventures", description: "Walk together outdoors holding hands. Let baby stop and explore whatever catches their eye.", icon: "🚶" },
-      { type: "physical", name: "Stacking Towers", description: "Stack 3-4 blocks and let baby knock them down. Then encourage them to stack too!", icon: "🏰" },
-      { type: "emotional", name: "First Birthday Party!", description: "Celebrate! Baby may not understand the party, but they'll love the attention and cake.", icon: "🎂" },
-      { type: "emotional", name: "Simple Choices", description: "Offer two options: 'Red shirt or blue shirt?' This builds decision-making skills.", icon: "🤔" },
-      { type: "emotional", name: "Sing Action Songs", description: "'Head, Shoulders, Knees and Toes' — baby will try to follow along. Great for body awareness!", icon: "🎵" }
+      { type: "physical", name: "Walking Adventures", description: "Walk together outdoors holding hands. Let baby stop and explore whatever catches their eye.", icon: "1f6b6" },
+      { type: "physical", name: "Stacking Towers", description: "Stack 3-4 blocks and let baby knock them down. Then encourage them to stack too!", icon: "1f3f0" },
+      { type: "emotional", name: "First Birthday Party!", description: "Celebrate! Baby may not understand the party, but they'll love the attention and cake.", icon: "1f382" },
+      { type: "emotional", name: "Simple Choices", description: "Offer two options: 'Red shirt or blue shirt?' This builds decision-making skills.", icon: "1f914" },
+      { type: "emotional", name: "Sing Action Songs", description: "'Head, Shoulders, Knees and Toes' — baby will try to follow along. Great for body awareness!", icon: "1f3b5" }
     ],
     watchFor: [
       "No words at all",
@@ -596,10 +596,10 @@ const milestones = [
       { id: "e13-4", text: "Explores independently but checks back with you", tip: "Be their safe base — always be visually available" }
     ],
     activities: [
-      { type: "physical", name: "Nature Walks", description: "Walk outside and let toddler lead. They'll stop for every leaf, rock, and bug. That's the point!", icon: "🍂" },
-      { type: "physical", name: "Ball Kicking", description: "Place a ball and encourage toddler to kick it. Develops balance and coordination.", icon: "⚽" },
-      { type: "emotional", name: "Word Expansion", description: "When toddler says a word, expand it into a sentence. 'Dog!' → 'Yes, a fluffy dog walking by!'", icon: "📝" },
-      { type: "emotional", name: "Sorting Games", description: "Sort toys by color or size. 'Can you find all the red ones?' Builds categorization skills.", icon: "🔴" }
+      { type: "physical", name: "Nature Walks", description: "Walk outside and let toddler lead. They'll stop for every leaf, rock, and bug. That's the point!", icon: "1f342" },
+      { type: "physical", name: "Ball Kicking", description: "Place a ball and encourage toddler to kick it. Develops balance and coordination.", icon: "26bd" },
+      { type: "emotional", name: "Word Expansion", description: "When toddler says a word, expand it into a sentence. 'Dog!' → 'Yes, a fluffy dog walking by!'", icon: "1f4dd" },
+      { type: "emotional", name: "Sorting Games", description: "Sort toys by color or size. 'Can you find all the red ones?' Builds categorization skills.", icon: "1f534" }
     ],
     watchFor: [
       "Not walking by 15 months",
@@ -641,10 +641,10 @@ const milestones = [
       { id: "e14-4", text: "Begins pretend play with dolls/animals", tip: "Join in the pretend play — feed the doll, rock the bear" }
     ],
     activities: [
-      { type: "physical", name: "Obstacle Climbing", description: "Safe climbing structures, cushion mountains, small slides. Toddlers need to climb!", icon: "🧗" },
-      { type: "physical", name: "Pour & Scoop", description: "Water table, sand box, or rice bin. Pouring and scooping builds fine motor skills.", icon: "🪣" },
-      { type: "emotional", name: "Feelings Check-In", description: "Use feeling faces: happy, sad, angry. 'How are you feeling?' Builds emotional literacy.", icon: "😊" },
-      { type: "emotional", name: "Story Acting", description: "Act out simple stories with stuffed animals. Toddler will join in!", icon: "🧸" }
+      { type: "physical", name: "Obstacle Climbing", description: "Safe climbing structures, cushion mountains, small slides. Toddlers need to climb!", icon: "1f9d7" },
+      { type: "physical", name: "Pour & Scoop", description: "Water table, sand box, or rice bin. Pouring and scooping builds fine motor skills.", icon: "1faa3" },
+      { type: "emotional", name: "Feelings Check-In", description: "Use feeling faces: happy, sad, angry. 'How are you feeling?' Builds emotional literacy.", icon: "1f60a" },
+      { type: "emotional", name: "Story Acting", description: "Act out simple stories with stuffed animals. Toddler will join in!", icon: "1f9f8" }
     ],
     watchFor: ["Not walking independently", "No words", "Doesn't point or wave", "Loss of skills"],
     pros: ["Growing independence makes daily tasks easier", "Pretend play shows imagination developing", "Running and climbing burns energy — better naps!", "Words are emerging regularly"],
@@ -671,10 +671,10 @@ const milestones = [
       { id: "e15-4", text: "Shows affection to familiar people", tip: "Model affectionate behavior — hug, kiss, say 'I love you'" }
     ],
     activities: [
-      { type: "physical", name: "Dance & Movement", description: "Put on music and dance! Toddler will stomp, spin, and bounce. Great for gross motor skills.", icon: "💃" },
-      { type: "physical", name: "Bubble Chasing", description: "Blow bubbles and let toddler chase and pop them. Works on coordination and joy!", icon: "🫧" },
-      { type: "emotional", name: "Body Parts Song", description: "Sing 'Head, Shoulders, Knees and Toes' while touching each part. Toddler will follow along.", icon: "🎶" },
-      { type: "emotional", name: "Phone Conversations", description: "Give toddler a toy phone and pretend to call. 'Hello! What are you doing?' Builds conversation skills.", icon: "📱" }
+      { type: "physical", name: "Dance & Movement", description: "Put on music and dance! Toddler will stomp, spin, and bounce. Great for gross motor skills.", icon: "1f483" },
+      { type: "physical", name: "Bubble Chasing", description: "Blow bubbles and let toddler chase and pop them. Works on coordination and joy!", icon: "1fae7" },
+      { type: "emotional", name: "Body Parts Song", description: "Sing 'Head, Shoulders, Knees and Toes' while touching each part. Toddler will follow along.", icon: "1f3b6" },
+      { type: "emotional", name: "Phone Conversations", description: "Give toddler a toy phone and pretend to call. 'Hello! What are you doing?' Builds conversation skills.", icon: "1f4f1" }
     ],
     watchFor: ["Not walking", "Fewer than 5 words", "Doesn't imitate actions", "No pointing or gesturing", "Doesn't notice when caregiver leaves"],
     pros: ["Vocabulary explosion begins", "Body awareness grows rapidly", "Imitation makes learning natural", "Affectionate moments are deeply rewarding"],
@@ -701,10 +701,10 @@ const milestones = [
       { id: "e16-4", text: "Engages in more complex pretend play", tip: "Provide props: play kitchen, doctor kit, tools" }
     ],
     activities: [
-      { type: "physical", name: "Kicking Practice", description: "Kick a ball back and forth. Toddler may miss a lot — that's perfect practice!", icon: "⚽" },
-      { type: "physical", name: "Playground Time", description: "Slides, low climbers, swings. Supervised playground play builds strength and confidence.", icon: "🛝" },
-      { type: "emotional", name: "Choice Boards", description: "Offer 2-3 choices throughout the day: snack, shirt, activity. Empowers toddler.", icon: "📋" },
-      { type: "emotional", name: "Play Kitchen", description: "Pretend cooking together. 'What are you making? Yum, pasta!' Builds vocabulary and imagination.", icon: "🍳" }
+      { type: "physical", name: "Kicking Practice", description: "Kick a ball back and forth. Toddler may miss a lot — that's perfect practice!", icon: "26bd" },
+      { type: "physical", name: "Playground Time", description: "Slides, low climbers, swings. Supervised playground play builds strength and confidence.", icon: "1f6dd" },
+      { type: "emotional", name: "Choice Boards", description: "Offer 2-3 choices throughout the day: snack, shirt, activity. Empowers toddler.", icon: "clipboard" },
+      { type: "emotional", name: "Play Kitchen", description: "Pretend cooking together. 'What are you making? Yum, pasta!' Builds vocabulary and imagination.", icon: "1f373" }
     ],
     watchFor: ["Can't walk steadily", "Doesn't follow simple directions", "Fewer than 10 words", "Shows no pretend play"],
     pros: ["Independence means toddler can do more self-care", "Vocabulary is growing fast", "Pretend play shows cognitive leaps", "Physical confidence brings joy"],
@@ -731,10 +731,10 @@ const milestones = [
       { id: "e17-4", text: "Shows possessiveness ('Mine!')", tip: "Teach turn-taking: 'First you, then me'" }
     ],
     activities: [
-      { type: "physical", name: "Stair Climbing", description: "Hold hands and practice going up and down stairs. Count each step!", icon: "🪜" },
-      { type: "physical", name: "Throwing Games", description: "Beanbags into a bucket, balls at targets. Builds arm strength and aim.", icon: "🎯" },
-      { type: "emotional", name: "Story Time Plus", description: "Read stories and ask questions: 'Where's the dog? What color is it?' Builds comprehension.", icon: "📚" },
-      { type: "emotional", name: "Turn-Taking Games", description: "Take turns stacking, rolling a ball, putting puzzle pieces. 'Your turn, my turn!'", icon: "🔄" }
+      { type: "physical", name: "Stair Climbing", description: "Hold hands and practice going up and down stairs. Count each step!", icon: "1fa9c" },
+      { type: "physical", name: "Throwing Games", description: "Beanbags into a bucket, balls at targets. Builds arm strength and aim.", icon: "target" },
+      { type: "emotional", name: "Story Time Plus", description: "Read stories and ask questions: 'Where's the dog? What color is it?' Builds comprehension.", icon: "books" },
+      { type: "emotional", name: "Turn-Taking Games", description: "Take turns stacking, rolling a ball, putting puzzle pieces. 'Your turn, my turn!'", icon: "1f504" }
     ],
     watchFor: ["Fewer than 15 words", "No interest in other children", "Can't walk without help", "Doesn't follow simple directions"],
     pros: ["Language explosion is thrilling to witness", "Two-word phrases mark a cognitive leap", "Physical skills allow more outdoor adventure", "Toddler can express basic needs with words"],
@@ -761,10 +761,10 @@ const milestones = [
       { id: "e18-4", text: "Shows empathy — comforts others", tip: "Model empathy: 'Your friend is sad. Should we give a hug?'" }
     ],
     activities: [
-      { type: "physical", name: "Playground Adventures", description: "Regular playground visits — slides, climbers, sand. Toddler needs 60+ minutes of active play daily.", icon: "🛝" },
-      { type: "physical", name: "Jumping Practice", description: "Hold hands and jump together! Toddler is learning to get both feet off the ground.", icon: "🤸" },
-      { type: "emotional", name: "Emotion Naming", description: "Use emotion words all day: 'You're excited!' 'That made you angry.' Builds emotional intelligence.", icon: "💭" },
-      { type: "emotional", name: "Pretend Grocery Store", description: "Set up a pretend shop. 'What would you like to buy?' Builds vocabulary and social skills.", icon: "🛒" }
+      { type: "physical", name: "Playground Adventures", description: "Regular playground visits — slides, climbers, sand. Toddler needs 60+ minutes of active play daily.", icon: "1f6dd" },
+      { type: "physical", name: "Jumping Practice", description: "Hold hands and jump together! Toddler is learning to get both feet off the ground.", icon: "cartwheel" },
+      { type: "emotional", name: "Emotion Naming", description: "Use emotion words all day: 'You're excited!' 'That made you angry.' Builds emotional intelligence.", icon: "1f4ad" },
+      { type: "emotional", name: "Pretend Grocery Store", description: "Set up a pretend shop. 'What would you like to buy?' Builds vocabulary and social skills.", icon: "shopping-cart" }
     ],
     watchFor: ["Fewer than 20 words", "Doesn't walk independently", "Can't follow simple instructions", "No pretend play", "Loss of skills"],
     pros: ["Real conversations are possible!", "Empathy development is heartwarming", "Physical confidence allows outdoor adventures", "18-month check-up confirms progress"],
@@ -781,10 +781,10 @@ const milestones = [
     physical: [{ id: "p19-1", text: "Runs and stops without falling", tip: "Play 'Red Light, Green Light'" }, { id: "p19-2", text: "Kicks ball while walking", tip: "Set up mini soccer goals" }, { id: "p19-3", text: "Climbs stairs holding rail", tip: "Teach hand-on-rail habit" }, { id: "p19-4", text: "Opens containers and jars", tip: "Give safe containers to practice" }],
     emotional: [{ id: "e19-1", text: "Combines words into short sentences", tip: "Model proper sentences without correcting" }, { id: "e19-2", text: "Understands 'yours' and 'mine'", tip: "Label ownership clearly during play" }, { id: "e19-3", text: "Creates simple pretend scenarios", tip: "Join their pretend world enthusiastically" }, { id: "e19-4", text: "May start to show interest in potty", tip: "Follow toddler's lead — don't push potty training" }],
     activities: [
-      { type: "physical", name: "Red Light Green Light", description: "Run on green, freeze on red! Great for impulse control and body awareness.", icon: "🚦" },
-      { type: "physical", name: "Painting", description: "Finger painting or brush painting. Focus on the process, not the product!", icon: "🎨" },
-      { type: "emotional", name: "Storytelling", description: "Make up simple stories about toddler's day. They'll love being the main character!", icon: "📖" },
-      { type: "emotional", name: "Matching Games", description: "Match socks, match colors, match pictures. Builds cognitive skills.", icon: "🧦" }
+      { type: "physical", name: "Red Light Green Light", description: "Run on green, freeze on red! Great for impulse control and body awareness.", icon: "1f6a6" },
+      { type: "physical", name: "Painting", description: "Finger painting or brush painting. Focus on the process, not the product!", icon: "1f3a8" },
+      { type: "emotional", name: "Storytelling", description: "Make up simple stories about toddler's day. They'll love being the main character!", icon: "1f4d6" },
+      { type: "emotional", name: "Matching Games", description: "Match socks, match colors, match pictures. Builds cognitive skills.", icon: "1f9e6" }
     ],
     watchFor: ["No two-word phrases", "Can't run", "Doesn't imitate pretend play", "Extreme separation anxiety"],
     pros: ["Imagination makes play more creative and fun", "Sentences open up real communication", "Understanding concepts shows cognitive growth", "May show potty readiness — diaper-free days ahead!"],
@@ -801,9 +801,9 @@ const milestones = [
     physical: [{ id: "p20-1", text: "Jumps with both feet", tip: "Jump in puddles — best activity ever!" }, { id: "p20-2", text: "Walks up and down stairs", tip: "Practice with and without holding the rail" }, { id: "p20-3", text: "Stacks 5-6 blocks", tip: "Build towers and bridges together" }, { id: "p20-4", text: "Turns doorknobs", tip: "Install child-proof covers on important doors" }],
     emotional: [{ id: "e20-1", text: "Uses 50-100 words", tip: "Introduce descriptive words: big, small, hot, cold" }, { id: "e20-2", text: "Begins cooperative play with peers", tip: "Facilitate play dates with structured activities" }, { id: "e20-3", text: "Understands simple time concepts", tip: "'First lunch, then park' — use sequence words" }, { id: "e20-4", text: "Shows pride in accomplishments", tip: "Celebrate specific efforts: 'You stacked that so carefully!'" }],
     activities: [
-      { type: "physical", name: "Puddle Jumping", description: "Put on rain boots and jump in every puddle! Pure joy plus great exercise.", icon: "💧" },
-      { type: "physical", name: "Tower Building", description: "Build the tallest tower possible together. Count blocks, discuss colors. Multiskill activity!", icon: "🏗️" },
-      { type: "emotional", name: "Play Dates", description: "Structured play with peers: blocks, play dough, sandbox. Help with sharing and turn-taking.", icon: "👫" },
+      { type: "physical", name: "Puddle Jumping", description: "Put on rain boots and jump in every puddle! Pure joy plus great exercise.", icon: "1f4a7" },
+      { type: "physical", name: "Tower Building", description: "Build the tallest tower possible together. Count blocks, discuss colors. Multiskill activity!", icon: "1f3d7" },
+      { type: "emotional", name: "Play Dates", description: "Structured play with peers: blocks, play dough, sandbox. Help with sharing and turn-taking.", icon: "1f46b" },
       { type: "emotional", name: "Sequence Storytelling", description: "'First we wake up, then we eat, then we play.' Helps toddler understand routines and time.", icon: "⏰" }
     ],
     watchFor: ["Fewer than 50 words", "No interest in peers", "Can't climb stairs", "Doesn't follow two-step directions"],
@@ -821,10 +821,10 @@ const milestones = [
     physical: [{ id: "p21-1", text: "Runs well and changes direction", tip: "Play chase games outside" }, { id: "p21-2", text: "Kicks ball with good aim", tip: "Set up targets to kick toward" }, { id: "p21-3", text: "Tries to balance on one foot", tip: "Practice standing on one foot together — hold hands for balance" }, { id: "p21-4", text: "Uses a spoon/fork well", tip: "Encourage self-feeding at every meal" }],
     emotional: [{ id: "e21-1", text: "Asks 'What's that?' constantly", tip: "Answer every question patiently — this builds vocabulary fast" }, { id: "e21-2", text: "Understands simple stories", tip: "Ask questions about stories: 'What happened next?'" }, { id: "e21-3", text: "Shows a wider range of emotions", tip: "Help name all emotions, not just happy/sad" }, { id: "e21-4", text: "Pretend play becomes elaborate", tip: "Provide open-ended toys: blocks, fabric, boxes" }],
     activities: [
-      { type: "physical", name: "Chase & Catch", description: "Run, chase, catch, and tumble on soft grass. Best full-body exercise for toddlers!", icon: "🏃" },
-      { type: "physical", name: "Balance Games", description: "Walk on a line, stand on one foot, walk on low balance beams. Builds coordination.", icon: "⚖️" },
-      { type: "emotional", name: "Question Time", description: "When toddler asks 'What's that?' — answer AND ask back. 'It's a butterfly! What color is it?'", icon: "❓" },
-      { type: "emotional", name: "Emotion Cards", description: "Use cards with different faces. Name and discuss each emotion. 'When do you feel angry?'", icon: "🃏" }
+      { type: "physical", name: "Chase & Catch", description: "Run, chase, catch, and tumble on soft grass. Best full-body exercise for toddlers!", icon: "1f3c3" },
+      { type: "physical", name: "Balance Games", description: "Walk on a line, stand on one foot, walk on low balance beams. Builds coordination.", icon: "2696" },
+      { type: "emotional", name: "Question Time", description: "When toddler asks 'What's that?' — answer AND ask back. 'It's a butterfly! What color is it?'", icon: "2753" },
+      { type: "emotional", name: "Emotion Cards", description: "Use cards with different faces. Name and discuss each emotion. 'When do you feel angry?'", icon: "1f0cf" }
     ],
     watchFor: ["Not combining words", "Doesn't ask questions", "Can't run", "Shows no pretend play", "Extreme behavior issues"],
     pros: ["Curiosity drives incredible learning speed", "Rich pretend play shows creativity", "Physical skills allow real adventure", "Emotional vocabulary is expanding"],
@@ -841,10 +841,10 @@ const milestones = [
     physical: [{ id: "p22-1", text: "Walks down stairs holding rail", tip: "Always supervise stairs, teach hand-on-rail" }, { id: "p22-2", text: "Pedals a tricycle or ride-on toy", tip: "Practice in a safe, flat area" }, { id: "p22-3", text: "Stacks 6+ blocks", tip: "Try building specific structures: houses, bridges" }, { id: "p22-4", text: "Opens and closes zippers, lids", tip: "Let them practice on their own jackets" }],
     emotional: [{ id: "e22-1", text: "Uses 100+ words", tip: "Introduce category words: fruits, animals, vehicles" }, { id: "e22-2", text: "Sings parts of songs", tip: "Sing together often — pause and let toddler fill in words" }, { id: "e22-3", text: "Copies adult behaviors precisely", tip: "Model the behaviors you want to see — they're always watching!" }, { id: "e22-4", text: "Shows sense of humor", tip: "Laugh together! Toddler humor is the best humor" }],
     activities: [
-      { type: "physical", name: "Ride-On Toys", description: "Tricycles, balance bikes, ride-on cars. Great for coordination and leg strength.", icon: "🚲" },
-      { type: "physical", name: "Fine Motor Play", description: "Zippers, buttons, playdough, beading. Small hand muscles need practice!", icon: "🧵" },
-      { type: "emotional", name: "Singing Sessions", description: "Sing favorite songs and pause for toddler to fill in words. 'Twinkle twinkle little...'", icon: "🎤" },
-      { type: "emotional", name: "Mini-Me Chores", description: "Give toddler-sized tools: small broom, cloth, watering can. They'll 'help' with everything!", icon: "🧹" }
+      { type: "physical", name: "Ride-On Toys", description: "Tricycles, balance bikes, ride-on cars. Great for coordination and leg strength.", icon: "1f6b2" },
+      { type: "physical", name: "Fine Motor Play", description: "Zippers, buttons, playdough, beading. Small hand muscles need practice!", icon: "1f9f5" },
+      { type: "emotional", name: "Singing Sessions", description: "Sing favorite songs and pause for toddler to fill in words. 'Twinkle twinkle little...'", icon: "1f3a4" },
+      { type: "emotional", name: "Mini-Me Chores", description: "Give toddler-sized tools: small broom, cloth, watering can. They'll 'help' with everything!", icon: "1f9f9" }
     ],
     watchFor: ["Doesn't use two-word phrases", "No pretend play", "Can't understand simple instructions", "Shows no interest in peers"],
     pros: ["Imitation accelerates learning across all areas", "Songs and humor create joyful family moments", "Fine motor skills improve daily tasks (dressing, eating)", "Growing vocabulary enables real conversations"],
@@ -862,9 +862,9 @@ const milestones = [
     emotional: [{ id: "e23-1", text: "Short sentences (3-4 words)", tip: "Model longer sentences in response" }, { id: "e23-2", text: "Knows own name and age", tip: "Practice: 'What's your name? How old are you?'" }, { id: "e23-3", text: "Shows strong preferences and opinions", tip: "Respect reasonable preferences, hold firm on safety" }, { id: "e23-4", text: "Parallel play evolves into interactive play", tip: "Facilitate cooperative activities with peers" }],
     activities: [
       { type: "physical", name: "Jump & Land", description: "Practice jumping from the bottom step, landing with bent knees. Great for coordination!", icon: "⬇️" },
-      { type: "physical", name: "Getting Dressed", description: "Let toddler practice putting on easy clothes. Build extra time — it takes a while!", icon: "👕" },
-      { type: "emotional", name: "Name & Age Practice", description: "'What's your name?' 'How old are you?' Practice for the second birthday!", icon: "🎂" },
-      { type: "emotional", name: "Color Hunt", description: "'Can you find something red? Something blue?' Scavenger hunts build color recognition.", icon: "🌈" }
+      { type: "physical", name: "Getting Dressed", description: "Let toddler practice putting on easy clothes. Build extra time — it takes a while!", icon: "t-shirt" },
+      { type: "emotional", name: "Name & Age Practice", description: "'What's your name?' 'How old are you?' Practice for the second birthday!", icon: "1f382" },
+      { type: "emotional", name: "Color Hunt", description: "'Can you find something red? Something blue?' Scavenger hunts build color recognition.", icon: "1f308" }
     ],
     watchFor: ["Not using phrases", "Fewer than 50 words", "Doesn't play with others", "Can't run", "Significant behavior concerns"],
     pros: ["Sentences make communication so much richer", "Dressing skills build toward independence", "Interactive play means real friendships", "Second birthday excitement!"],
@@ -881,10 +881,10 @@ const milestones = [
     physical: [{ id: "p24-1", text: "Runs well, rarely falls", tip: "Regular outdoor running and climbing" }, { id: "p24-2", text: "Kicks a ball with power", tip: "Soccer in the backyard!" }, { id: "p24-3", text: "Walks up/down stairs alternating feet (with help)", tip: "Practice daily, always supervised" }, { id: "p24-4", text: "Stacks 6-7 blocks", tip: "Introduce Duplo blocks for creative building" }],
     emotional: [{ id: "e24-1", text: "200-300 word vocabulary", tip: "Introduce new words through books and experiences" }, { id: "e24-2", text: "2-3 word sentences consistently", tip: "Respond with expanded sentences" }, { id: "e24-3", text: "Begins to show readiness for potty training", tip: "Watch for signs of readiness, don't force it" }, { id: "e24-4", text: "Engages in elaborate pretend play", tip: "Provide open-ended materials for imaginative play" }],
     activities: [
-      { type: "physical", name: "Backyard Soccer", description: "Set up goals with cones or shoes. Kick the ball back and forth. Great family activity!", icon: "⚽" },
-      { type: "physical", name: "Duplo Building", description: "Build houses, towers, and vehicles. Follow instructions or free-build — both are valuable.", icon: "🧱" },
-      { type: "emotional", name: "Birthday Celebration!", description: "Celebrate with family and friends. Keep the party small and toddler-friendly.", icon: "🎉" },
-      { type: "emotional", name: "Potty Introduction", description: "If showing readiness, introduce the potty as something exciting, not scary.", icon: "🚽" }
+      { type: "physical", name: "Backyard Soccer", description: "Set up goals with cones or shoes. Kick the ball back and forth. Great family activity!", icon: "26bd" },
+      { type: "physical", name: "Duplo Building", description: "Build houses, towers, and vehicles. Follow instructions or free-build — both are valuable.", icon: "1f9f1" },
+      { type: "emotional", name: "Birthday Celebration!", description: "Celebrate with family and friends. Keep the party small and toddler-friendly.", icon: "party" },
+      { type: "emotional", name: "Potty Introduction", description: "If showing readiness, introduce the potty as something exciting, not scary.", icon: "1f6bd" }
     ],
     watchFor: ["Doesn't use two-word phrases", "Doesn't follow simple instructions", "Doesn't walk steadily", "Loss of previously acquired skills", "Can't stack blocks"],
     pros: ["Two years of incredible growth to celebrate!", "Real conversations are happening", "Physical abilities allow for active family fun", "Potty training may begin — end of diapers in sight!"],
@@ -901,10 +901,10 @@ const milestones = [
     physical: [{ id: "p25-1", text: "Jumps forward", tip: "Practice long jumps — how far can you go?" }, { id: "p25-2", text: "Balances on one foot briefly", tip: "Play flamingo — who can stand on one foot longer?" }, { id: "p25-3", text: "Pedals a tricycle", tip: "Practice in a safe, enclosed area" }, { id: "p25-4", text: "Screws/unscrews lids", tip: "Give a jar with a lid and small toys inside" }],
     emotional: [{ id: "e25-1", text: "Uses 3-4 word sentences", tip: "Have real back-and-forth conversations" }, { id: "e25-2", text: "Creates elaborate pretend scenarios", tip: "Join in and extend their pretend worlds" }, { id: "e25-3", text: "Understands concepts: big/small, up/down", tip: "Use comparison words throughout the day" }, { id: "e25-4", text: "Shows awareness of gender", tip: "Provide diverse toys and role models" }],
     activities: [
-      { type: "physical", name: "Tricycle Riding", description: "Pedaling builds leg strength and coordination. Let toddler ride in safe areas.", icon: "🚲" },
-      { type: "physical", name: "Long Jump", description: "Mark a starting line and see how far toddler can jump! Measure and celebrate.", icon: "📏" },
-      { type: "emotional", name: "Imaginative Worlds", description: "Build a blanket fort and pretend it's a castle, spaceship, or animal den!", icon: "🏰" },
-      { type: "emotional", name: "Size Sorting", description: "Sort objects by big/small. 'Which is bigger? Which is smaller?' Builds math concepts.", icon: "📊" }
+      { type: "physical", name: "Tricycle Riding", description: "Pedaling builds leg strength and coordination. Let toddler ride in safe areas.", icon: "1f6b2" },
+      { type: "physical", name: "Long Jump", description: "Mark a starting line and see how far toddler can jump! Measure and celebrate.", icon: "1f4cf" },
+      { type: "emotional", name: "Imaginative Worlds", description: "Build a blanket fort and pretend it's a castle, spaceship, or animal den!", icon: "1f3f0" },
+      { type: "emotional", name: "Size Sorting", description: "Sort objects by big/small. 'Which is bigger? Which is smaller?' Builds math concepts.", icon: "bar-chart" }
     ],
     watchFor: ["No phrases", "Doesn't play pretend", "Can't run or climb", "Extremely difficult behavior"],
     pros: ["Imagination makes play endlessly entertaining", "Complex language enables deeper connection", "Physical abilities allow for real sports and activities", "Concepts understanding shows cognitive growth"],
@@ -921,9 +921,9 @@ const milestones = [
     physical: [{ id: "p26-1", text: "Walks on tiptoes", tip: "Play 'sneaky feet' — tiptoe around the house" }, { id: "p26-2", text: "Catches a large ball", tip: "Practice with a beach ball first" }, { id: "p26-3", text: "Threads large beads", tip: "Provide chunky beads and thick string" }, { id: "p26-4", text: "Draws circles and lines", tip: "Draw together and talk about what you see" }],
     emotional: [{ id: "e26-1", text: "Plays cooperatively with peers", tip: "Set up collaborative activities: building together, art together" }, { id: "e26-2", text: "Begins to share (with prompting)", tip: "Use a timer for turn-taking: 'In 2 minutes, it's your friend's turn'" }, { id: "e26-3", text: "Expresses ideas and preferences clearly", tip: "Listen to and validate their ideas" }, { id: "e26-4", text: "Knows full name", tip: "Practice first and last name" }],
     activities: [
-      { type: "physical", name: "Sneaky Tiptoe Game", description: "Tiptoe like a mouse through the house. Who can be the quietest? Great for balance!", icon: "🐭" },
-      { type: "physical", name: "Bead Threading", description: "Thread large beads onto string. Amazing fine motor practice for hand strength.", icon: "📿" },
-      { type: "emotional", name: "Cooperative Art", description: "Create art together on one big paper. Each person adds something. Learn to share space.", icon: "🎨" },
+      { type: "physical", name: "Sneaky Tiptoe Game", description: "Tiptoe like a mouse through the house. Who can be the quietest? Great for balance!", icon: "1f42d" },
+      { type: "physical", name: "Bead Threading", description: "Thread large beads onto string. Amazing fine motor practice for hand strength.", icon: "1f4ff" },
+      { type: "emotional", name: "Cooperative Art", description: "Create art together on one big paper. Each person adds something. Learn to share space.", icon: "1f3a8" },
       { type: "emotional", name: "Sharing Timer", description: "Set a visual timer. 'You play for 2 minutes, then it's [friend's] turn.' Makes sharing concrete.", icon: "⏳" }
     ],
     watchFor: ["No cooperative play attempts", "Very limited vocabulary", "Can't run or climb stairs", "Extreme aggression"],
@@ -941,10 +941,10 @@ const milestones = [
     physical: [{ id: "p27-1", text: "Jumps with both feet leaving the ground", tip: "Jumping games: jump over a rope on the ground" }, { id: "p27-2", text: "Walks up stairs alternating feet", tip: "Encourage but always supervise" }, { id: "p27-3", text: "Uses scissors (child-safe) with help", tip: "Practice snipping paper strips" }, { id: "p27-4", text: "Draws recognizable shapes", tip: "Draw shapes together and name them" }],
     emotional: [{ id: "e27-1", text: "Asks 'why?' constantly", tip: "Answer simply and honestly, then ask 'What do you think?'" }, { id: "e27-2", text: "Understands taking turns", tip: "Board games with turn-taking are great now" }, { id: "e27-3", text: "Shows fear of specific things", tip: "Acknowledge fears without dismissing them" }, { id: "e27-4", text: "4-5 word sentences", tip: "Expand their sentences: 'Yes, the big red truck IS going fast!'" }],
     activities: [
-      { type: "physical", name: "Jumping Games", description: "Jump over a rope, jump between pillows, jump and touch something high. Builds explosive strength!", icon: "🦗" },
-      { type: "physical", name: "Scissor Practice", description: "Child-safe scissors and paper strips. Snip, snip! Great for hand strength and coordination.", icon: "✂️" },
-      { type: "emotional", name: "Why Conversations", description: "When they ask 'why?', answer simply, then ask 'What do you think?' Builds critical thinking.", icon: "🤔" },
-      { type: "emotional", name: "Simple Board Games", description: "Memory matching, simple card games, Candy Land. Learning rules and taking turns!", icon: "🎲" }
+      { type: "physical", name: "Jumping Games", description: "Jump over a rope, jump between pillows, jump and touch something high. Builds explosive strength!", icon: "1f997" },
+      { type: "physical", name: "Scissor Practice", description: "Child-safe scissors and paper strips. Snip, snip! Great for hand strength and coordination.", icon: "2702" },
+      { type: "emotional", name: "Why Conversations", description: "When they ask 'why?', answer simply, then ask 'What do you think?' Builds critical thinking.", icon: "1f914" },
+      { type: "emotional", name: "Simple Board Games", description: "Memory matching, simple card games, Candy Land. Learning rules and taking turns!", icon: "1f3b2" }
     ],
     watchFor: ["Can't jump", "Doesn't ask questions", "Very limited sentences", "Unable to play cooperatively"],
     pros: ["Curiosity drives incredible learning", "Logical thinking is emerging", "Turn-taking shows social maturity", "Sentences are becoming complex"],
@@ -961,10 +961,10 @@ const milestones = [
     physical: [{ id: "p28-1", text: "Runs smoothly, changes direction quickly", tip: "Obstacle courses in the backyard" }, { id: "p28-2", text: "Stands on one foot for 2+ seconds", tip: "Play balance challenges" }, { id: "p28-3", text: "Draws circles, attempts letters", tip: "Don't push letter writing — let it emerge naturally" }, { id: "p28-4", text: "Brushes teeth with help", tip: "Make brushing a fun routine" }],
     emotional: [{ id: "e28-1", text: "Sings whole songs", tip: "Sing together in the car, bath, and bedtime" }, { id: "e28-2", text: "Names friends", tip: "Ask about friends: 'What did you play with [friend] today?'" }, { id: "e28-3", text: "Shows awareness of daily routines", tip: "Use visual schedules if helpful" }, { id: "e28-4", text: "Begins to understand time concepts", tip: "'After nap, we go to the park.' Use sequence words" }],
     activities: [
-      { type: "physical", name: "Backyard Obstacle Course", description: "Cones to weave, cushions to jump, tunnels to crawl through. Timed races!", icon: "🏅" },
-      { type: "physical", name: "Art Studio", description: "Set up a dedicated art space: paper, crayons, paint, stickers. Let creativity flow!", icon: "🖼️" },
-      { type: "emotional", name: "Song Time Concert", description: "Let toddler perform their favorite songs. Be the enthusiastic audience!", icon: "🎤" },
-      { type: "emotional", name: "Visual Schedule", description: "Create a picture schedule of daily routines. Toddler can move/check items as they go.", icon: "📋" }
+      { type: "physical", name: "Backyard Obstacle Course", description: "Cones to weave, cushions to jump, tunnels to crawl through. Timed races!", icon: "1f3c5" },
+      { type: "physical", name: "Art Studio", description: "Set up a dedicated art space: paper, crayons, paint, stickers. Let creativity flow!", icon: "1f5bc" },
+      { type: "emotional", name: "Song Time Concert", description: "Let toddler perform their favorite songs. Be the enthusiastic audience!", icon: "1f3a4" },
+      { type: "emotional", name: "Visual Schedule", description: "Create a picture schedule of daily routines. Toddler can move/check items as they go.", icon: "clipboard" }
     ],
     watchFor: ["Can't draw a circle", "Doesn't know any songs", "No interest in creative play", "Can't balance momentarily"],
     pros: ["Creative expression is a joy to witness", "Songs and art build confidence", "Understanding routines reduces meltdowns", "Physical skills allow real sports participation"],
@@ -981,10 +981,10 @@ const milestones = [
     physical: [{ id: "p29-1", text: "Hops on one foot", tip: "Practice hopping games" }, { id: "p29-2", text: "Catches a bounced ball", tip: "Bounce-catch is easier than air-catch" }, { id: "p29-3", text: "Uses child-safe scissors independently", tip: "Supervised cutting activities with various materials" }, { id: "p29-4", text: "Buttons large buttons", tip: "Practice on button boards or their own jackets" }],
     emotional: [{ id: "e29-1", text: "Understands rules (may not follow them!)", tip: "Keep rules simple, consistent, and fair" }, { id: "e29-2", text: "Shows guilt when breaking rules", tip: "Focus on the behavior, not the child: 'Hitting hurts' vs 'Bad boy'" }, { id: "e29-3", text: "Asks for help when needed", tip: "Celebrate when they ask — it's a sign of trust" }, { id: "e29-4", text: "Uses past tense words", tip: "Model correct grammar without correcting: 'I runned!' → 'Yes, you RAN so fast!'" }],
     activities: [
-      { type: "physical", name: "Hopping Games", description: "Hop on one foot, then the other. Hop across the room. Hopscotch!", icon: "🦩" },
-      { type: "physical", name: "Cutting Crafts", description: "Cut out shapes, make paper chains, create collages. Scissor skills are growing!", icon: "✂️" },
-      { type: "emotional", name: "Rule Games", description: "Simon Says, Red Light Green Light — games with rules teach self-control.", icon: "🎯" },
-      { type: "emotional", name: "Feelings Check", description: "'How are you feeling right now?' with a feelings chart. Daily emotional check-ins.", icon: "💭" }
+      { type: "physical", name: "Hopping Games", description: "Hop on one foot, then the other. Hop across the room. Hopscotch!", icon: "1f9a9" },
+      { type: "physical", name: "Cutting Crafts", description: "Cut out shapes, make paper chains, create collages. Scissor skills are growing!", icon: "2702" },
+      { type: "emotional", name: "Rule Games", description: "Simon Says, Red Light Green Light — games with rules teach self-control.", icon: "target" },
+      { type: "emotional", name: "Feelings Check", description: "'How are you feeling right now?' with a feelings chart. Daily emotional check-ins.", icon: "1f4ad" }
     ],
     watchFor: ["Can't follow simple rules at all", "No multi-word sentences", "Extreme aggression", "No understanding of consequences"],
     pros: ["Understanding rules makes daily life smoother", "Guilt shows moral development", "Asking for help shows trust and intelligence", "Grammar sophistication shows language maturity"],
@@ -1001,10 +1001,10 @@ const milestones = [
     physical: [{ id: "p30-1", text: "Jumps over objects", tip: "Set up small items to jump over" }, { id: "p30-2", text: "Balances on one foot for 3+ seconds", tip: "Balance challenges: yoga poses for kids" }, { id: "p30-3", text: "Draws a person (head + legs)", tip: "Ask toddler to draw family members" }, { id: "p30-4", text: "Dresses self with some help", tip: "Lay out clothes and let them try independently" }],
     emotional: [{ id: "e30-1", text: "Speaks in full sentences", tip: "Have real conversations about their day" }, { id: "e30-2", text: "Understands 'in,' 'on,' 'under'", tip: "Play position games: 'Put the ball UNDER the table'" }, { id: "e30-3", text: "Negotiates and bargains", tip: "Allow reasonable negotiation — it builds thinking skills" }, { id: "e30-4", text: "Shows strong attachment to routines", tip: "Maintain consistent routines for security" }],
     activities: [
-      { type: "physical", name: "Kid Yoga", description: "Simple yoga poses: tree, cat, dog, butterfly. Builds balance, flexibility, and calm!", icon: "🧘" },
-      { type: "physical", name: "Draw Your Family", description: "Draw family members together. Talk about who's in the picture. Frame it!", icon: "👨‍👩‍👧‍👦" },
-      { type: "emotional", name: "Preposition Play", description: "Hide a toy and give position clues: 'It's UNDER something soft.' Scavenger hunt!", icon: "🗺️" },
-      { type: "emotional", name: "Negotiation Practice", description: "'You want 3 cookies? How about 1 now and 1 after dinner?' Teach fair negotiation.", icon: "🤝" }
+      { type: "physical", name: "Kid Yoga", description: "Simple yoga poses: tree, cat, dog, butterfly. Builds balance, flexibility, and calm!", icon: "1f9d8" },
+      { type: "physical", name: "Draw Your Family", description: "Draw family members together. Talk about who's in the picture. Frame it!", icon: "1f468-200d-1f469-200d-1f467-200d-1f466" },
+      { type: "emotional", name: "Preposition Play", description: "Hide a toy and give position clues: 'It's UNDER something soft.' Scavenger hunt!", icon: "1f5fa" },
+      { type: "emotional", name: "Negotiation Practice", description: "'You want 3 cookies? How about 1 now and 1 after dinner?' Teach fair negotiation.", icon: "handshake" }
     ],
     watchFor: ["Can't form sentences", "Difficult to understand speech", "Can't jump or climb", "No imaginative play", "Extreme behavior issues"],
     pros: ["Full sentences make life so much easier", "Understanding prepositions shows spatial reasoning", "Negotiation shows cognitive sophistication", "Dressing independence is a parent win"],
@@ -1021,10 +1021,10 @@ const milestones = [
     physical: [{ id: "p31-1", text: "Pedals and steers a tricycle", tip: "Ride together in safe areas" }, { id: "p31-2", text: "Catches a thrown ball (large)", tip: "Practice with big soft balls" }, { id: "p31-3", text: "Copies a circle and cross shapes", tip: "Practice shapes with chalk outside" }, { id: "p31-4", text: "Unbuttons buttons", tip: "Let them unbutton their own clothes" }],
     emotional: [{ id: "e31-1", text: "Tells simple stories about their day", tip: "Ask open-ended questions: 'Tell me about your day!'" }, { id: "e31-2", text: "Understands 'same' and 'different'", tip: "Compare and contrast everything: 'How are these the same?'" }, { id: "e31-3", text: "Uses pronouns correctly (I, you, me)", tip: "Model correct pronoun use" }, { id: "e31-4", text: "Begins to understand waiting", tip: "Use visual timers for waiting practice" }],
     activities: [
-      { type: "physical", name: "Trike Riding", description: "Ride tricycles in the neighborhood or park. Practice steering and stopping.", icon: "🚴" },
-      { type: "physical", name: "Chalk Art", description: "Sidewalk chalk drawing! Practice shapes, letters, and free drawing outside.", icon: "🖍️" },
-      { type: "emotional", name: "Storytelling Time", description: "Take turns telling stories. Start with 'Once upon a time...' and let toddler continue!", icon: "📖" },
-      { type: "emotional", name: "Same/Different Game", description: "Show two objects. 'How are they the same? How are they different?' Builds critical thinking.", icon: "🔍" }
+      { type: "physical", name: "Trike Riding", description: "Ride tricycles in the neighborhood or park. Practice steering and stopping.", icon: "1f6b4" },
+      { type: "physical", name: "Chalk Art", description: "Sidewalk chalk drawing! Practice shapes, letters, and free drawing outside.", icon: "1f58d" },
+      { type: "emotional", name: "Storytelling Time", description: "Take turns telling stories. Start with 'Once upon a time...' and let toddler continue!", icon: "1f4d6" },
+      { type: "emotional", name: "Same/Different Game", description: "Show two objects. 'How are they the same? How are they different?' Builds critical thinking.", icon: "1f50d" }
     ],
     watchFor: ["Can't recount simple events", "Speech is mostly unclear", "Can't pedal", "No interest in stories"],
     pros: ["Storytelling shows incredible cognitive growth", "Comparisons build analytical thinking", "Pronoun mastery aids clear communication", "Physical skills allow bike riding fun"],
@@ -1041,10 +1041,10 @@ const milestones = [
     physical: [{ id: "p32-1", text: "Walks on a line", tip: "Draw lines with chalk or use tape on the floor" }, { id: "p32-2", text: "Throws a ball with aim", tip: "Set up targets for throwing practice" }, { id: "p32-3", text: "Turns faucets on and off", tip: "Practice during hand-washing routine" }, { id: "p32-4", text: "Pours from a small pitcher", tip: "Let toddler pour their own water at meals" }],
     emotional: [{ id: "e32-1", text: "Counts to 5-10 (may skip numbers)", tip: "Count everything: stairs, snacks, toys, steps" }, { id: "e32-2", text: "Sorts by shape or color", tip: "Sorting toys, blocks, or snacks by color" }, { id: "e32-3", text: "Takes turns in games", tip: "Play simple board games regularly" }, { id: "e32-4", text: "Shows preference for certain friends", tip: "Nurture those friendships with regular play dates" }],
     activities: [
-      { type: "physical", name: "Balance Beam Walking", description: "Walk along a line on the ground, then try a low balance beam. Arms out for balance!", icon: "⚖️" },
-      { type: "physical", name: "Target Throw", description: "Throw beanbags at targets — buckets, hoops, drawn circles. Keep score (more counting!).", icon: "🎯" },
-      { type: "emotional", name: "Counting Everything", description: "Count stairs, crackers, fingers, toes, cars passing by. Numbers are everywhere!", icon: "🔢" },
-      { type: "emotional", name: "Pattern Making", description: "Create patterns with blocks or beads: red, blue, red, blue. 'What comes next?'", icon: "🔴" }
+      { type: "physical", name: "Balance Beam Walking", description: "Walk along a line on the ground, then try a low balance beam. Arms out for balance!", icon: "2696" },
+      { type: "physical", name: "Target Throw", description: "Throw beanbags at targets — buckets, hoops, drawn circles. Keep score (more counting!).", icon: "target" },
+      { type: "emotional", name: "Counting Everything", description: "Count stairs, crackers, fingers, toes, cars passing by. Numbers are everywhere!", icon: "1f522" },
+      { type: "emotional", name: "Pattern Making", description: "Create patterns with blocks or beads: red, blue, red, blue. 'What comes next?'", icon: "1f534" }
     ],
     watchFor: ["No interest in numbers or counting", "Can't sort by one attribute", "Poor balance for age", "Limited social interest"],
     pros: ["Number awareness builds math foundations", "Sorting shows logical thinking", "Turn-taking is becoming natural", "Best friendships are forming"],
@@ -1061,10 +1061,10 @@ const milestones = [
     physical: [{ id: "p33-1", text: "Hops on one foot several times", tip: "Hopscotch is perfect practice!" }, { id: "p33-2", text: "Climbs playground equipment confidently", tip: "Let them challenge themselves with supervision" }, { id: "p33-3", text: "Draws a person with 3+ body parts", tip: "Draw people together and add details" }, { id: "p33-4", text: "Uses fork and spoon well", tip: "Model table manners during meals" }],
     emotional: [{ id: "e33-1", text: "Talks about past and future events", tip: "'What did we do yesterday? What will we do tomorrow?'" }, { id: "e33-2", text: "Shows empathy consistently", tip: "Praise empathetic behavior: 'That was so kind of you!'" }, { id: "e33-3", text: "Understands 'mine' and 'yours' and 'theirs'", tip: "Reinforce ownership and sharing concepts" }, { id: "e33-4", text: "Plays cooperatively for extended periods", tip: "Provide cooperative games and projects" }],
     activities: [
-      { type: "physical", name: "Hopscotch", description: "Draw a hopscotch grid with chalk. Classic game that builds balance and counting!", icon: "🔢" },
-      { type: "physical", name: "People Drawing", description: "Draw people with more detail: arms, fingers, hair, clothes. Talk about each part.", icon: "🧑" },
-      { type: "emotional", name: "Yesterday/Tomorrow Talk", description: "Discuss past and future daily. Builds time understanding and memory skills.", icon: "📅" },
-      { type: "emotional", name: "Empathy Stories", description: "Read books about kindness and feelings. Discuss: 'How did the character feel?'", icon: "❤️" }
+      { type: "physical", name: "Hopscotch", description: "Draw a hopscotch grid with chalk. Classic game that builds balance and counting!", icon: "1f522" },
+      { type: "physical", name: "People Drawing", description: "Draw people with more detail: arms, fingers, hair, clothes. Talk about each part.", icon: "1f9d1" },
+      { type: "emotional", name: "Yesterday/Tomorrow Talk", description: "Discuss past and future daily. Builds time understanding and memory skills.", icon: "1f4c5" },
+      { type: "emotional", name: "Empathy Stories", description: "Read books about kindness and feelings. Discuss: 'How did the character feel?'", icon: "heart" }
     ],
     watchFor: ["Can't have a conversation", "No empathy shown", "Can't hop or balance", "Difficult behavior that doesn't improve"],
     pros: ["Confidence is inspiring to watch", "Empathy shows emotional maturity", "Time concepts reduce anxiety about transitions", "Extended cooperative play means longer peaceful moments"],
@@ -1081,10 +1081,10 @@ const milestones = [
     physical: [{ id: "p34-1", text: "Gallops and skips (or tries)", tip: "Practice galloping like horses" }, { id: "p34-2", text: "Catches a small ball", tip: "Progress from big balls to smaller ones" }, { id: "p34-3", text: "Draws basic shapes intentionally", tip: "Practice circles, squares, triangles" }, { id: "p34-4", text: "Dresses independently (most items)", tip: "Only help when asked" }],
     emotional: [{ id: "e34-1", text: "Asks complex questions about the world", tip: "Answer honestly at their level" }, { id: "e34-2", text: "Understands counting to 10+", tip: "Count higher: 11, 12, 13..." }, { id: "e34-3", text: "Follows 3-step directions", tip: "'Get your shoes, put them on, and come to the door'" }, { id: "e34-4", text: "Shows pride in skills", tip: "Acknowledge specific efforts and skills" }],
     activities: [
-      { type: "physical", name: "Horse Gallop", description: "Gallop like horses around the yard! Great for coordination and imaginative play.", icon: "🐴" },
-      { type: "physical", name: "Shape Drawing", description: "Practice drawing shapes with purpose. 'Can you draw a house?' (triangle + square!)", icon: "📐" },
-      { type: "emotional", name: "Science Questions", description: "When they ask big questions, explore together: 'Let's find out!' Look it up, experiment.", icon: "🔬" },
-      { type: "emotional", name: "Multi-Step Tasks", description: "Give 3-step instructions for daily tasks. Builds memory and independence.", icon: "📝" }
+      { type: "physical", name: "Horse Gallop", description: "Gallop like horses around the yard! Great for coordination and imaginative play.", icon: "1f434" },
+      { type: "physical", name: "Shape Drawing", description: "Practice drawing shapes with purpose. 'Can you draw a house?' (triangle + square!)", icon: "1f4d0" },
+      { type: "emotional", name: "Science Questions", description: "When they ask big questions, explore together: 'Let's find out!' Look it up, experiment.", icon: "1f52c" },
+      { type: "emotional", name: "Multi-Step Tasks", description: "Give 3-step instructions for daily tasks. Builds memory and independence.", icon: "1f4dd" }
     ],
     watchFor: ["Can't follow multi-step directions", "Speech unclear to strangers", "Can't draw basic shapes", "No interest in counting or numbers"],
     pros: ["Complex thinking is emerging rapidly", "Following multi-step directions shows working memory growth", "Independence in dressing saves parents time", "Pride in skills builds self-esteem"],
@@ -1101,10 +1101,10 @@ const milestones = [
     physical: [{ id: "p35-1", text: "Runs, jumps, climbs with confidence", tip: "Let them take physical risks (supervised)" }, { id: "p35-2", text: "Pedals and steers well", tip: "Bike riding in safe areas — helmet always!" }, { id: "p35-3", text: "Uses scissors to cut along a line", tip: "Practice cutting out shapes" }, { id: "p35-4", text: "Buttons and unbuttons clothes", tip: "Let them dress completely independently" }],
     emotional: [{ id: "e35-1", text: "Speaks in complex sentences", tip: "Have deep conversations — they're capable!" }, { id: "e35-2", text: "Understands and follows rules", tip: "Involve them in making family rules" }, { id: "e35-3", text: "Shows awareness of others' feelings", tip: "Discuss emotions in books, movies, and real life" }, { id: "e35-4", text: "Begins to understand 'why' behind rules", tip: "Explain reasons: 'We hold hands because the road has cars'" }],
     activities: [
-      { type: "physical", name: "Adventure Hike", description: "Go on a nature walk/hike. Collect leaves, rocks, sticks. Toddler can walk long distances now!", icon: "🥾" },
-      { type: "physical", name: "Cutting Skills", description: "Practice cutting along lines, cutting out shapes. Great pre-writing skill!", icon: "✂️" },
-      { type: "emotional", name: "Family Rules Meeting", description: "Let toddler help make family rules. 'What rules should we have?' They'll follow rules they helped create.", icon: "📜" },
-      { type: "emotional", name: "Feelings Journal", description: "Draw or paste pictures about feelings each day. 'Today I felt happy because...'", icon: "📓" }
+      { type: "physical", name: "Adventure Hike", description: "Go on a nature walk/hike. Collect leaves, rocks, sticks. Toddler can walk long distances now!", icon: "1f97e" },
+      { type: "physical", name: "Cutting Skills", description: "Practice cutting along lines, cutting out shapes. Great pre-writing skill!", icon: "2702" },
+      { type: "emotional", name: "Family Rules Meeting", description: "Let toddler help make family rules. 'What rules should we have?' They'll follow rules they helped create.", icon: "1f4dc" },
+      { type: "emotional", name: "Feelings Journal", description: "Draw or paste pictures about feelings each day. 'Today I felt happy because...'", icon: "1f4d3" }
     ],
     watchFor: ["Speech hard to understand", "Can't follow simple rules", "Poor coordination for age", "No interest in peers", "Significant behavior concerns"],
     pros: ["Toddler is incredibly capable and independent", "Complex conversations are deeply fulfilling", "Physical confidence allows real adventures", "Emotional awareness is impressive"],
@@ -1121,10 +1121,10 @@ const milestones = [
     physical: [{ id: "p36-1", text: "Runs, jumps, hops, gallops, climbs", tip: "Enroll in age-appropriate sports or dance" }, { id: "p36-2", text: "Rides tricycle well, may try balance bike", tip: "Consider a balance bike for the transition to pedal bike" }, { id: "p36-3", text: "Draws recognizable pictures", tip: "Ask about their drawings — every line has meaning" }, { id: "p36-4", text: "Mostly dresses independently", tip: "Reserve help for tricky items only" }],
     emotional: [{ id: "e36-1", text: "Vocabulary of 1000+ words", tip: "Read chapter books together now!" }, { id: "e36-2", text: "Plays cooperatively with sustained focus", tip: "Group activities, classes, and play dates" }, { id: "e36-3", text: "Shows empathy, kindness, and humor", tip: "Celebrate these qualities — they're who your child is becoming" }, { id: "e36-4", text: "Ready for preschool!", tip: "Visit the preschool together, read books about school, talk positively" }],
     activities: [
-      { type: "physical", name: "Sports Introduction", description: "Try soccer, swimming, dance, or gymnastics. Structured physical activity with peers!", icon: "🏅" },
-      { type: "physical", name: "Balance Bike", description: "A balance bike teaches coordination and prepares for a pedal bike later.", icon: "🚲" },
-      { type: "emotional", name: "Third Birthday Celebration!", description: "Celebrate this incredible milestone! Your baby is now a full-fledged kid!", icon: "🎂" },
-      { type: "emotional", name: "Preschool Prep", description: "Visit the school, meet the teacher, read books about school. Make it exciting!", icon: "🏫" }
+      { type: "physical", name: "Sports Introduction", description: "Try soccer, swimming, dance, or gymnastics. Structured physical activity with peers!", icon: "1f3c5" },
+      { type: "physical", name: "Balance Bike", description: "A balance bike teaches coordination and prepares for a pedal bike later.", icon: "1f6b2" },
+      { type: "emotional", name: "Third Birthday Celebration!", description: "Celebrate this incredible milestone! Your baby is now a full-fledged kid!", icon: "1f382" },
+      { type: "emotional", name: "Preschool Prep", description: "Visit the school, meet the teacher, read books about school. Make it exciting!", icon: "1f3eb" }
     ],
     watchFor: ["Significant speech delay", "Can't play with other children", "Major coordination difficulties", "Extreme behavior that disrupts daily life", "Loss of skills"],
     pros: [

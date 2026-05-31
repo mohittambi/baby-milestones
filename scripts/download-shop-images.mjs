@@ -15,7 +15,7 @@ const fc = (id) => `https://cdn.fcglcdn.com/brainbees/images/products/438x531/${
 const items = [
   { file: 'sebamed-lotion', pageUrl: 'https://www.firstcry.com/sebamed/sebamed-baby-body-lotion-ph-5-5-vegan-400-ml/552251/product-detail' },
   { file: 'sebamed-rash', pageUrl: 'https://www.firstcry.com/sebamed/sebamed-baby-diaper-rash-cream-ph-5-5-100-ml/552253/product-detail' },
-  { file: 'sebamed-shampoo', pageUrl: 'https://www.firstcry.com/sebamed/sebamed-baby-shampoo-ph-5-5-tear-free-150-ml/552255/product-detail' },
+  { file: 'sebamed-shampoo', imageUrl: fc('48194'), pageUrl: 'https://www.firstcry.com/sebamed/sebamed-baby-shampoo-ph-5-5-soap-free-no-tears-150-ml/48194/product-detail' },
   { file: 'sebamed-wash', imageUrl: fc('18256737') },
   { file: 'sterilizer', imageUrl: fc('8870538') },
   { file: 'breast-pump', pageUrl: 'https://www.firstcry.com/breast-feeding/breast-pumps?scid=37&type=t1-70' },
@@ -27,11 +27,11 @@ const items = [
   { file: 'stroller', pageUrl: 'https://www.firstcry.com/babyhug/baby-strollers-prams/7/44/621' },
   { file: 'pacifier', pageUrl: 'https://www.amazon.in/Philips-Avent-Pacifier-SCF085-12/dp/B09P1V8RMM' },
   { file: 'dry-sheets', pageUrl: 'https://www.amazon.in/dp/B0BCVRJSSM' },
-  { file: 'newborn-clothes', imageUrl: 'https://picsum.photos/seed/newborn/600/400' },
+  { file: 'newborn-clothes', imageUrl: fc('19801994'), pageUrl: 'https://www.firstcry.com/babyhug/babyhug-100-cotton-woven-sleeveless-jhablas-with-stripes-and-teddy-bear-print-pack-of-3-white-orange-and-sky-blue/19801994/product-detail' },
   { file: 'bibs', pageUrl: 'https://www.firstcry.com/babyhug/babyhug-drool-bibs-printed-pack-of-5-multicolor/18149757/product-detail' },
   { file: 'walking-shoes', imageUrl: 'https://picsum.photos/seed/babyshoes/600/400' },
-  { file: 'nursing-pads', imageUrl: 'https://picsum.photos/seed/nursing/600/400' },
-  { file: 'nipple-cream', imageUrl: 'https://picsum.photos/seed/cream/600/400' },
+  { file: 'nursing-pads', imageUrl: fc('21490225'), pageUrl: 'https://www.firstcry.com/nua/nua-nursing-pads-pack-of-18-disposable-pads-soft-and-breathable-leak-protection-during-breastfeeding-discreet-and-comfortable-fit-100-toxic-free-safe-for-mom-and-baby-white/21490225/product-detail' },
+  { file: 'nipple-cream', imageUrl: fc('17520908'), pageUrl: 'https://www.firstcry.com/lansinoh/lansinoh-lanolin-nipple-cream-10ml/17520908/product-detail' },
   { file: 'burp-cloths', imageUrl: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=600&h=400&q=80' },
   { file: 'clothes-sizeup', imageUrl: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=600&h=400&q=80' },
 ];

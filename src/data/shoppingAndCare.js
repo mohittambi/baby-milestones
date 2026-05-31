@@ -34,7 +34,7 @@ const PRODUCTS = {
     for: 'baby',
     why: 'Gentle scalp cleansing; use 1–2× per week',
     links: {
-      firstcry: 'https://www.firstcry.com/soaps,-shampoos-and-body-wash/baby-shampoo/sebamed?brand=831&scid=12&type=t1-162',
+      firstcry: 'https://www.firstcry.com/sebamed/sebamed-baby-shampoo-ph-5-5-soap-free-no-tears-150-ml/48194/product-detail',
       amazon: 'https://www.amazon.in/s?k=sebamed+baby+shampoo',
     },
   },
@@ -142,7 +142,7 @@ const PRODUCTS = {
     for: 'baby',
     why: '6–8 jhablas/onesies, caps, mittens, swaddles — wash before first use',
     links: {
-      firstcry: 'https://www.firstcry.com/search?q=newborn+cotton+romper',
+      firstcry: 'https://www.firstcry.com/babyhug/babyhug-100-cotton-woven-sleeveless-jhablas-with-stripes-and-teddy-bear-print-pack-of-3-white-orange-and-sky-blue/19801994/product-detail',
       amazon: 'https://www.amazon.in/s?k=newborn+cotton+jhabla+romper',
     },
   },
@@ -216,7 +216,7 @@ const PRODUCTS = {
     for: 'parent',
     why: 'Leak protection during breastfeeding',
     links: {
-      firstcry: 'https://www.firstcry.com/search?q=nursing+pads',
+      firstcry: 'https://www.firstcry.com/nua/nua-nursing-pads-pack-of-18-disposable-pads-soft-and-breathable-leak-protection-during-breastfeeding-discreet-and-comfortable-fit-100-toxic-free-safe-for-mom-and-baby-white/21490225/product-detail',
       amazon: 'https://www.amazon.in/s?k=nursing+pads+breastfeeding',
     },
   },
@@ -228,7 +228,7 @@ const PRODUCTS = {
     for: 'parent',
     why: 'Sore nipple relief',
     links: {
-      firstcry: 'https://www.firstcry.com/search?q=lanolin+nipple+cream',
+      firstcry: 'https://www.firstcry.com/lansinoh/lansinoh-lanolin-nipple-cream-10ml/17520908/product-detail',
       amazon: 'https://www.amazon.in/s?k=lanolin+nipple+cream',
     },
   },
@@ -450,75 +450,75 @@ const HOLDING_BY_RANGE = [
   {
     maxMonth: 1,
     games: [
-      { id: 'hold-m1-cradle', name: 'Cradle Hold', icon: '🤱', description: 'Head in elbow crook, body along forearm — for feeding and calming' },
-      { id: 'hold-m1-football', name: 'Football Hold', icon: '🏈', description: 'Baby along your side, head in hand — good for colic and reflux' },
-      { id: 'hold-m1-skin', name: 'Skin-to-Skin', icon: '💕', description: 'Baby on bare chest, face turned — regulates temperature and bonding' },
-      { id: 'hold-m1-shoulder', name: 'Shoulder Hold', icon: '👶', description: 'Upright against shoulder for burping after feeds' },
+      { id: 'hold-m1-cradle', name: 'Cradle Hold', icon: "1f931", description: 'Head in elbow crook, body along forearm — for feeding and calming' },
+      { id: 'hold-m1-football', name: 'Football Hold', icon: "1f3c8", description: 'Baby along your side, head in hand — good for colic and reflux' },
+      { id: 'hold-m1-skin', name: 'Skin-to-Skin', icon: "two-hearts", description: 'Baby on bare chest, face turned — regulates temperature and bonding' },
+      { id: 'hold-m1-shoulder', name: 'Shoulder Hold', icon: "baby", description: 'Upright against shoulder for burping after feeds' },
     ],
   },
   {
     maxMonth: 2,
     games: [
-      { id: 'hold-m2-face', name: 'Face-to-Face Upright', icon: '👀', description: 'Hold upright on chest at 30 cm — encourages social smile' },
-      { id: 'hold-m2-mirror', name: 'Smile Mirror Game', icon: '🪞', description: 'Make slow smiles; wait up to 10 seconds for baby to respond' },
+      { id: 'hold-m2-face', name: 'Face-to-Face Upright', icon: "1f440", description: 'Hold upright on chest at 30 cm — encourages social smile' },
+      { id: 'hold-m2-mirror', name: 'Smile Mirror Game', icon: "1fa9e", description: 'Make slow smiles; wait up to 10 seconds for baby to respond' },
     ],
   },
   {
     maxMonth: 3,
     games: [
-      { id: 'hold-m3-airplane', name: 'Airplane Hold', icon: '✈️', description: 'Tummy on forearm like airplane — tummy time alternative' },
-      { id: 'hold-m3-sit', name: 'Supported Sitting', icon: '🪑', description: 'Prop with pillows on lap — builds core strength' },
-      { id: 'hold-m3-peek', name: 'Peek-a-Boo While Held', icon: '🙈', description: 'Cover face with cloth — object permanence play' },
+      { id: 'hold-m3-airplane', name: 'Airplane Hold', icon: "airplane", description: 'Tummy on forearm like airplane — tummy time alternative' },
+      { id: 'hold-m3-sit', name: 'Supported Sitting', icon: "1fa91", description: 'Prop with pillows on lap — builds core strength' },
+      { id: 'hold-m3-peek', name: 'Peek-a-Boo While Held', icon: "1f648", description: 'Cover face with cloth — object permanence play' },
     ],
   },
   {
     maxMonth: 4,
     games: [
-      { id: 'hold-m4-sit', name: 'Supported Sitting on Lap', icon: '🪑', description: 'Face in or out — trunk strength for reaching' },
-      { id: 'hold-m4-bounce', name: 'Standing Bounce', icon: '🦵', description: 'Feet on lap, gentle bounce — leg strength prep' },
+      { id: 'hold-m4-sit', name: 'Supported Sitting on Lap', icon: "1fa91", description: 'Face in or out — trunk strength for reaching' },
+      { id: 'hold-m4-bounce', name: 'Standing Bounce', icon: "1f9b5", description: 'Feet on lap, gentle bounce — leg strength prep' },
     ],
   },
   {
     maxMonth: 6,
     games: [
-      { id: 'hold-m5-hip', name: 'Hip Carry (facing in)', icon: '🤗', description: 'Short periods facing in — safe world exploration' },
-      { id: 'hold-m5-knee', name: 'Bouncing on Knee', icon: '🎵', description: 'Gentle bounce with rhymes — balance and joy' },
+      { id: 'hold-m5-hip', name: 'Hip Carry (facing in)', icon: "hugging", description: 'Short periods facing in — safe world exploration' },
+      { id: 'hold-m5-knee', name: 'Bouncing on Knee', icon: "1f3b5", description: 'Gentle bounce with rhymes — balance and joy' },
     ],
   },
   {
     maxMonth: 9,
     games: [
-      { id: 'hold-m7-stand', name: 'Supported Standing', icon: '🧍', description: 'Hold under arms on lap — pre-walking leg strength' },
-      { id: 'hold-m8-cruise', name: 'Cruising Support', icon: '🚶', description: 'Walk beside baby holding one hand at furniture' },
+      { id: 'hold-m7-stand', name: 'Supported Standing', icon: "1f9cd", description: 'Hold under arms on lap — pre-walking leg strength' },
+      { id: 'hold-m8-cruise', name: 'Cruising Support', icon: "1f6b6", description: 'Walk beside baby holding one hand at furniture' },
     ],
   },
   {
     maxMonth: 12,
     games: [
-      { id: 'hold-m10-walk', name: 'Hand-Holding Walks', icon: '🤝', description: 'Walk holding both hands — walking confidence' },
-      { id: 'hold-m11-piggy', name: 'Piggyback / Shoulder Ride', icon: '🎒', description: 'Well-supported shoulder ride for fun and balance' },
-      { id: 'hold-m12-dance', name: 'Dancing Together', icon: '💃', description: 'Sway to music while holding — rhythm and bonding' },
+      { id: 'hold-m10-walk', name: 'Hand-Holding Walks', icon: "handshake", description: 'Walk holding both hands — walking confidence' },
+      { id: 'hold-m11-piggy', name: 'Piggyback / Shoulder Ride', icon: "backpack", description: 'Well-supported shoulder ride for fun and balance' },
+      { id: 'hold-m12-dance', name: 'Dancing Together', icon: "1f483", description: 'Sway to music while holding — rhythm and bonding' },
     ],
   },
   {
     maxMonth: 18,
     games: [
-      { id: 'hold-m14-chase', name: 'Chase Games', icon: '🏃', description: 'Safe crawling chase on soft surfaces' },
-      { id: 'hold-m15-ball', name: 'Ball Rolling', icon: '⚽', description: 'Roll soft ball while standing supported' },
+      { id: 'hold-m14-chase', name: 'Chase Games', icon: "1f3c3", description: 'Safe crawling chase on soft surfaces' },
+      { id: 'hold-m15-ball', name: 'Ball Rolling', icon: "26bd", description: 'Roll soft ball while standing supported' },
     ],
   },
   {
     maxMonth: 24,
     games: [
-      { id: 'hold-m18-spin', name: 'Spinning / Dancing', icon: '🌀', description: 'Hold hands and spin gently' },
-      { id: 'hold-m20-horsey', name: 'Horsey Ride', icon: '🐴', description: 'Gentle bouncing on lap or back' },
+      { id: 'hold-m18-spin', name: 'Spinning / Dancing', icon: "1f300", description: 'Hold hands and spin gently' },
+      { id: 'hold-m20-horsey', name: 'Horsey Ride', icon: "1f434", description: 'Gentle bouncing on lap or back' },
     ],
   },
   {
     maxMonth: 36,
     games: [
-      { id: 'hold-m24-throw', name: 'Throw and Catch', icon: '🎾', description: 'Soft ball turn-taking while facing each other' },
-      { id: 'hold-m30-copy', name: 'Copycat Games', icon: '🪞', description: 'Mirror baby movements — imitation learning' },
+      { id: 'hold-m24-throw', name: 'Throw and Catch', icon: "1f3be", description: 'Soft ball turn-taking while facing each other' },
+      { id: 'hold-m30-copy', name: 'Copycat Games', icon: "1fa9e", description: 'Mirror baby movements — imitation learning' },
     ],
   },
 ];

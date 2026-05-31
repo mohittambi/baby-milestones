@@ -463,7 +463,7 @@ export function getTravelOverview(month) {
     ...TRAVEL_TYPES.map((id) => {
       const cfg = travelTypeConfig[id];
       const tip = TIPS[id][band].during[0];
-      return `• ${cfg.icon} ${cfg.label}: ${tip}`;
+      return `• ${cfg.label}: ${tip}`;
     }),
     'Open the Travel page to read full guides by type, or ask: "flying with my baby" or "road trip month 6".',
   ];

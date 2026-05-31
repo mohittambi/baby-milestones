@@ -1,6 +1,7 @@
 import { interact } from '../utils/haptics';
 import { categoryConfig } from './shopCategoryConfig';
 import ShopProductImage from './ShopProductImage';
+import Icon from './Icon';
 
 function ShopItemCard({ item, checked, onToggleCheck, introMonth }) {
   const cat = categoryConfig[item.category] || categoryConfig.gear;
@@ -26,14 +27,14 @@ function ShopItemCard({ item, checked, onToggleCheck, introMonth }) {
           onKeyDown={(e) => e.key === 'Enter' && handleCheck()}
           title={checked ? 'Purchased' : 'Mark as purchased'}
         >
-          {checked && '✓'}
+          {checked && <Icon name="check" size={14} />}
         </div>
       </div>
 
       <div className="shop-product-content">
         <div className="shop-card-title-row">
           <span className="diy-cat-badge" style={{ background: cat.bg, color: cat.color }}>
-            {cat.icon} {cat.label}
+            <Icon name={cat.icon} size={16} /> {cat.label}
           </span>
           {introMonth != null && (
             <span className="shop-intro-month">Month {introMonth}</span>

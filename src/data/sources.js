@@ -11,7 +11,7 @@ const sources = {
         "WHO Guidelines on Physical Activity, Sedentary Behaviour and Sleep for Children Under 5 Years of Age (2019)"
       ],
       url: "https://www.who.int/tools/child-growth-standards",
-      icon: "🌍",
+      icon: "1f30d",
       color: "#0093D5"
     },
     {
@@ -25,7 +25,7 @@ const sources = {
         "Developmental Monitoring and Screening Guidelines for Healthcare Providers"
       ],
       url: "https://www.cdc.gov/ncbddd/actearly/milestones/index.html",
-      icon: "🇺🇸",
+      icon: "1f1fa-1f1f8",
       color: "#0057B8"
     },
     {
@@ -39,7 +39,7 @@ const sources = {
         "Caring for Your Baby and Young Child: Birth to Age 5, 7th Edition (2019)"
       ],
       url: "https://www.aap.org/en/practice-management/bright-futures/",
-      icon: "👨‍⚕️",
+      icon: "1f468-200d-2695",
       color: "#00529B"
     },
     {
@@ -53,7 +53,7 @@ const sources = {
         "Social-Emotional Development Milestones: Birth to 36 Months"
       ],
       url: "https://www.zerotothree.org/",
-      icon: "👶",
+      icon: "baby",
       color: "#E8562A"
     },
     {
@@ -67,7 +67,7 @@ const sources = {
         "Care for Child Development: Improving the Care of Young Children (with WHO)"
       ],
       url: "https://www.unicef.org/early-childhood-development",
-      icon: "🌐",
+      icon: "1f310",
       color: "#1CABE2"
     },
     {
@@ -81,7 +81,7 @@ const sources = {
         "Language Development: Speech Milestones for Babies"
       ],
       url: "https://www.mayoclinic.org/healthy-lifestyle/infant-and-toddler-health/in-depth/infant-development/art-20048012",
-      icon: "🏥",
+      icon: "1f3e5",
       color: "#0057A8"
     },
     {
@@ -95,7 +95,7 @@ const sources = {
         "Safe to Sleep® Campaign Guidelines for Infant Sleep Safety"
       ],
       url: "https://www.nichd.nih.gov/health/topics/childdevelopment",
-      icon: "🔬",
+      icon: "1f52c",
       color: "#20558A"
     },
     {
@@ -108,7 +108,7 @@ const sources = {
         "Technical Manual for the Denver II (1992, Updated 2012)"
       ],
       url: "https://denverii.com/",
-      icon: "📋",
+      icon: "clipboard",
       color: "#6B4C9A"
     }
   ],
@@ -126,7 +126,7 @@ const sources = {
         "IAP Position Paper on Neurodevelopmental Screening in Children (2020)"
       ],
       url: "https://www.iapindia.org/",
-      icon: "🇮🇳",
+      icon: "1f1ee-1f1f3",
       color: "#FF9933"
     },
     {
@@ -140,7 +140,7 @@ const sources = {
         "NNF Manual of Neonatal Care — Developmental Assessment Chapter"
       ],
       url: "https://www.nnfi.org/",
-      icon: "🍼",
+      icon: "baby-bottle",
       color: "#138808"
     },
     {
@@ -154,7 +154,7 @@ const sources = {
         "Developmental Assessment Scales for Indian Infants (DASII) — Developed by NIMHANS faculty"
       ],
       url: "https://nimhans.ac.in/",
-      icon: "🧠",
+      icon: "brain",
       color: "#000080"
     },
     {
@@ -168,7 +168,7 @@ const sources = {
         "ICMR Multicentric Study on Normal Developmental Milestones in Indian Children"
       ],
       url: "https://www.icmr.gov.in/",
-      icon: "🔬",
+      icon: "1f52c",
       color: "#003366"
     },
     {
@@ -182,7 +182,7 @@ const sources = {
         "RBSK Training Module for Medical Officers: Developmental Milestones"
       ],
       url: "https://rbsk.gov.in/",
-      icon: "🏛️",
+      icon: "1f3db",
       color: "#FF6600"
     },
     {
@@ -196,7 +196,7 @@ const sources = {
         "Guide to Child Development and Early Intervention — AIIMS Department of Pediatrics"
       ],
       url: "https://www.aiims.edu/",
-      icon: "🎓",
+      icon: "1f393",
       color: "#0066CC"
     },
     {
@@ -210,7 +210,7 @@ const sources = {
         "Guidelines for Anganwadi Workers: Monitoring Child Development Milestones"
       ],
       url: "https://wcd.nic.in/",
-      icon: "🏘️",
+      icon: "1f3d8",
       color: "#CC3333"
     }
   ],

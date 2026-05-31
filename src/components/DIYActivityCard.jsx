@@ -2,6 +2,7 @@ import ActivityIllustration from './ActivityIllustration';
 import DetailModal from './DetailModal';
 import { diyCategoryConfig, difficultyDots } from './diyCategoryConfig';
 import { interact } from '../utils/haptics';
+import Icon from './Icon';
 
 function DIYActivityCard({ activity, onOpen, onClose, isOpen }) {
   const cat = diyCategoryConfig[activity.category] || diyCategoryConfig.sensory;
@@ -30,11 +31,11 @@ function DIYActivityCard({ activity, onOpen, onClose, isOpen }) {
         </div>
         <div className="content-card-body">
           <span className="diy-cat-badge" style={{ background: cat.bg, color: cat.color }}>
-            {cat.icon} {cat.label}
+            <Icon name={cat.icon} size={16} /> {cat.label}
           </span>
           <h4 className="content-card-title">{activity.name}</h4>
           <div className="content-card-meta">
-            <span className="diy-duration">⏱ {activity.duration}</span>
+            <span className="diy-duration"><Icon name="stopwatch" size={14} /> {activity.duration}</span>
             <span className="diy-difficulty" aria-label={`Difficulty: ${activity.difficulty}`}>
               {Array.from({ length: 3 }).map((_, i) => (
                 <span
@@ -69,7 +70,7 @@ function DIYActivityCard({ activity, onOpen, onClose, isOpen }) {
             <ActivityIllustration type={activity.illustration} />
           </div>
           <div className="diy-section">
-            <h5 className="diy-section-title">🛒 What You Need</h5>
+            <h5 className="diy-section-title"><Icon name="shopping-cart" size={16} /> What You Need</h5>
             <div className="diy-materials">
               {activity.materials.map((m, i) => (
                 <span key={i} className="diy-material-chip">{m}</span>
@@ -77,7 +78,7 @@ function DIYActivityCard({ activity, onOpen, onClose, isOpen }) {
             </div>
           </div>
           <div className="diy-section">
-            <h5 className="diy-section-title">📋 How To Play</h5>
+            <h5 className="diy-section-title"><Icon name="clipboard" size={16} /> How To Play</h5>
             <ol className="diy-steps">
               {activity.steps.map((step, i) => (
                 <li key={i}>
@@ -89,7 +90,7 @@ function DIYActivityCard({ activity, onOpen, onClose, isOpen }) {
           </div>
           <div className="diy-two-col">
             <div className="diy-section">
-              <h5 className="diy-section-title">✅ Benefits</h5>
+              <h5 className="diy-section-title"><Icon name="check-mark" size={16} /> Benefits</h5>
               <ul className="diy-benefits">
                 {activity.benefits.map((b, i) => (
                   <li key={i}>{b}</li>
@@ -97,12 +98,12 @@ function DIYActivityCard({ activity, onOpen, onClose, isOpen }) {
               </ul>
             </div>
             <div className="diy-section diy-why">
-              <h5 className="diy-section-title">🔬 Why It Works</h5>
+              <h5 className="diy-section-title"><Icon name="microscope" size={16} /> Why It Works</h5>
               <p>{activity.whyItWorks}</p>
             </div>
           </div>
           <button type="button" className="diy-video-btn" onClick={openVideo}>
-            <span className="yt-icon">▶</span>
+            <Icon name="play" size={14} className="yt-icon" />
             Watch How-To Videos on YouTube
           </button>
         </DetailModal>

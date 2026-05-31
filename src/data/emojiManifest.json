@@ -1,0 +1,2216 @@
+{
+  "generatedAt": "2026-05-31T17:55:41.118Z",
+  "source": "Twemoji 14.0.2 (CDN → local PNG)",
+  "imageDir": "/images/emojis/",
+  "count": 163,
+  "entries": [
+    {
+      "emoji": "🌀",
+      "codepoints": "1f300",
+      "slug": "1f300",
+      "imagePath": "/images/emojis/1f300.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f300.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🌈",
+      "codepoints": "1f308",
+      "slug": "1f308",
+      "imagePath": "/images/emojis/1f308.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f308.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🌍",
+      "codepoints": "1f30d",
+      "slug": "1f30d",
+      "imagePath": "/images/emojis/1f30d.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f30d.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/sources.js",
+        "src/pages/Sources.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🌐",
+      "codepoints": "1f310",
+      "slug": "1f310",
+      "imagePath": "/images/emojis/1f310.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f310.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/sources.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🌙",
+      "codepoints": "1f319",
+      "slug": "crescent-moon",
+      "imagePath": "/images/emojis/1f319.png",
+      "slugPath": "/images/emojis/crescent-moon.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f319.png",
+      "alternate": "Twemoji PNG — slug `crescent-moon` (Lucide/Feather equivalent: crescent moon)",
+      "files": [
+        "src/components/community/TipCard.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🌟",
+      "codepoints": "1f31f",
+      "slug": "star-glow",
+      "imagePath": "/images/emojis/1f31f.png",
+      "slugPath": "/images/emojis/star-glow.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f31f.png",
+      "alternate": "Twemoji PNG — slug `star-glow` (Lucide/Feather equivalent: star glow)",
+      "files": [
+        "src/utils/communityHelpers.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🌳",
+      "codepoints": "1f333",
+      "slug": "tree",
+      "imagePath": "/images/emojis/1f333.png",
+      "slugPath": "/images/emojis/tree.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f333.png",
+      "alternate": "Twemoji PNG — slug `tree` (Lucide/Feather equivalent: tree)",
+      "files": [
+        "src/data/milestones.js",
+        "src/data/travelTypeConfig.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🌾",
+      "codepoints": "1f33e",
+      "slug": "1f33e",
+      "imagePath": "/images/emojis/1f33e.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f33e.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🍂",
+      "codepoints": "1f342",
+      "slug": "1f342",
+      "imagePath": "/images/emojis/1f342.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f342.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx",
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🍳",
+      "codepoints": "1f373",
+      "slug": "1f373",
+      "imagePath": "/images/emojis/1f373.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f373.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🍼",
+      "codepoints": "1f37c",
+      "slug": "baby-bottle",
+      "imagePath": "/images/emojis/1f37c.png",
+      "slugPath": "/images/emojis/baby-bottle.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f37c.png",
+      "alternate": "Twemoji PNG — slug `baby-bottle` (Lucide/Feather equivalent: baby bottle)",
+      "files": [
+        "src/components/CareSection.jsx",
+        "src/components/careTypeConfig.js",
+        "src/components/community/RecipeFeed.jsx",
+        "src/components/community/TipCard.jsx",
+        "src/components/shopCategoryConfig.js",
+        "src/data/sources.js",
+        "src/pages/Community.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🍽️",
+      "codepoints": "1f37d",
+      "slug": "plate",
+      "imagePath": "/images/emojis/1f37d.png",
+      "slugPath": "/images/emojis/plate.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f37d.png",
+      "alternate": "Twemoji PNG — slug `plate` (Lucide/Feather equivalent: plate)",
+      "files": [
+        "src/utils/communityHelpers.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎂",
+      "codepoints": "1f382",
+      "slug": "1f382",
+      "imagePath": "/images/emojis/1f382.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f382.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎈",
+      "codepoints": "1f388",
+      "slug": "balloon",
+      "imagePath": "/images/emojis/1f388.png",
+      "slugPath": "/images/emojis/balloon.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f388.png",
+      "alternate": "Twemoji PNG — slug `balloon` (Lucide/Feather equivalent: balloon)",
+      "files": [
+        "src/components/community/TipCard.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎉",
+      "codepoints": "1f389",
+      "slug": "party",
+      "imagePath": "/images/emojis/1f389.png",
+      "slugPath": "/images/emojis/party.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f389.png",
+      "alternate": "Twemoji PNG — slug `party` (Lucide/Feather equivalent: party)",
+      "files": [
+        "src/components/ActivityIllustration.jsx",
+        "src/components/community/MemoryCard.jsx",
+        "src/data/milestones.js",
+        "src/pages/MonthDetail.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎒",
+      "codepoints": "1f392",
+      "slug": "backpack",
+      "imagePath": "/images/emojis/1f392.png",
+      "slugPath": "/images/emojis/backpack.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f392.png",
+      "alternate": "Twemoji PNG — slug `backpack` (Lucide/Feather equivalent: backpack)",
+      "files": [
+        "src/components/shopCategoryConfig.js",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎓",
+      "codepoints": "1f393",
+      "slug": "1f393",
+      "imagePath": "/images/emojis/1f393.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f393.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/sources.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎤",
+      "codepoints": "1f3a4",
+      "slug": "1f3a4",
+      "imagePath": "/images/emojis/1f3a4.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3a4.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎨",
+      "codepoints": "1f3a8",
+      "slug": "1f3a8",
+      "imagePath": "/images/emojis/1f3a8.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3a8.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎭",
+      "codepoints": "1f3ad",
+      "slug": "1f3ad",
+      "imagePath": "/images/emojis/1f3ad.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3ad.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎯",
+      "codepoints": "1f3af",
+      "slug": "target",
+      "imagePath": "/images/emojis/1f3af.png",
+      "slugPath": "/images/emojis/target.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3af.png",
+      "alternate": "Twemoji PNG — slug `target` (Lucide/Feather equivalent: target)",
+      "files": [
+        "src/components/ActivityIllustration.jsx",
+        "src/components/CareSection.jsx",
+        "src/components/DIYSection.jsx",
+        "src/data/milestones.js",
+        "src/pages/MonthDetail.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎲",
+      "codepoints": "1f3b2",
+      "slug": "1f3b2",
+      "imagePath": "/images/emojis/1f3b2.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3b2.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎵",
+      "codepoints": "1f3b5",
+      "slug": "1f3b5",
+      "imagePath": "/images/emojis/1f3b5.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3b5.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx",
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎶",
+      "codepoints": "1f3b6",
+      "slug": "1f3b6",
+      "imagePath": "/images/emojis/1f3b6.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3b6.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🎾",
+      "codepoints": "1f3be",
+      "slug": "1f3be",
+      "imagePath": "/images/emojis/1f3be.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3be.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏃",
+      "codepoints": "1f3c3",
+      "slug": "1f3c3",
+      "imagePath": "/images/emojis/1f3c3.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3c3.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏄",
+      "codepoints": "1f3c4",
+      "slug": "1f3c4",
+      "imagePath": "/images/emojis/1f3c4.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3c4.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏅",
+      "codepoints": "1f3c5",
+      "slug": "1f3c5",
+      "imagePath": "/images/emojis/1f3c5.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3c5.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏈",
+      "codepoints": "1f3c8",
+      "slug": "1f3c8",
+      "imagePath": "/images/emojis/1f3c8.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3c8.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏔️",
+      "codepoints": "1f3d4",
+      "slug": "1f3d4",
+      "imagePath": "/images/emojis/1f3d4.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3d4.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏗️",
+      "codepoints": "1f3d7",
+      "slug": "1f3d7",
+      "imagePath": "/images/emojis/1f3d7.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3d7.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏘️",
+      "codepoints": "1f3d8",
+      "slug": "1f3d8",
+      "imagePath": "/images/emojis/1f3d8.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3d8.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/sources.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏛️",
+      "codepoints": "1f3db",
+      "slug": "1f3db",
+      "imagePath": "/images/emojis/1f3db.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3db.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/sources.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏠",
+      "codepoints": "1f3e0",
+      "slug": "home",
+      "imagePath": "/images/emojis/1f3e0.png",
+      "slugPath": "/images/emojis/home.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3e0.png",
+      "alternate": "Twemoji PNG — slug `home` (Lucide/Feather equivalent: home)",
+      "files": [
+        "src/components/Header.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏥",
+      "codepoints": "1f3e5",
+      "slug": "1f3e5",
+      "imagePath": "/images/emojis/1f3e5.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3e5.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/sources.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏨",
+      "codepoints": "1f3e8",
+      "slug": "hotel",
+      "imagePath": "/images/emojis/1f3e8.png",
+      "slugPath": "/images/emojis/hotel.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3e8.png",
+      "alternate": "Twemoji PNG — slug `hotel` (Lucide/Feather equivalent: hotel)",
+      "files": [
+        "src/data/travelTypeConfig.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏫",
+      "codepoints": "1f3eb",
+      "slug": "1f3eb",
+      "imagePath": "/images/emojis/1f3eb.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3eb.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏰",
+      "codepoints": "1f3f0",
+      "slug": "1f3f0",
+      "imagePath": "/images/emojis/1f3f0.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3f0.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🏷️",
+      "codepoints": "1f3f7",
+      "slug": "1f3f7",
+      "imagePath": "/images/emojis/1f3f7.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3f7.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🐄",
+      "codepoints": "1f404",
+      "slug": "1f404",
+      "imagePath": "/images/emojis/1f404.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f404.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🐛",
+      "codepoints": "1f41b",
+      "slug": "1f41b",
+      "imagePath": "/images/emojis/1f41b.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f41b.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🐟",
+      "codepoints": "1f41f",
+      "slug": "1f41f",
+      "imagePath": "/images/emojis/1f41f.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f41f.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🐭",
+      "codepoints": "1f42d",
+      "slug": "1f42d",
+      "imagePath": "/images/emojis/1f42d.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f42d.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🐴",
+      "codepoints": "1f434",
+      "slug": "1f434",
+      "imagePath": "/images/emojis/1f434.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f434.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🐶",
+      "codepoints": "1f436",
+      "slug": "1f436",
+      "imagePath": "/images/emojis/1f436.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f436.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👀",
+      "codepoints": "1f440",
+      "slug": "1f440",
+      "imagePath": "/images/emojis/1f440.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f440.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👆",
+      "codepoints": "1f446",
+      "slug": "1f446",
+      "imagePath": "/images/emojis/1f446.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f446.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👋",
+      "codepoints": "1f44b",
+      "slug": "1f44b",
+      "imagePath": "/images/emojis/1f44b.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f44b.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👍",
+      "codepoints": "1f44d",
+      "slug": "thumbs-up",
+      "imagePath": "/images/emojis/1f44d.png",
+      "slugPath": "/images/emojis/thumbs-up.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f44d.png",
+      "alternate": "Twemoji PNG — slug `thumbs-up` (Lucide/Feather equivalent: thumbs up)",
+      "files": [
+        "src/components/community/TipCard.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👏",
+      "codepoints": "1f44f",
+      "slug": "1f44f",
+      "imagePath": "/images/emojis/1f44f.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f44f.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👐",
+      "codepoints": "1f450",
+      "slug": "1f450",
+      "imagePath": "/images/emojis/1f450.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f450.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👕",
+      "codepoints": "1f455",
+      "slug": "t-shirt",
+      "imagePath": "/images/emojis/1f455.png",
+      "slugPath": "/images/emojis/t-shirt.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f455.png",
+      "alternate": "Twemoji PNG — slug `t-shirt` (Lucide/Feather equivalent: t shirt)",
+      "files": [
+        "src/components/CareSection.jsx",
+        "src/components/careTypeConfig.js",
+        "src/components/shopCategoryConfig.js",
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👨‍👩‍👧",
+      "codepoints": "1f468-200d-1f469-200d-1f467",
+      "slug": "1f468-200d-1f469-200d-1f467",
+      "imagePath": "/images/emojis/1f468-200d-1f469-200d-1f467.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f468-200d-1f469-200d-1f467.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👨‍👩‍👧‍👦",
+      "codepoints": "1f468-200d-1f469-200d-1f467-200d-1f466",
+      "slug": "1f468-200d-1f469-200d-1f467-200d-1f466",
+      "imagePath": "/images/emojis/1f468-200d-1f469-200d-1f467-200d-1f466.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f468-200d-1f469-200d-1f467-200d-1f466.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👨‍⚕️",
+      "codepoints": "1f468-200d-2695",
+      "slug": "1f468-200d-2695",
+      "imagePath": "/images/emojis/1f468-200d-2695.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9d1-200d-2695-fe0f.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/sources.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👫",
+      "codepoints": "1f46b",
+      "slug": "1f46b",
+      "imagePath": "/images/emojis/1f46b.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f46b.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "👶",
+      "codepoints": "1f476",
+      "slug": "baby",
+      "imagePath": "/images/emojis/1f476.png",
+      "slugPath": "/images/emojis/baby.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f476.png",
+      "alternate": "Twemoji PNG — slug `baby` (Lucide/Feather equivalent: baby)",
+      "files": [
+        "index.html",
+        "src/components/Header.jsx",
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js",
+        "src/data/sources.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "💃",
+      "codepoints": "1f483",
+      "slug": "1f483",
+      "imagePath": "/images/emojis/1f483.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f483.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "💕",
+      "codepoints": "1f495",
+      "slug": "two-hearts",
+      "imagePath": "/images/emojis/1f495.png",
+      "slugPath": "/images/emojis/two-hearts.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f495.png",
+      "alternate": "Twemoji PNG — slug `two-hearts` (Lucide/Feather equivalent: two hearts)",
+      "files": [
+        "src/components/ActivityIllustration.jsx",
+        "src/components/diyCategoryConfig.js",
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js",
+        "src/utils/communityHelpers.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "💡",
+      "codepoints": "1f4a1",
+      "slug": "light-bulb",
+      "imagePath": "/images/emojis/1f4a1.png",
+      "slugPath": "/images/emojis/light-bulb.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4a1.png",
+      "alternate": "Twemoji PNG — slug `light-bulb` (Lucide/Feather equivalent: light bulb)",
+      "files": [
+        "src/components/community/TipCard.jsx",
+        "src/components/community/TipsFeed.jsx",
+        "src/pages/Community.jsx",
+        "src/pages/MonthDetail.jsx",
+        "src/utils/communityHelpers.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "💧",
+      "codepoints": "1f4a7",
+      "slug": "1f4a7",
+      "imagePath": "/images/emojis/1f4a7.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4a7.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "💪",
+      "codepoints": "1f4aa",
+      "slug": "flexed-bicep",
+      "imagePath": "/images/emojis/1f4aa.png",
+      "slugPath": "/images/emojis/flexed-bicep.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4aa.png",
+      "alternate": "Twemoji PNG — slug `flexed-bicep` (Lucide/Feather equivalent: flexed bicep)",
+      "files": [
+        "src/pages/MonthDetail.jsx",
+        "src/pages/Sources.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "💬",
+      "codepoints": "1f4ac",
+      "slug": "speech-bubble",
+      "imagePath": "/images/emojis/1f4ac.png",
+      "slugPath": "/images/emojis/speech-bubble.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4ac.png",
+      "alternate": "Twemoji PNG — slug `speech-bubble` (Lucide/Feather equivalent: speech bubble)",
+      "files": [
+        "src/components/AssistantPanel.jsx",
+        "src/components/Header.jsx",
+        "src/components/community/MemoryCard.jsx",
+        "src/components/community/MemoryFeed.jsx",
+        "src/data/milestones.js",
+        "src/pages/Community.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "💭",
+      "codepoints": "1f4ad",
+      "slug": "1f4ad",
+      "imagePath": "/images/emojis/1f4ad.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4ad.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📅",
+      "codepoints": "1f4c5",
+      "slug": "1f4c5",
+      "imagePath": "/images/emojis/1f4c5.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4c5.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js",
+        "src/pages/MonthDetail.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📊",
+      "codepoints": "1f4ca",
+      "slug": "bar-chart",
+      "imagePath": "/images/emojis/1f4ca.png",
+      "slugPath": "/images/emojis/bar-chart.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4ca.png",
+      "alternate": "Twemoji PNG — slug `bar-chart` (Lucide/Feather equivalent: bar chart)",
+      "files": [
+        "src/components/Header.jsx",
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📋",
+      "codepoints": "1f4cb",
+      "slug": "clipboard",
+      "imagePath": "/images/emojis/1f4cb.png",
+      "slugPath": "/images/emojis/clipboard.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4cb.png",
+      "alternate": "Twemoji PNG — slug `clipboard` (Lucide/Feather equivalent: clipboard)",
+      "files": [
+        "src/components/DIYActivityCard.jsx",
+        "src/data/milestones.js",
+        "src/data/sources.js",
+        "src/pages/Sources.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📎",
+      "codepoints": "1f4ce",
+      "slug": "paperclip",
+      "imagePath": "/images/emojis/1f4ce.png",
+      "slugPath": "/images/emojis/paperclip.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4ce.png",
+      "alternate": "Twemoji PNG — slug `paperclip` (Lucide/Feather equivalent: paperclip)",
+      "files": [
+        "src/pages/MonthDetail.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📏",
+      "codepoints": "1f4cf",
+      "slug": "1f4cf",
+      "imagePath": "/images/emojis/1f4cf.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4cf.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📐",
+      "codepoints": "1f4d0",
+      "slug": "1f4d0",
+      "imagePath": "/images/emojis/1f4d0.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4d0.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📓",
+      "codepoints": "1f4d3",
+      "slug": "1f4d3",
+      "imagePath": "/images/emojis/1f4d3.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4d3.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📖",
+      "codepoints": "1f4d6",
+      "slug": "1f4d6",
+      "imagePath": "/images/emojis/1f4d6.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4d6.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📚",
+      "codepoints": "1f4da",
+      "slug": "books",
+      "imagePath": "/images/emojis/1f4da.png",
+      "slugPath": "/images/emojis/books.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4da.png",
+      "alternate": "Twemoji PNG — slug `books` (Lucide/Feather equivalent: books)",
+      "files": [
+        "src/components/Header.jsx",
+        "src/data/milestones.js",
+        "src/pages/MonthDetail.jsx",
+        "src/pages/Sources.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📜",
+      "codepoints": "1f4dc",
+      "slug": "1f4dc",
+      "imagePath": "/images/emojis/1f4dc.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4dc.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📝",
+      "codepoints": "1f4dd",
+      "slug": "1f4dd",
+      "imagePath": "/images/emojis/1f4dd.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4dd.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📦",
+      "codepoints": "1f4e6",
+      "slug": "1f4e6",
+      "imagePath": "/images/emojis/1f4e6.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4e6.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📱",
+      "codepoints": "1f4f1",
+      "slug": "1f4f1",
+      "imagePath": "/images/emojis/1f4f1.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4f1.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📷",
+      "codepoints": "1f4f7",
+      "slug": "1f4f7",
+      "imagePath": "/images/emojis/1f4f7.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4f7.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "📿",
+      "codepoints": "1f4ff",
+      "slug": "1f4ff",
+      "imagePath": "/images/emojis/1f4ff.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4ff.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🔄",
+      "codepoints": "1f504",
+      "slug": "1f504",
+      "imagePath": "/images/emojis/1f504.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f504.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🔇",
+      "codepoints": "1f507",
+      "slug": "speaker-muted",
+      "imagePath": "/images/emojis/1f507.png",
+      "slugPath": "/images/emojis/speaker-muted.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f507.png",
+      "alternate": "Twemoji PNG — slug `speaker-muted` (Lucide/Feather equivalent: speaker muted)",
+      "files": [
+        "src/components/Header.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🔊",
+      "codepoints": "1f50a",
+      "slug": "speaker-loud",
+      "imagePath": "/images/emojis/1f50a.png",
+      "slugPath": "/images/emojis/speaker-loud.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f50a.png",
+      "alternate": "Twemoji PNG — slug `speaker-loud` (Lucide/Feather equivalent: speaker loud)",
+      "files": [
+        "src/components/Header.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🔍",
+      "codepoints": "1f50d",
+      "slug": "1f50d",
+      "imagePath": "/images/emojis/1f50d.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f50d.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🔔",
+      "codepoints": "1f514",
+      "slug": "1f514",
+      "imagePath": "/images/emojis/1f514.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f514.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🔗",
+      "codepoints": "1f517",
+      "slug": "1f517",
+      "imagePath": "/images/emojis/1f517.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f517.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/pages/Sources.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🔘",
+      "codepoints": "1f518",
+      "slug": "1f518",
+      "imagePath": "/images/emojis/1f518.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f518.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🔢",
+      "codepoints": "1f522",
+      "slug": "1f522",
+      "imagePath": "/images/emojis/1f522.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f522.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🔬",
+      "codepoints": "1f52c",
+      "slug": "1f52c",
+      "imagePath": "/images/emojis/1f52c.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f52c.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/DIYActivityCard.jsx",
+        "src/data/milestones.js",
+        "src/data/sources.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🔴",
+      "codepoints": "1f534",
+      "slug": "1f534",
+      "imagePath": "/images/emojis/1f534.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f534.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🔸",
+      "codepoints": "1f538",
+      "slug": "1f538",
+      "imagePath": "/images/emojis/1f538.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f538.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/pages/MonthDetail.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🖍️",
+      "codepoints": "1f58d",
+      "slug": "1f58d",
+      "imagePath": "/images/emojis/1f58d.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f58d.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🖨️",
+      "codepoints": "1f5a8",
+      "slug": "1f5a8",
+      "imagePath": "/images/emojis/1f5a8.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f5a8.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/pages/MonthDetail.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🖼️",
+      "codepoints": "1f5bc",
+      "slug": "1f5bc",
+      "imagePath": "/images/emojis/1f5bc.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f5bc.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🗣️",
+      "codepoints": "1f5e3",
+      "slug": "1f5e3",
+      "imagePath": "/images/emojis/1f5e3.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f5e3.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🗺️",
+      "codepoints": "1f5fa",
+      "slug": "1f5fa",
+      "imagePath": "/images/emojis/1f5fa.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f5fa.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "😊",
+      "codepoints": "1f60a",
+      "slug": "1f60a",
+      "imagePath": "/images/emojis/1f60a.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f60a.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🙈",
+      "codepoints": "1f648",
+      "slug": "1f648",
+      "imagePath": "/images/emojis/1f648.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f648.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🙌",
+      "codepoints": "1f64c",
+      "slug": "1f64c",
+      "imagePath": "/images/emojis/1f64c.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f64c.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🚆",
+      "codepoints": "1f686",
+      "slug": "train",
+      "imagePath": "/images/emojis/1f686.png",
+      "slugPath": "/images/emojis/train.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f686.png",
+      "alternate": "Twemoji PNG — slug `train` (Lucide/Feather equivalent: train)",
+      "files": [
+        "src/data/travelTypeConfig.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🚗",
+      "codepoints": "1f697",
+      "slug": "car",
+      "imagePath": "/images/emojis/1f697.png",
+      "slugPath": "/images/emojis/car.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f697.png",
+      "alternate": "Twemoji PNG — slug `car` (Lucide/Feather equivalent: car)",
+      "files": [
+        "src/components/shopCategoryConfig.js",
+        "src/data/travelTypeConfig.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🚦",
+      "codepoints": "1f6a6",
+      "slug": "1f6a6",
+      "imagePath": "/images/emojis/1f6a6.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f6a6.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🚲",
+      "codepoints": "1f6b2",
+      "slug": "1f6b2",
+      "imagePath": "/images/emojis/1f6b2.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f6b2.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🚴",
+      "codepoints": "1f6b4",
+      "slug": "1f6b4",
+      "imagePath": "/images/emojis/1f6b4.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f6b4.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🚶",
+      "codepoints": "1f6b6",
+      "slug": "1f6b6",
+      "imagePath": "/images/emojis/1f6b6.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f6b6.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🚽",
+      "codepoints": "1f6bd",
+      "slug": "1f6bd",
+      "imagePath": "/images/emojis/1f6bd.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f6bd.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🛁",
+      "codepoints": "1f6c1",
+      "slug": "bathtub",
+      "imagePath": "/images/emojis/1f6c1.png",
+      "slugPath": "/images/emojis/bathtub.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f6c1.png",
+      "alternate": "Twemoji PNG — slug `bathtub` (Lucide/Feather equivalent: bathtub)",
+      "files": [
+        "src/components/CareSection.jsx",
+        "src/components/careTypeConfig.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🛒",
+      "codepoints": "1f6d2",
+      "slug": "shopping-cart",
+      "imagePath": "/images/emojis/1f6d2.png",
+      "slugPath": "/images/emojis/shopping-cart.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f6d2.png",
+      "alternate": "Twemoji PNG — slug `shopping-cart` (Lucide/Feather equivalent: shopping cart)",
+      "files": [
+        "src/components/DIYActivityCard.jsx",
+        "src/components/Header.jsx",
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🛝",
+      "codepoints": "1f6dd",
+      "slug": "1f6dd",
+      "imagePath": "/images/emojis/1f6dd.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f6dd.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🤔",
+      "codepoints": "1f914",
+      "slug": "1f914",
+      "imagePath": "/images/emojis/1f914.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f914.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🤗",
+      "codepoints": "1f917",
+      "slug": "hugging",
+      "imagePath": "/images/emojis/1f917.png",
+      "slugPath": "/images/emojis/hugging.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f917.png",
+      "alternate": "Twemoji PNG — slug `hugging` (Lucide/Feather equivalent: hugging)",
+      "files": [
+        "src/components/diyCategoryConfig.js",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🤝",
+      "codepoints": "1f91d",
+      "slug": "handshake",
+      "imagePath": "/images/emojis/1f91d.png",
+      "slugPath": "/images/emojis/handshake.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f91d.png",
+      "alternate": "Twemoji PNG — slug `handshake` (Lucide/Feather equivalent: handshake)",
+      "files": [
+        "src/components/community/MemoryCard.jsx",
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js",
+        "src/utils/communityHelpers.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🤱",
+      "codepoints": "1f931",
+      "slug": "1f931",
+      "imagePath": "/images/emojis/1f931.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f931.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🤲",
+      "codepoints": "1f932",
+      "slug": "palms-up",
+      "imagePath": "/images/emojis/1f932.png",
+      "slugPath": "/images/emojis/palms-up.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f932.png",
+      "alternate": "Twemoji PNG — slug `palms-up` (Lucide/Feather equivalent: palms up)",
+      "files": [
+        "src/components/CareSection.jsx",
+        "src/components/careTypeConfig.js",
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🤸",
+      "codepoints": "1f938",
+      "slug": "cartwheel",
+      "imagePath": "/images/emojis/1f938.png",
+      "slugPath": "/images/emojis/cartwheel.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f938.png",
+      "alternate": "Twemoji PNG — slug `cartwheel` (Lucide/Feather equivalent: cartwheel)",
+      "files": [
+        "src/components/diyCategoryConfig.js",
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🥁",
+      "codepoints": "1f941",
+      "slug": "1f941",
+      "imagePath": "/images/emojis/1f941.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f941.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🥄",
+      "codepoints": "1f944",
+      "slug": "1f944",
+      "imagePath": "/images/emojis/1f944.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f944.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx",
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🥾",
+      "codepoints": "1f97e",
+      "slug": "1f97e",
+      "imagePath": "/images/emojis/1f97e.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f97e.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🦗",
+      "codepoints": "1f997",
+      "slug": "1f997",
+      "imagePath": "/images/emojis/1f997.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f997.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🦘",
+      "codepoints": "1f998",
+      "slug": "1f998",
+      "imagePath": "/images/emojis/1f998.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f998.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🦩",
+      "codepoints": "1f9a9",
+      "slug": "1f9a9",
+      "imagePath": "/images/emojis/1f9a9.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9a9.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🦵",
+      "codepoints": "1f9b5",
+      "slug": "1f9b5",
+      "imagePath": "/images/emojis/1f9b5.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9b5.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🦶",
+      "codepoints": "1f9b6",
+      "slug": "1f9b6",
+      "imagePath": "/images/emojis/1f9b6.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9b6.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧍",
+      "codepoints": "1f9cd",
+      "slug": "1f9cd",
+      "imagePath": "/images/emojis/1f9cd.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9cd.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧑",
+      "codepoints": "1f9d1",
+      "slug": "1f9d1",
+      "imagePath": "/images/emojis/1f9d1.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9d1.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧗",
+      "codepoints": "1f9d7",
+      "slug": "1f9d7",
+      "imagePath": "/images/emojis/1f9d7.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9d7.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧘",
+      "codepoints": "1f9d8",
+      "slug": "1f9d8",
+      "imagePath": "/images/emojis/1f9d8.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9d8.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧠",
+      "codepoints": "1f9e0",
+      "slug": "brain",
+      "imagePath": "/images/emojis/1f9e0.png",
+      "slugPath": "/images/emojis/brain.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9e0.png",
+      "alternate": "Twemoji PNG — slug `brain` (Lucide/Feather equivalent: brain)",
+      "files": [
+        "src/components/diyCategoryConfig.js",
+        "src/data/sources.js",
+        "src/pages/MonthDetail.jsx",
+        "src/pages/Sources.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧦",
+      "codepoints": "1f9e6",
+      "slug": "1f9e6",
+      "imagePath": "/images/emojis/1f9e6.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9e6.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧩",
+      "codepoints": "1f9e9",
+      "slug": "1f9e9",
+      "imagePath": "/images/emojis/1f9e9.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9e9.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧱",
+      "codepoints": "1f9f1",
+      "slug": "1f9f1",
+      "imagePath": "/images/emojis/1f9f1.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9f1.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧳",
+      "codepoints": "1f9f3",
+      "slug": "luggage",
+      "imagePath": "/images/emojis/1f9f3.png",
+      "slugPath": "/images/emojis/luggage.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9f3.png",
+      "alternate": "Twemoji PNG — slug `luggage` (Lucide/Feather equivalent: luggage)",
+      "files": [
+        "src/components/Header.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧴",
+      "codepoints": "1f9f4",
+      "slug": "lotion",
+      "imagePath": "/images/emojis/1f9f4.png",
+      "slugPath": "/images/emojis/lotion.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9f4.png",
+      "alternate": "Twemoji PNG — slug `lotion` (Lucide/Feather equivalent: lotion)",
+      "files": [
+        "src/components/shopCategoryConfig.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧵",
+      "codepoints": "1f9f5",
+      "slug": "1f9f5",
+      "imagePath": "/images/emojis/1f9f5.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9f5.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx",
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧸",
+      "codepoints": "1f9f8",
+      "slug": "1f9f8",
+      "imagePath": "/images/emojis/1f9f8.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9f8.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧹",
+      "codepoints": "1f9f9",
+      "slug": "1f9f9",
+      "imagePath": "/images/emojis/1f9f9.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9f9.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🧼",
+      "codepoints": "1f9fc",
+      "slug": "soap",
+      "imagePath": "/images/emojis/1f9fc.png",
+      "slugPath": "/images/emojis/soap.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f9fc.png",
+      "alternate": "Twemoji PNG — slug `soap` (Lucide/Feather equivalent: soap)",
+      "files": [
+        "src/components/shopCategoryConfig.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🩺",
+      "codepoints": "1fa7a",
+      "slug": "stethoscope",
+      "imagePath": "/images/emojis/1fa7a.png",
+      "slugPath": "/images/emojis/stethoscope.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1fa7a.png",
+      "alternate": "Twemoji PNG — slug `stethoscope` (Lucide/Feather equivalent: stethoscope)",
+      "files": [
+        "src/components/community/TipCard.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🪑",
+      "codepoints": "1fa91",
+      "slug": "1fa91",
+      "imagePath": "/images/emojis/1fa91.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1fa91.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🪜",
+      "codepoints": "1fa9c",
+      "slug": "1fa9c",
+      "imagePath": "/images/emojis/1fa9c.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1fa9c.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🪞",
+      "codepoints": "1fa9e",
+      "slug": "1fa9e",
+      "imagePath": "/images/emojis/1fa9e.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1fa9e.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx",
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🪣",
+      "codepoints": "1faa3",
+      "slug": "1faa3",
+      "imagePath": "/images/emojis/1faa3.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1faa3.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🪨",
+      "codepoints": "1faa8",
+      "slug": "1faa8",
+      "imagePath": "/images/emojis/1faa8.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1faa8.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🪵",
+      "codepoints": "1fab5",
+      "slug": "1fab5",
+      "imagePath": "/images/emojis/1fab5.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1fab5.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "🫧",
+      "codepoints": "1fae7",
+      "slug": "1fae7",
+      "imagePath": "/images/emojis/1fae7.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1fae7.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "⏱",
+      "codepoints": "23f1",
+      "slug": "stopwatch",
+      "imagePath": "/images/emojis/23f1.png",
+      "slugPath": "/images/emojis/stopwatch.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/23f1.png",
+      "alternate": "Twemoji PNG — slug `stopwatch` (Lucide/Feather equivalent: stopwatch)",
+      "files": [
+        "src/components/DIYActivityCard.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "▶",
+      "codepoints": "25b6",
+      "slug": "play",
+      "imagePath": "/images/emojis/25b6.png",
+      "slugPath": "/images/emojis/play.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/25b6.png",
+      "alternate": "Twemoji PNG — slug `play` (Lucide/Feather equivalent: play)",
+      "files": [
+        "src/components/DIYActivityCard.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "♪",
+      "codepoints": "266a",
+      "slug": "266a",
+      "imagePath": "/images/emojis/266a.svg",
+      "slugPath": null,
+      "twemojiUrl": "local-svg-fallback",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "♫",
+      "codepoints": "266b",
+      "slug": "266b",
+      "imagePath": "/images/emojis/266b.svg",
+      "slugPath": null,
+      "twemojiUrl": "local-svg-fallback",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "⚕️",
+      "codepoints": "2695",
+      "slug": "medical",
+      "imagePath": "/images/emojis/2695.png",
+      "slugPath": "/images/emojis/medical.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2695.png",
+      "alternate": "Twemoji PNG — slug `medical` (Lucide/Feather equivalent: medical)",
+      "files": [
+        "src/pages/Sources.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "⚖️",
+      "codepoints": "2696",
+      "slug": "2696",
+      "imagePath": "/images/emojis/2696.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2696.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "⚠️",
+      "codepoints": "26a0",
+      "slug": "warning",
+      "imagePath": "/images/emojis/26a0.png",
+      "slugPath": "/images/emojis/warning.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/26a0.png",
+      "alternate": "Twemoji PNG — slug `warning` (Lucide/Feather equivalent: warning)",
+      "files": [
+        "src/pages/MonthDetail.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "⚽",
+      "codepoints": "26bd",
+      "slug": "26bd",
+      "imagePath": "/images/emojis/26bd.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/26bd.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "✂️",
+      "codepoints": "2702",
+      "slug": "2702",
+      "imagePath": "/images/emojis/2702.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2702.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "✅",
+      "codepoints": "2705",
+      "slug": "check-mark",
+      "imagePath": "/images/emojis/2705.png",
+      "slugPath": "/images/emojis/check-mark.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2705.png",
+      "alternate": "Twemoji PNG — slug `check-mark` (Lucide/Feather equivalent: check mark)",
+      "files": [
+        "src/components/DIYActivityCard.jsx",
+        "src/pages/MonthDetail.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "✈️",
+      "codepoints": "2708",
+      "slug": "airplane",
+      "imagePath": "/images/emojis/2708.png",
+      "slugPath": "/images/emojis/airplane.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2708.png",
+      "alternate": "Twemoji PNG — slug `airplane` (Lucide/Feather equivalent: airplane)",
+      "files": [
+        "src/data/milestones.js",
+        "src/data/shoppingAndCare.js",
+        "src/data/travelTypeConfig.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "✊",
+      "codepoints": "270a",
+      "slug": "270a",
+      "imagePath": "/images/emojis/270a.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/270a.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/components/ActivityIllustration.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "✋",
+      "codepoints": "270b",
+      "slug": "raised-hand",
+      "imagePath": "/images/emojis/270b.png",
+      "slugPath": "/images/emojis/raised-hand.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/270b.png",
+      "alternate": "Twemoji PNG — slug `raised-hand` (Lucide/Feather equivalent: raised hand)",
+      "files": [
+        "src/components/CareSection.jsx",
+        "src/components/careTypeConfig.js",
+        "src/components/diyCategoryConfig.js",
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "✓",
+      "codepoints": "2713",
+      "slug": "check",
+      "imagePath": "/images/emojis/2713.png",
+      "slugPath": "/images/emojis/check.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2705.png",
+      "alternate": "Twemoji PNG — slug `check` (Lucide/Feather equivalent: check)",
+      "files": [
+        "src/components/ShopItemCard.jsx",
+        "src/pages/MonthDetail.jsx",
+        "src/styles/global.css"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "✕",
+      "codepoints": "2715",
+      "slug": "close",
+      "imagePath": "/images/emojis/2715.png",
+      "slugPath": "/images/emojis/close.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/274c.png",
+      "alternate": "Twemoji PNG — slug `close` (Lucide/Feather equivalent: close)",
+      "files": [
+        "src/components/AssistantPanel.jsx",
+        "src/styles/global.css"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "✨",
+      "codepoints": "2728",
+      "slug": "sparkles",
+      "imagePath": "/images/emojis/2728.png",
+      "slugPath": "/images/emojis/sparkles.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2728.png",
+      "alternate": "Twemoji PNG — slug `sparkles` (Lucide/Feather equivalent: sparkles)",
+      "files": [
+        "src/components/ActivityIllustration.jsx",
+        "src/components/community/RecipeFeed.jsx",
+        "src/pages/Community.jsx"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "❓",
+      "codepoints": "2753",
+      "slug": "2753",
+      "imagePath": "/images/emojis/2753.png",
+      "slugPath": null,
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2753.png",
+      "alternate": "Twemoji PNG (open-source; replace with custom SVG or icon font if desired)",
+      "files": [
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "❤️",
+      "codepoints": "2764",
+      "slug": "heart",
+      "imagePath": "/images/emojis/2764.png",
+      "slugPath": "/images/emojis/heart.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2764.png",
+      "alternate": "Twemoji PNG — slug `heart` (Lucide/Feather equivalent: heart)",
+      "files": [
+        "src/components/community/MemoryCard.jsx",
+        "src/components/community/RecipeFeed.jsx",
+        "src/data/milestones.js"
+      ],
+      "downloaded": true
+    },
+    {
+      "emoji": "⭐",
+      "codepoints": "2b50",
+      "slug": "star",
+      "imagePath": "/images/emojis/2b50.png",
+      "slugPath": "/images/emojis/star.png",
+      "twemojiUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2b50.png",
+      "alternate": "Twemoji PNG — slug `star` (Lucide/Feather equivalent: star)",
+      "files": [
+        "src/components/ActivityIllustration.jsx"
+      ],
+      "downloaded": true
+    }
+  ]
+}

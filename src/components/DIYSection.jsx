@@ -2,6 +2,7 @@ import { useState } from 'react';
 import DIYActivityCard from './DIYActivityCard';
 import { diyCategoryConfig } from './diyCategoryConfig';
 import { interact } from '../utils/haptics';
+import Icon from './Icon';
 import diyActivities from '../data/diyActivities';
 
 function DIYSection({ month }) {
@@ -35,7 +36,15 @@ function DIYSection({ month }) {
               style={activeFilter === f && cat ? { background: cat.bg, color: cat.color, borderColor: cat.color } : {}}
               onClick={() => { setActiveFilter(f); interact('tap', 'selection'); }}
             >
-              {cat ? `${cat.icon} ${cat.label}` : '🎯 All'}
+              {cat ? (
+                <>
+                  <Icon name={cat.icon} size={16} /> {cat.label}
+                </>
+              ) : (
+                <>
+                  <Icon name="target" size={16} /> All
+                </>
+              )}
             </button>
           );
         })}

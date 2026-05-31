@@ -26,11 +26,14 @@ alwaysApply: true
 | `docs/ui-design.md` | Select, tokens, shared form/layout patterns |
 | `docs/shopping-ui-design.md` | Shopping checklist, cards, grid, images |
 | `docs/travel-ui-design.md` | Travel page, type tabs, tip cards |
+| `docs/mom-care-ui-design.md` | Mom Care page, self-care tabs, tip cards |
 | `docs/month-detail-ui-design.md` | DIY & Care grids, detail modal on month page |
+| `docs/community-feature-plan.md` | **Community feature** — phased plan, memories, recipes, tips, social |
 
 ## UI components
 
 - **Select:** `src/components/Select.jsx` — use for all dropdowns; spec in `docs/ui-design.md`.
+- **Footer:** `src/components/Footer.jsx` — global footer; do not duplicate per page.
 
 ## Data and assistant (other areas)
 

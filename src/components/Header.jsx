@@ -1,71 +1,92 @@
+import { Link, useLocation } from 'react-router-dom';
 import { interact } from '../utils/haptics';
+import { ROUTES, navSectionFromPath } from '../routes';
+import Icon from './Icon';
 
-function Header({ page, setPage, soundEnabled, onToggleSound }) {
-  const nav = (p) => {
-    interact('tap', 'selection');
-    setPage(p);
-  };
+function Header({ soundEnabled, onToggleSound }) {
+  const { pathname } = useLocation();
+  const section = navSectionFromPath(pathname);
+
+  const navClass = (key) => (section === key ? 'active' : '');
+
+  const onNav = () => interact('tap', 'selection');
 
   return (
     <>
       <header className="header">
         <div className="header-inner">
-          <div className="header-logo" onClick={() => nav('home')}>
-            <span>👶</span>
+          <Link to={ROUTES.home} className="header-logo" onClick={onNav}>
+            <Icon name="baby" size={28} className="header-logo-icon" label="Baby Milestones" />
             <span>Baby Milestones</span>
-          </div>
+          </Link>
           <nav className="header-nav">
-            <button className={page === 'home' ? 'active' : ''} onClick={() => nav('home')}>
+            <Link to={ROUTES.home} className={navClass('home')} onClick={onNav}>
               Home
-            </button>
-            <button className={page === 'shopping' ? 'active' : ''} onClick={() => nav('shopping')}>
+            </Link>
+            <Link to={ROUTES.shopping} className={navClass('shopping')} onClick={onNav}>
               Shopping
-            </button>
-            <button className={page === 'travel' ? 'active' : ''} onClick={() => nav('travel')}>
+            </Link>
+            <Link to={ROUTES.travel} className={navClass('travel')} onClick={onNav}>
               Travel
-            </button>
-            <button className={page === 'dashboard' ? 'active' : ''} onClick={() => nav('dashboard')}>
+            </Link>
+            <Link to={ROUTES.momCare} className={navClass('momCare')} onClick={onNav}>
+              Mom Care
+            </Link>
+            <Link to={ROUTES.communityTab('feed')} className={navClass('community')} onClick={onNav}>
+              Community
+            </Link>
+            <Link to={ROUTES.progress} className={navClass('dashboard')} onClick={onNav}>
               Progress
-            </button>
-            <button className={page === 'sources' ? 'active' : ''} onClick={() => nav('sources')}>
+            </Link>
+            <Link to={ROUTES.sources} className={navClass('sources')} onClick={onNav}>
               Sources
-            </button>
+            </Link>
             <button
+              type="button"
               className="sound-toggle"
               onClick={(e) => { e.stopPropagation(); onToggleSound(); }}
               title={soundEnabled ? 'Mute sounds' : 'Enable sounds'}
             >
-              {soundEnabled ? '🔊' : '🔇'}
+              <Icon name={soundEnabled ? 'speaker-loud' : 'speaker-muted'} size={20} label={soundEnabled ? 'Mute sounds' : 'Enable sounds'} />
             </button>
           </nav>
         </div>
       </header>
       <nav className="mobile-nav">
-        <button className={page === 'home' ? 'active' : ''} onClick={() => nav('home')}>
-          <span>🏠</span>
+        <Link to={ROUTES.home} className={navClass('home')} onClick={onNav}>
+          <Icon name="home" size={22} />
           <span>Home</span>
-        </button>
-        <button className={page === 'shopping' ? 'active' : ''} onClick={() => nav('shopping')}>
-          <span>🛒</span>
+        </Link>
+        <Link to={ROUTES.shopping} className={navClass('shopping')} onClick={onNav}>
+          <Icon name="shopping-cart" size={22} />
           <span>Shop</span>
-        </button>
-        <button className={page === 'travel' ? 'active' : ''} onClick={() => nav('travel')}>
-          <span>🧳</span>
+        </Link>
+        <Link to={ROUTES.travel} className={navClass('travel')} onClick={onNav}>
+          <Icon name="luggage" size={22} />
           <span>Travel</span>
-        </button>
-        <button className={page === 'dashboard' ? 'active' : ''} onClick={() => nav('dashboard')}>
-          <span>📊</span>
+        </Link>
+        <Link to={ROUTES.momCare} className={navClass('momCare')} onClick={onNav}>
+          <Icon name="heart" size={22} />
+          <span>Mom Care</span>
+        </Link>
+        <Link to={ROUTES.communityTab('feed')} className={navClass('community')} onClick={onNav}>
+          <Icon name="speech-bubble" size={22} />
+          <span>Community</span>
+        </Link>
+        <Link to={ROUTES.progress} className={navClass('dashboard')} onClick={onNav}>
+          <Icon name="bar-chart" size={22} />
           <span>Progress</span>
-        </button>
-        <button className={page === 'sources' ? 'active' : ''} onClick={() => nav('sources')}>
-          <span>📚</span>
+        </Link>
+        <Link to={ROUTES.sources} className={navClass('sources')} onClick={onNav}>
+          <Icon name="books" size={22} />
           <span>Sources</span>
-        </button>
+        </Link>
         <button
-          className={`sound-toggle-mobile`}
+          type="button"
+          className="sound-toggle-mobile"
           onClick={(e) => { e.stopPropagation(); onToggleSound(); }}
         >
-          <span>{soundEnabled ? '🔊' : '🔇'}</span>
+          <Icon name={soundEnabled ? 'speaker-loud' : 'speaker-muted'} size={22} />
           <span>Sound</span>
         </button>
       </nav>

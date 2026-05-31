@@ -1,18 +1,35 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { getTravelTips } from '../data/travelTips';
 import { travelTypeConfig, TRAVEL_TYPES } from '../data/travelTypeConfig';
 import { getShoppingListForRange } from '../data/shoppingAndCare';
 import { interact } from '../utils/haptics';
+import { ROUTES } from '../routes';
+import Icon from './Icon';
 
-function TravelTips({ currentMonth, onGoHome, onGoShopping }) {
-  const [activeType, setActiveType] = useState(() => {
-    const saved = localStorage.getItem('travelType');
-    return saved && TRAVEL_TYPES.includes(saved) ? saved : 'car';
-  });
+const DEFAULT_TRAVEL_TYPE = 'car';
+
+function parseTravelHash(hash) {
+  const id = hash.replace(/^#/, '');
+  return TRAVEL_TYPES.includes(id) ? id : DEFAULT_TRAVEL_TYPE;
+}
+
+function TravelTips({ currentMonth }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const activeType = parseTravelHash(location.hash);
 
   useEffect(() => {
-    localStorage.setItem('travelType', activeType);
-  }, [activeType]);
+    const fromHash = location.hash.replace(/^#/, '');
+    if (!fromHash || !TRAVEL_TYPES.includes(fromHash)) {
+      navigate({ pathname: ROUTES.travel, hash: DEFAULT_TRAVEL_TYPE }, { replace: true });
+    }
+  }, [location.hash, navigate]);
+
+  const selectType = (id) => {
+    interact('tap', 'selection');
+    navigate({ pathname: ROUTES.travel, hash: id });
+  };
 
   const tips = useMemo(
     () => (currentMonth != null ? getTravelTips(currentMonth, activeType) : null),
@@ -41,32 +58,33 @@ function TravelTips({ currentMonth, onGoHome, onGoShopping }) {
         ) : (
           <div className="travel-set-dob">
             <p>Set your baby&apos;s birth date on Home to unlock age-specific travel guidance.</p>
-            <button type="button" className="travel-dob-btn" onClick={onGoHome}>
+            <button type="button" className="travel-dob-btn" onClick={() => navigate(ROUTES.home)}>
               Go to Home
             </button>
           </div>
         )}
       </div>
 
-      <div className="diy-filter-tabs travel-type-tabs">
+      <div className="diy-filter-tabs travel-type-tabs" role="tablist" aria-label="Travel type">
         {TRAVEL_TYPES.map((id) => {
           const cfg = travelTypeConfig[id];
           return (
             <button
               key={id}
+              id={`travel-tab-${id}`}
               type="button"
+              role="tab"
+              aria-selected={activeType === id}
+              aria-controls={`travel-panel-${id}`}
               className={`diy-filter-btn ${activeType === id ? 'active' : ''}`}
               style={
                 activeType === id
                   ? { background: cfg.bg, color: cfg.color, borderColor: cfg.color }
                   : {}
               }
-              onClick={() => {
-                setActiveType(id);
-                interact('tap', 'selection');
-              }}
+              onClick={() => selectType(id)}
             >
-              {cfg.icon} {cfg.label}
+              <Icon name={cfg.icon} size={18} /> {cfg.label}
             </button>
           );
         })}
@@ -74,11 +92,14 @@ function TravelTips({ currentMonth, onGoHome, onGoShopping }) {
 
       {tips && (
         <article
+          id={`travel-panel-${activeType}`}
+          role="tabpanel"
+          aria-labelledby={`travel-tab-${activeType}`}
           className="travel-tip-card card-accent-top"
           style={{ '--cat-color': cat.color }}
         >
           <div className="travel-tip-card-header">
-            <span className="travel-tip-type-icon">{tips.typeIcon}</span>
+            <Icon name={tips.typeIcon} size={32} className="travel-tip-type-icon" />
             <div>
               <h2>{tips.typeLabel}</h2>
               <p className="travel-tip-band">{tips.bandLabel}</p>
@@ -108,7 +129,7 @@ function TravelTips({ currentMonth, onGoHome, onGoShopping }) {
               <li key={item.id}>{item.name}</li>
             ))}
           </ul>
-          <button type="button" className="travel-shop-link" onClick={onGoShopping}>
+          <button type="button" className="travel-shop-link" onClick={() => navigate(ROUTES.shopping)}>
             View all in Shopping →
           </button>
         </footer>

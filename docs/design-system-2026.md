@@ -432,6 +432,18 @@ style={{ '--cat-color': cat.color, '--cat-bg': cat.bg }}
 - Close: subtle `×` top-right; title reserves `padding-right: 44px`
 - Safe area: `padding-bottom: env(safe-area-inset-bottom)` on mobile
 
+#### Site footer (`Footer.jsx`)
+
+Persistent on every route in `App.jsx` (below `<main className="app-main">`).
+
+| Region | Content |
+|--------|---------|
+| Brand | Coral logo + tagline |
+| Nav | Home, Shopping, Travel, Mom Care, Community, Progress, Sources |
+| Meta | Disclaimer + copyright |
+
+Mobile: footer `padding-bottom` clears fixed bottom nav. Print: hidden.
+
 #### Card Variants (other)
 
 | Variant | Usage | Special Properties |

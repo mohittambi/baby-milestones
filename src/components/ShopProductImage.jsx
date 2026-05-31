@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { categoryConfig, SHOP_IMAGE_FALLBACK_CATEGORY } from './shopCategoryConfig';
+import Icon from './Icon';
 
 function ShopProductImage({ item, size = 'md' }) {
   const [failed, setFailed] = useState(false);
@@ -31,7 +32,7 @@ function ShopProductImage({ item, size = 'md' }) {
       style={{ background: cat.bg, color: cat.color }}
       aria-hidden="true"
     >
-      <span className="shop-product-thumb-icon">{cat.icon}</span>
+      <Icon name={cat.icon} size={28} className="shop-product-thumb-icon" />
     </div>
   );
 }

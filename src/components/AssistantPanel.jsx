@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { matchAssistantQuery } from '../utils/assistantMatch';
 import { interact } from '../utils/haptics';
+import Icon from './Icon';
 
 function AssistantPanel({ currentMonth, selectedMonth }) {
   const [open, setOpen] = useState(false);
@@ -31,7 +32,7 @@ function AssistantPanel({ currentMonth, selectedMonth }) {
         aria-expanded={open}
         aria-label={open ? 'Close parenting assistant' : 'Open parenting assistant'}
       >
-        {open ? '✕' : '💬'}
+        <Icon name={open ? 'close' : 'speech-bubble'} size={24} />
       </button>
 
       {open && (
@@ -45,26 +46,20 @@ function AssistantPanel({ currentMonth, selectedMonth }) {
               <p className="assistant-context">Answering for Month {contextMonth}</p>
             )}
           </div>
-
           <form className="assistant-form" onSubmit={handleSubmit}>
             <input
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="e.g. not taking feed, teething, sleep regression…"
-              aria-label="Ask the assistant"
+              placeholder="e.g. 4 month not taking feed"
+              aria-label="Ask a parenting question"
             />
             <button type="submit">Ask</button>
           </form>
-
           {response && (
             <div className="assistant-response">
-              <h4>{response.title}</h4>
-              {response.monthUsed != null && (
-                <p className="assistant-context">Customized for Month {response.monthUsed}</p>
-              )}
-              {response.body.split('\n\n').map((para, i) => (
-                <p key={i}>{para}</p>
+              {response.paragraphs.map((p, i) => (
+                <p key={i}>{p}</p>
               ))}
             </div>
           )}

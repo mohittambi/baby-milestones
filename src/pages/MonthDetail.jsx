@@ -5,6 +5,16 @@ import { interact, sounds } from '../utils/haptics';
 import { useSwipe } from '../utils/gestures';
 import DIYSection from '../components/DIYSection';
 import CareSection from '../components/CareSection';
+import Icon from '../components/Icon';
+
+function SectionHeading({ icon, children }) {
+  return (
+    <h3 className="section-heading-with-icon">
+      <Icon name={icon} size={22} />
+      <span>{children}</span>
+    </h3>
+  );
+}
 
 function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, currentWeek }) {
   const data = milestones.find(m => m.month === month);
@@ -128,7 +138,7 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
       {showCelebration && (
         <div className="celebration-overlay">
           <div className="celebration-content">
-            <div className="celebration-emoji">🎉</div>
+            <Icon name="party" size={64} className="celebration-icon" />
             <h2>All Milestones Complete!</h2>
             <p>Month {data.month} fully achieved! Amazing progress!</p>
           </div>
@@ -155,7 +165,7 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
             ← Previous
           </button>
           <button className="print-btn" onClick={handlePrint}>
-            🖨️ Print
+            <Icon name="printer" size={18} /> Print
           </button>
           <button disabled={month >= 36} onClick={() => { interact('navigate', 'light'); onNavigate(month + 1); }}>
             Next →
@@ -166,7 +176,7 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
 
       <div className="section-grid">
         <div className="detail-section">
-          <h3>💪 Physical Milestones</h3>
+          <SectionHeading icon="flexed-bicep">Physical Milestones</SectionHeading>
           {data.physical.map((item) => (
             <div
               key={item.id}
@@ -180,17 +190,17 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
                 tabIndex={0}
                 onKeyDown={(e) => e.key === 'Enter' && handleCheck(item.id)}
               >
-                {checkedItems[item.id] && '✓'}
+                {checkedItems[item.id] && <Icon name="check" size={14} />}
               </div>
               <div className="milestone-text">
                 <p>{item.text}</p>
-                <span className="tip">💡 {item.tip}</span>
+                <span className="tip"><Icon name="light-bulb" size={14} /> {item.tip}</span>
               </div>
             </div>
           ))}
           {physicalCites.length > 0 && (
             <div className="inline-citations">
-              <span className="cite-label">📎 Sources:</span>
+              <span className="cite-label"><Icon name="paperclip" size={14} /> Sources:</span>
               {physicalCites.flatMap((c) => c.sources).filter((v, i, a) => a.indexOf(v) === i).map((s, i) => (
                 sourceUrlMap[s]
                   ? <a key={i} href={sourceUrlMap[s]} target="_blank" rel="noopener noreferrer" className="cite-badge cite-link" title={physicalCites.find(c => c.sources.includes(s))?.note}>{s} ↗</a>
@@ -201,7 +211,7 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
         </div>
 
         <div className="detail-section">
-          <h3>🧠 Emotional & Cognitive</h3>
+          <SectionHeading icon="brain">Emotional & Cognitive</SectionHeading>
           {data.emotional.map((item) => (
             <div
               key={item.id}
@@ -215,17 +225,17 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
                 tabIndex={0}
                 onKeyDown={(e) => e.key === 'Enter' && handleCheck(item.id)}
               >
-                {checkedItems[item.id] && '✓'}
+                {checkedItems[item.id] && <Icon name="check" size={14} />}
               </div>
               <div className="milestone-text">
                 <p>{item.text}</p>
-                <span className="tip">💡 {item.tip}</span>
+                <span className="tip"><Icon name="light-bulb" size={14} /> {item.tip}</span>
               </div>
             </div>
           ))}
           {emotionalCites.length > 0 && (
             <div className="inline-citations">
-              <span className="cite-label">📎 Sources:</span>
+              <span className="cite-label"><Icon name="paperclip" size={14} /> Sources:</span>
               {emotionalCites.flatMap((c) => c.sources).filter((v, i, a) => a.indexOf(v) === i).map((s, i) => (
                 sourceUrlMap[s]
                   ? <a key={i} href={sourceUrlMap[s]} target="_blank" rel="noopener noreferrer" className="cite-badge cite-link" title={emotionalCites.find(c => c.sources.includes(s))?.note}>{s} ↗</a>
@@ -237,7 +247,7 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
       </div>
 
       <div className="activities-section">
-        <h3>🎯 Activities to Try</h3>
+        <SectionHeading icon="target">Activities to Try</SectionHeading>
         <div className="activity-grid">
           {data.activities.map((activity, i) => (
             <div
@@ -253,7 +263,7 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
               }}
               onClick={() => interact('tap', 'selection')}
             >
-              <div className="activity-icon">{activity.icon}</div>
+              <div className="activity-icon"><Icon name={activity.icon} size={36} /></div>
               <div className="activity-type">{activity.type}</div>
               <h4>{activity.name}</h4>
               <p>{activity.description}</p>
@@ -264,7 +274,7 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
 
       <div className="info-grid">
         <div className="info-card watch">
-          <h3>⚠️ Watch For</h3>
+          <SectionHeading icon="warning">Watch For</SectionHeading>
           <ul>
             {data.watchFor.map((item, i) => (
               <li key={i}>{item}</li>
@@ -273,7 +283,7 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
         </div>
 
         <div className="info-card pros">
-          <h3>✅ The Good Stuff</h3>
+          <SectionHeading icon="check-mark">The Good Stuff</SectionHeading>
           <ul>
             {data.pros.map((item, i) => (
               <li key={i}>{item}</li>
@@ -282,7 +292,7 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
         </div>
 
         <div className="info-card cons">
-          <h3>🔸 Challenges</h3>
+          <SectionHeading icon="1f538">Challenges</SectionHeading>
           <ul>
             {data.cons.map((item, i) => (
               <li key={i}>{item}</li>
@@ -296,7 +306,7 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
       <CareSection month={month} />
 
       <div className="weekly-tips">
-        <h3>📅 Weekly Tips</h3>
+        <SectionHeading icon="calendar">Weekly Tips</SectionHeading>
         <div className="tips-grid">
           {data.weeklyTips.map((tip, i) => (
             <div key={i} className={`tip-card ${currentWeek === tip.week && month === Math.ceil((new Date() - new Date(localStorage.getItem('babyBirthDate'))) / (1000 * 60 * 60 * 24 * 30.44)) ? 'active' : ''}`}>
@@ -308,7 +318,7 @@ function MonthDetail({ month, checkedItems, toggleCheck, onBack, onNavigate, cur
       </div>
 
       <div className="sources-badge-bar">
-        <span className="sources-bar-label">📚 Read more from these sources:</span>
+        <span className="sources-bar-label"><Icon name="books" size={16} /> Read more from these sources:</span>
         <div className="source-links-list">
           {sources.monthToLinks(data.month).map((link, i) => (
             <a

@@ -1,6 +1,15 @@
 import { useState } from 'react';
 import sources from '../data/sources';
 import { interact } from '../utils/haptics';
+import Icon from '../components/Icon';
+
+function TabButton({ active, onClick, icon, children }) {
+  return (
+    <button type="button" className={active ? 'active' : ''} onClick={onClick}>
+      <Icon name={icon} size={16} /> {children}
+    </button>
+  );
+}
 
 function Sources() {
   const [activeTab, setActiveTab] = useState('global');
@@ -29,24 +38,24 @@ function Sources() {
   return (
     <div className="sources-page fade-in">
       <div className="sources-hero">
-        <div className="sources-hero-icon">📚</div>
+        <Icon name="books" size={48} className="sources-hero-icon" />
         <h1>Medical Sources & Citations</h1>
         <p>All milestones in this app are based on evidence from these globally and nationally recognized medical authorities.</p>
       </div>
 
       <div className="sources-tabs">
-        <button className={activeTab === 'global' ? 'active' : ''} onClick={() => handleTabChange('global')}>
-          🌍 Global Sources
-        </button>
-        <button className={activeTab === 'indian' ? 'active' : ''} onClick={() => handleTabChange('indian')}>
-          🇮🇳 Indian Sources
-        </button>
-        <button className={activeTab === 'tools' ? 'active' : ''} onClick={() => handleTabChange('tools')}>
-          📋 Screening Tools
-        </button>
-        <button className={activeTab === 'citations' ? 'active' : ''} onClick={() => handleTabChange('citations')}>
-          🔗 Milestone Citations
-        </button>
+        <TabButton active={activeTab === 'global'} onClick={() => handleTabChange('global')} icon="globe">
+          Global Sources
+        </TabButton>
+        <TabButton active={activeTab === 'indian'} onClick={() => handleTabChange('indian')} icon="1f1ee-1f1f3">
+          Indian Sources
+        </TabButton>
+        <TabButton active={activeTab === 'tools'} onClick={() => handleTabChange('tools')} icon="clipboard">
+          Screening Tools
+        </TabButton>
+        <TabButton active={activeTab === 'citations'} onClick={() => handleTabChange('citations')} icon="link">
+          Milestone Citations
+        </TabButton>
       </div>
 
       {currentSources && (
@@ -59,7 +68,7 @@ function Sources() {
             >
               <div className="source-card-header">
                 <div className="source-icon-wrap" style={{ background: source.color + '20', color: source.color }}>
-                  <span>{source.icon}</span>
+                  <Icon name={source.icon} size={28} />
                 </div>
                 <div className="source-info">
                   <h3>{source.name}</h3>
@@ -115,7 +124,9 @@ function Sources() {
       {activeTab === 'citations' && (
         <div className="citations-section">
           <div className="citation-group">
-            <h2>💪 Physical Milestone Citations</h2>
+            <h2 className="section-heading-with-icon">
+              <Icon name="flexed-bicep" size={22} /> Physical Milestone Citations
+            </h2>
             {sources.citations.physical.map((cite, i) => (
               <div
                 key={i}
@@ -144,7 +155,9 @@ function Sources() {
           </div>
 
           <div className="citation-group">
-            <h2>🧠 Emotional & Cognitive Citations</h2>
+            <h2 className="section-heading-with-icon">
+              <Icon name="brain" size={22} /> Emotional & Cognitive Citations
+            </h2>
             {sources.citations.emotional.map((cite, i) => (
               <div
                 key={i}
@@ -174,10 +187,12 @@ function Sources() {
         </div>
       )}
 
-      <div className="disclaimer-section">
-        <div className="disclaimer-icon">⚕️</div>
-        <h3>Medical Disclaimer</h3>
-        <p>{sources.disclaimer}</p>
+      <div className="sources-disclaimer">
+        <Icon name="medical" size={32} className="disclaimer-icon" />
+        <p>
+          This app provides educational information only and is not a substitute for professional medical advice,
+          diagnosis, or treatment. Always consult your pediatrician for concerns about your child&apos;s development.
+        </p>
       </div>
     </div>
   );

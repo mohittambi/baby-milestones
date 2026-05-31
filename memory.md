@@ -114,6 +114,10 @@ Data: `growthData.js` (WHO 15th–85th approx.)
 
 Nav: **Travel** (desktop + mobile). Data: `travelTips.js`. Types: car, air, train, dayOuting, hotel. Gear footer links to Shopping.
 
+## Mom Care page
+
+Nav: **Mom Care** (desktop + mobile, between Travel and Community). Data: `momCareTips.js`. Route: `/mom-care`. Hash-based topic tabs (11 topics): posture, nippleCare, supplements, boneDensity, stretchMarks, hydration, nutrition, exercise, recovery, massage, walking. Design doc: `docs/mom-care-ui-design.md`.
+
 ## Disclaimer
 
 All responses append `MEDICAL_DISCLAIMER` from `assistantResponses.js`.

@@ -45,7 +45,7 @@ const illustrations = {
       {/* Mirror */}
       <rect x="155" y="60" width="30" height="38" rx="4" fill="white" stroke="#A78BCA" strokeWidth="2"/>
       <ellipse cx="170" cy="79" rx="11" ry="13" fill="#D5C8E8"/>
-      <text x="170" y="83" textAnchor="middle" fontSize="8" fill="#A78BCA">🪞</text>
+      <image href="/images/emojis/1fa9e.png" x="164.4" y="73.48" width="11.2" height="11.2" />
       {/* Arrow up = head lift */}
       <path d="M 145 55 L 145 45" stroke="#7BC88F" strokeWidth="2" markerEnd="url(#arrow)"/>
       <text x="145" y="40" textAnchor="middle" fontSize="8" fill="#7BC88F">Head up!</text>
@@ -70,7 +70,7 @@ const illustrations = {
       <path d="M 75 75 Q 68 65 75 55" stroke="#E88A93" strokeWidth="1.5" fill="none" opacity="0.5"/>
       <path d="M 125 75 Q 132 65 125 55" stroke="#E88A93" strokeWidth="1.5" fill="none" opacity="0.5"/>
       {/* Heart */}
-      <text x="100" y="100" textAnchor="middle" fontSize="16">💕</text>
+      <image href="/images/emojis/two-hearts.png" x="88.8" y="80.96000000000001" width="22.4" height="22.4" />
     </svg>
   ),
 
@@ -125,7 +125,7 @@ const illustrations = {
       <circle cx="55" cy="50" r="22" fill="#F5C2A0"/>
       {/* Cloth over face */}
       <rect x="33" y="28" width="44" height="35" rx="4" fill="#A78BCA" opacity="0.85"/>
-      <text x="55" y="50" textAnchor="middle" fontSize="14">👀</text>
+      <image href="/images/emojis/1f440.png" x="45.2" y="33.34" width="19.599999999999998" height="19.599999999999998" />
       {/* Arms holding cloth */}
       <path d="M 44 48 L 33 42" stroke="#F5C2A0" strokeWidth="7" strokeLinecap="round"/>
       <path d="M 66 48 L 77 42" stroke="#F5C2A0" strokeWidth="7" strokeLinecap="round"/>
@@ -138,7 +138,7 @@ const illustrations = {
       <ellipse cx="145" cy="72" rx="10" ry="7" fill="#3A2E3F"/>
       <ellipse cx="145" cy="70" rx="8" ry="5" fill="#E88A93"/>
       {/* Exclamation */}
-      <text x="100" y="25" textAnchor="middle" fontSize="18">🎉</text>
+      <image href="/images/emojis/party.png" x="87.4" y="3.580000000000002" width="25.2" height="25.2" />
     </svg>
   ),
 
@@ -152,7 +152,7 @@ const illustrations = {
       <circle cx="173" cy="77" r="3" fill="#3A2E3F"/>
       {/* Rattle (DIY container) */}
       <rect x="55" y="55" width="35" height="25" rx="8" fill="#C2DAF5"/>
-      <text x="72" y="72" textAnchor="middle" fontSize="10">🌾</text>
+      <image href="/images/emojis/1f33e.png" x="65" y="60.1" width="14" height="14" />
       {/* Hand holding rattle */}
       <ellipse cx="72" cy="90" rx="14" ry="9" fill="#F5C2A0"/>
       {/* Sound waves */}
@@ -170,8 +170,8 @@ const illustrations = {
       {/* Water and items inside */}
       <ellipse cx="60" cy="95" rx="12" ry="8" fill="#7EB3E8" opacity="0.5"/>
       <ellipse cx="100" cy="90" rx="10" ry="6" fill="#7EB3E8" opacity="0.5"/>
-      <text x="140" y="100" textAnchor="middle" fontSize="12">⭐</text>
-      <text x="80" y="100" textAnchor="middle" fontSize="10">🐟</text>
+      <image href="/images/emojis/star.png" x="133" y="88" width="16" height="16" />
+      <image href="/images/emojis/1f41f.png" x="73" y="88.1" width="14" height="14" />
       {/* Baby on mat */}
       <ellipse cx="100" cy="72" rx="55" ry="18" fill="#FFD5C2"/>
       <circle cx="148" cy="62" r="15" fill="#F5C2A0"/>
@@ -199,7 +199,7 @@ const illustrations = {
       <polygon points="55,55 47,70 63,70" fill="#F5A572"/>
       <circle cx="90" cy="75" r="10" fill="#D9C75C"/>
       <rect x="116" y="45" width="18" height="18" rx="3" fill="#7BC88F" transform="rotate(15,125,54)"/>
-      <text x="148" y="72" textAnchor="middle" fontSize="16">⭐</text>
+      <image href="/images/emojis/star.png" x="141" y="62" width="22" height="22" />
       {/* Baby looking up */}
       <circle cx="100" cy="115" r="18" fill="#F5C2A0"/>
       <circle cx="93" cy="110" r="4" fill="#3A2E3F"/>
@@ -246,10 +246,10 @@ const illustrations = {
       <path d="M 125 67 L 128 105" stroke="#A88A30" strokeWidth="1" opacity="0.5"/>
       <path d="M 145 70 L 150 100" stroke="#A88A30" strokeWidth="1" opacity="0.5"/>
       {/* Objects in basket */}
-      <text x="65" y="82" fontSize="14">🥄</text>
-      <text x="85" y="85" fontSize="12">🪨</text>
-      <text x="105" y="80" fontSize="13">🪵</text>
-      <text x="125" y="83" fontSize="12">🧵</text>
+      <image href="/images/emojis/1f944.png" x="65" y="65.34" width="19.599999999999998" height="19.599999999999998" />
+      <image href="/images/emojis/1faa8.png" x="85" y="70.72" width="16.799999999999997" height="16.799999999999997" />
+      <image href="/images/emojis/1fab5.png" x="105" y="64.53" width="18.2" height="18.2" />
+      <image href="/images/emojis/1f9f5.png" x="125" y="68.72" width="16.799999999999997" height="16.799999999999997" />
       {/* Baby seated */}
       <circle cx="100" cy="45" r="18" fill="#F5C2A0"/>
       <circle cx="94" cy="42" r="3" fill="#3A2E3F"/>
@@ -294,7 +294,7 @@ const illustrations = {
       <line x1="100" y1="80" x2="100" y2="135" stroke="#D5C8E8" strokeWidth="1.5"/>
       {/* Picture in book */}
       <circle cx="80" cy="100" r="10" fill="#FFD5C2"/>
-      <text x="80" y="104" textAnchor="middle" fontSize="12">🐶</text>
+      <image href="/images/emojis/1f436.png" x="71.6" y="89.72" width="16.799999999999997" height="16.799999999999997" />
       <text x="120" y="104" textAnchor="middle" fontSize="10">Woof!</text>
       {/* Baby on lap */}
       <circle cx="130" cy="58" r="16" fill="#FFD5C2"/>
@@ -310,9 +310,9 @@ const illustrations = {
     <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
       <rect width="200" height="140" fill="#FFF0F5" rx="12"/>
       {/* Music notes */}
-      <text x="20" y="30" fontSize="16" opacity="0.6">🎵</text>
-      <text x="160" y="25" fontSize="12" opacity="0.5">♪</text>
-      <text x="140" y="50" fontSize="10" opacity="0.4">♫</text>
+      <image href="/images/emojis/1f3b5.png" x="20" y="10.96" width="22.4" height="22.4" />
+      <image href="/images/emojis/266a.png" x="160" y="10.720000000000002" width="16.799999999999997" height="16.799999999999997" />
+      <image href="/images/emojis/266b.png" x="140" y="38.1" width="14" height="14" />
       {/* Parent dancing */}
       <circle cx="70" cy="45" r="20" fill="#F5C2A0"/>
       <rect x="55" y="65" width="30" height="45" rx="10" fill="#E88A93"/>
@@ -337,17 +337,17 @@ const illustrations = {
       {/* MORE sign */}
       <rect x="10" y="35" width="55" height="65" rx="8" fill="white" stroke="#A78BCA" strokeWidth="2"/>
       <text x="37" y="52" textAnchor="middle" fontSize="9" fill="#A78BCA" fontWeight="bold">MORE</text>
-      <text x="37" y="80" textAnchor="middle" fontSize="24">👐</text>
+      <image href="/images/emojis/1f450.png" x="20.200000000000003" y="51.440000000000005" width="33.599999999999994" height="33.599999999999994" />
       <text x="37" y="95" textAnchor="middle" fontSize="8" fill="#6B5F70">Tap fingertips</text>
       {/* ALL DONE sign */}
       <rect x="73" y="35" width="55" height="65" rx="8" fill="white" stroke="#7BC88F" strokeWidth="2"/>
       <text x="100" y="52" textAnchor="middle" fontSize="9" fill="#7BC88F" fontWeight="bold">ALL DONE</text>
-      <text x="100" y="80" textAnchor="middle" fontSize="24">🙌</text>
+      <image href="/images/emojis/1f64c.png" x="83.2" y="51.440000000000005" width="33.599999999999994" height="33.599999999999994" />
       <text x="100" y="95" textAnchor="middle" fontSize="8" fill="#6B5F70">Shake hands</text>
       {/* MILK sign */}
       <rect x="136" y="35" width="55" height="65" rx="8" fill="white" stroke="#F5A572" strokeWidth="2"/>
       <text x="163" y="52" textAnchor="middle" fontSize="9" fill="#F5A572" fontWeight="bold">MILK</text>
-      <text x="163" y="80" textAnchor="middle" fontSize="24">✊</text>
+      <image href="/images/emojis/270a.png" x="146.2" y="51.440000000000005" width="33.599999999999994" height="33.599999999999994" />
       <text x="163" y="95" textAnchor="middle" fontSize="8" fill="#6B5F70">Squeeze fist</text>
       <text x="100" y="120" textAnchor="middle" fontSize="9" fill="#6B5F70" fontWeight="bold">Start with these 3 signs!</text>
     </svg>
@@ -378,7 +378,7 @@ const illustrations = {
       <line x1="98" y1="100" x2="108" y2="100" stroke="#F5C2A0" strokeWidth="4" strokeLinecap="round"/>
       {/* Collection bag */}
       <rect x="115" y="98" width="16" height="18" rx="4" fill="#D9C75C"/>
-      <text x="123" y="110" textAnchor="middle" fontSize="8">🍂</text>
+      <image href="/images/emojis/1f342.png" x="117.4" y="100.48" width="11.2" height="11.2" />
     </svg>
   ),
 
@@ -420,8 +420,8 @@ const illustrations = {
       {/* Toddler hand */}
       <ellipse cx="95" cy="68" rx="14" ry="10" fill="#F5C2A0" transform="rotate(-15, 95, 68)"/>
       {/* Stars of pride */}
-      <text x="160" y="40" fontSize="14">⭐</text>
-      <text x="165" y="60" fontSize="10">✨</text>
+      <image href="/images/emojis/star.png" x="153" y="30" width="19" height="19" />
+      <image href="/images/emojis/sparkles.png" x="165" y="48.1" width="14" height="14" />
     </svg>
   ),
 
@@ -429,7 +429,7 @@ const illustrations = {
   default: (
     <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
       <rect width="200" height="140" fill="#F5F0FF" rx="12"/>
-      <text x="100" y="65" textAnchor="middle" fontSize="40">🎯</text>
+      <image href="/images/emojis/target.png" x="72" y="17.4" width="56" height="56" />
       <text x="100" y="95" textAnchor="middle" fontSize="14" fill="#A78BCA" fontWeight="bold">Activity Time!</text>
       <text x="100" y="115" textAnchor="middle" fontSize="11" fill="#6B5F70">Follow the steps below</text>
     </svg>
