@@ -1,0 +1,17 @@
+---
+description: Parenting assistant development guidance
+globs: src/utils/assistantMatch.js,src/data/assistantResponses.js,src/components/AssistantPanel.jsx
+alwaysApply: false
+---
+
+# Parenting Assistant Development
+
+- All responses must include a medical disclaimer (use `MEDICAL_DISCLAIMER` from assistantResponses.js).
+- Use month-aware content from `src/data/milestones.js` when `monthUsed` is set.
+- Month resolution: parsed month in query > `selectedMonth` > `currentMonth` (from birth date).
+- Parse both `month 4` and `4 month` in user queries.
+- Priority order: emergency (choking) > feeding > sleep > development > topic guides > fallback.
+- Keep responses concise (max ~6 paragraphs in body).
+- Reference AAP/WHO/CDC-style guidance; never diagnose.
+- When adding topics: update `memory.md`, `assistantResponses.js`, `assistantMatch.js`, and `assistantMatch.test.js`.
+- Run `npm test` and `npm run verify:data` after changes.
