@@ -395,7 +395,7 @@ Primary navigation at bottom for thumb-zone reach.
 #### Base pattern (shipped)
 
 - **Bezel-less:** no full border frame; `--shadow-card` only
-- **Category accent:** `.card-accent-top` — 3px top bar via `::before`, color from `--cat-color` (inline per category config)
+- **Category accent:** `.card-accent-top` — 3px inset top bar (full width within `border-radius`), color from `--cat-color`
 - **Radius:** `--radius-lg` (20px) on grid cards
 
 ```css
@@ -403,12 +403,11 @@ Primary navigation at bottom for thumb-zone reach.
   position: relative;
   overflow: hidden;
 }
-.card-accent-top::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: var(--card-accent-height); /* 3px */
-  background: var(--card-accent-color); /* var(--cat-color) */
+/* Per card type — inset shadow fills full width inside border-radius */
+.content-card.card-accent-top {
+  box-shadow:
+    inset 0 var(--card-accent-height) 0 0 var(--card-accent-color),
+    var(--shadow-card);
 }
 ```
 

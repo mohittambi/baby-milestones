@@ -614,13 +614,26 @@ a {
   padding: 20px;
   box-shadow: var(--shadow-card);
   border: none;
+  overflow: hidden;
   transition: box-shadow var(--motion-normal) var(--ease-out),
               transform var(--motion-normal) var(--ease-out);
+}
+
+.activity-card.card-accent-top {
+  box-shadow:
+    inset 0 var(--card-accent-height) 0 0 var(--card-accent-color),
+    var(--shadow-card);
 }
 
 .activity-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
+}
+
+.activity-card.card-accent-top:hover {
+  box-shadow:
+    inset 0 var(--card-accent-height) 0 0 var(--card-accent-color),
+    var(--shadow-md);
 }
 
 .activity-card.physical {
@@ -1676,19 +1689,10 @@ a {
   font-size: 14px;
 }
 
-/* Card category accent — 3px top bar, full width within card radius */
+/* Card category accent — 3px inset top bar (full width within border-radius) */
 .card-accent-top {
   position: relative;
   overflow: hidden;
-  box-shadow:
-    inset 0 var(--card-accent-height) 0 0 var(--card-accent-color),
-    var(--shadow-card);
-}
-
-.card-accent-top:hover {
-  box-shadow:
-    inset 0 var(--card-accent-height) 0 0 var(--card-accent-color),
-    var(--shadow-md);
 }
 
 .shop-item-checked.card-accent-top {
@@ -1730,9 +1734,21 @@ a {
               transform var(--motion-normal) var(--ease-out);
 }
 
+.content-card.card-accent-top {
+  box-shadow:
+    inset 0 var(--card-accent-height) 0 0 var(--card-accent-color),
+    var(--shadow-card);
+}
+
 .content-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
+}
+
+.content-card.card-accent-top:hover {
+  box-shadow:
+    inset 0 var(--card-accent-height) 0 0 var(--card-accent-color),
+    var(--shadow-md);
 }
 
 .content-card-media {
@@ -2583,9 +2599,21 @@ a {
               transform var(--motion-normal) var(--ease-out);
 }
 
+.shop-product-card.card-accent-top {
+  box-shadow:
+    inset 0 var(--card-accent-height) 0 0 var(--card-accent-color),
+    var(--shadow-card);
+}
+
 .shop-product-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
+}
+
+.shop-product-card.card-accent-top:hover {
+  box-shadow:
+    inset 0 var(--card-accent-height) 0 0 var(--card-accent-color),
+    var(--shadow-md);
 }
 
 .shop-product-media {
@@ -3045,6 +3073,13 @@ a {
   border: none;
   padding: 20px;
   box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.travel-tip-card.card-accent-top {
+  box-shadow:
+    inset 0 var(--card-accent-height) 0 0 var(--card-accent-color),
+    var(--shadow-card);
 }
 
 .travel-tip-card-header {
