@@ -1,4 +1,4 @@
-import { momMilestonePeriods, getAllMomMilestoneItemIds } from '../data/momMilestones.js';
+import { momMilestonePeriods } from '../data/momMilestones.js';
 import { MOM_CARE_CATEGORIES } from '../data/momCareTips.js';
 
 const MS_PER_DAY = 1000 * 60 * 60 * 24;
@@ -41,6 +41,11 @@ export function formatPostpartumAge(birthDate) {
   return `about month ${month} postpartum`;
 }
 
+export function getDefaultMomMilestonePeriodId(birthDate) {
+  const current = momMilestonePeriods.find((p) => isCurrentPeriod(p, birthDate));
+  return current?.id ?? momMilestonePeriods[0]?.id ?? '';
+}
+
 export function isCurrentPeriod(period, birthDate) {
   const week = getPostpartumWeek(birthDate);
   const month = getPostpartumMonth(birthDate);
@@ -49,18 +54,6 @@ export function isCurrentPeriod(period, birthDate) {
     return week >= period.periodStart && week <= period.periodEnd;
   }
   return month >= period.periodStart && month <= period.periodEnd;
-}
-
-export function getPeriodProgress(period, checks) {
-  const ids = period.items.map((i) => i.id);
-  const done = ids.filter((id) => checks[id]).length;
-  return { done, total: ids.length };
-}
-
-export function getOverallMomMilestoneProgress(checks) {
-  const allIds = getAllMomMilestoneItemIds();
-  const done = allIds.filter((id) => checks[id]).length;
-  return { done, total: allIds.length };
 }
 
 export function isValidMomCareTopic(topic) {

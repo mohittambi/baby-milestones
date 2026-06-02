@@ -1,6 +1,6 @@
 # Mom's Milestones — UI Design
 
-> Postpartum timeline for the parent inside Mom Care. Checkable milestones anchored to baby birth date.
+> Postpartum timeline for the parent inside Mom Care. Read-only guidance anchored to baby birth date.
 
 ## Route
 
@@ -13,19 +13,19 @@ Default landing when visiting Mom Care with no hash: `#timeline`.
 - Normalize postpartum expectations week-by-week and month-by-month
 - Reduce "is this normal?" anxiety with calm, evidence-based checkpoints
 - Deep-link to existing Mom Care topic guides (`#mentalHealth`, `#pelvicFloor`, etc.)
-- Let parents track recovery progress with low-friction checkboxes (same mental model as baby milestones)
+- Present clear expectations without checkbox tracking (read-only guide)
 
 ## Navigation
 
 - **Desktop / mobile:** Existing Mom Care nav in `Header.jsx` / `Footer.jsx` — no new top-level route
-- **In-page:** Timeline tab first; 16 topic tabs unchanged after it
+- **In-page:** Primary sub-nav row — **Mom Milestones** | **Self-care Guides** (separate from topic tabs). Milestones uses `#timeline`; guides show the 16 topic tabs on a second row.
 
 ## Data
 
 | File | Purpose |
 |------|---------|
-| `src/data/momMilestones.js` | Curated periods + checkable items |
-| `src/utils/momMilestones.js` | Postpartum week/month math, progress, current period |
+| `src/data/momMilestones.js` | Curated periods + guidance items |
+| `src/utils/momMilestones.js` | Postpartum week/month math, current period |
 | `docs/research/mom-postpartum-timeline-raw.md` | Working research outline (not user-facing) |
 
 ### Period schema
@@ -52,7 +52,6 @@ Default landing when visiting Mom Care with no hash: `#timeline`.
 
 | Key | Type | Purpose |
 |-----|------|---------|
-| `momMilestoneChecks` | `Record<itemId, boolean>` | Checkbox state per item id |
 | `babyBirthDate` | string (existing) | Personalizes "current" period and hero copy |
 
 ## Personalization
@@ -72,48 +71,42 @@ From `babyBirthDate`:
 |-----------|------|------|
 | `MomCare` | `src/pages/MomCare.jsx` | Passes birth date + check state |
 | `MomCareTips` | `src/components/MomCareTips.jsx` | Tab strip includes `timeline`; renders panel or topic card |
-| `MomMilestonesPanel` | `src/components/MomMilestonesPanel.jsx` | Timeline sections, checkboxes, progress, learn-more links |
+| `MomMilestonesPanel` | `src/components/MomMilestonesPanel.jsx` | Timeline sections, guidance lists, learn-more links |
 
 ### Layout (Timeline tab)
 
+Two-column on desktop: **range selector** (left) + **selected period** (right). Detail uses guidance **2-column grid** + sticky **aside** (Watch for, Learn more).
+
 ```
-┌─────────────────────────────────────┐
-│ Mom Care (hero)                     │
-├─────────────────────────────────────┤
-│ [Timeline] [Mental] [Recovery] …    │  ← timeline first
-├─────────────────────────────────────┤
-│ You are ~6 weeks postpartum         │
-│ ████████░░ 12/48 milestones       │
-├─────────────────────────────────────┤
-│ ▌ Weeks 3–6  (current)              │
-│   ☐ Six-week checkup booked         │
-│   ☐ Pelvic floor gentle start       │
-│   ⚠ Watch for: fever, heavy bleed…  │
-│   [Learn more: Recovery →]          │
-├─────────────────────────────────────┤
-│ ▌ Weeks 7–12                        │
-│   …                                 │
-└─────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────┐
+│ You are ~6 weeks postpartum                              │
+├─────────────┬────────────────────────────────────────────┤
+│ Weeks 0–2   │  Weeks 3–6 · title · summary               │
+│ Weeks 3–6 * │  ┌──────────────┬─────────────────────┐    │
+│ Weeks 7–12  │  │ item cards   │ Watch for           │    │
+│ Months 3–4  │  │ (2-col grid) │ Learn more →        │    │
+└─────────────┴────────────────────────────────────────────┘
 ```
+
+Mobile: horizontal scroll range pills; single-column cards and aside.
 
 ## Interaction
 
-- Checkbox tap toggles item in `momMilestoneChecks` (haptic `selection`)
+- **Range buttons** select one period at a time (defaults to current period from birth date)
+- **Jump to now** when viewing a non-current range
 - **Learn more** navigates to `{ pathname: /mom-care, hash: relatedTopic }`
-- Period sections use `.card-accent-top` with lavender accent (`--cat-color: var(--lavender-dark)`)
-- Reuse `.milestone-item` / `.milestone-check` from Month Detail for consistency
+- Panel uses `.card-accent-top` with lavender accent (`--cat-color: var(--lavender-dark)`)
 
 ## CSS classes
 
 | Class | Purpose |
 |-------|---------|
-| `.mom-milestones-panel` | Panel wrapper |
-| `.mom-milestones-hero` | Postpartum age + overall progress |
-| `.mom-milestones-progress` | Progress bar track/fill |
-| `.mom-milestones-birth-banner` | Missing birth date CTA |
-| `.mom-milestones-period` | One period section card |
-| `.mom-milestones-period.is-current` | Highlight active window |
-| `.mom-milestones-period-header` | Label + title + summary |
+| `.mom-milestones-layout` | Range nav + detail grid |
+| `.mom-milestones-ranges` | Vertical range buttons (sticky) |
+| `.mom-milestones-range-btn` | Week/month range selector |
+| `.mom-milestones-detail-grid` | Guidance grid + aside |
+| `.mom-milestones-list` | 2-column guidance cards (desktop) |
+| `.mom-milestones-aside` | Sticky Watch for + Learn more |
 | `.mom-milestones-watch` | Watch-for list (rose-tinted) |
 | `.mom-milestones-learn` | Link-styled button to topic tab |
 
@@ -136,7 +129,6 @@ From `babyBirthDate`:
 ### Functional
 
 - [x] `/mom-care` with no hash lands on `#timeline`
-- [x] Checkbox state persists after refresh (`momMilestoneChecks`)
 - [x] Current period highlights when birth date set
 - [x] Learn more opens correct topic tab
 - [x] All item ids unique; verify script passes
@@ -145,12 +137,10 @@ From `babyBirthDate`:
 
 - [x] Mobile 375px: tabs scroll; milestone rows readable
 - [x] Desktop 1280px: max-width 1100px aligned with Mom Care page
-- [x] Checkbox targets usable one-handed
-
 ### Accessibility
 
-- [x] Checkboxes: `role="checkbox"`, `aria-checked`, Enter key
 - [x] Period headings use semantic `<section>` + `aria-labelledby`
+- [x] Guidance lists use semantic `<ul>` / `<li>`
 
 ## Related docs
 

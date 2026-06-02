@@ -180,15 +180,14 @@ Move away from clinical neo-grotesks (Inter, SF Pro) toward **bouba grotesks**�
 
 | Role | Primary | Fallback |
 |------|---------|----------|
-| Display | **General Sans** | Cabinet Grotesk, system-ui |
-| Body | **General Sans** | Hanken Grotesk, system-ui |
+| Display | **Switzer** | Cabinet Grotesk, system-ui |
+| Body | **Switzer** | Hanken Grotesk, system-ui |
 | Monospace | Geist Mono | JetBrains Mono, monospace |
 
-**Why General Sans?**
-- Gently rounded terminals
-- Slightly curved strokes
-- Generous counters
-- Low contrast
+**Why Switzer?**
+- Warm Swiss grotesk — polished but approachable
+- Strong legibility at UI sizes
+- Low contrast, calm tone for health content
 - Free via Fontshare
 
 ### Type Scale
@@ -394,30 +393,25 @@ Primary navigation at bottom for thumb-zone reach.
 
 #### Base pattern (shipped)
 
-- **Bezel-less:** no full border frame; `--shadow-card` only
-- **Category accent:** `.card-accent-top` — 3px inset top bar (full width within `border-radius`), color from `--cat-color`
+- **Minimal border:** `1px solid var(--mushroom)` on all sides (`--card-border`); no drop shadow by default
+- **Hover:** slightly stronger border + `--shadow-sm` on interactive cards
+- **Legacy class:** `.card-accent-top` — still used in JSX; now applies the shared border (no top bar)
 - **Radius:** `--radius-lg` (20px) on grid cards
 
 ```css
 .card-accent-top {
-  position: relative;
-  overflow: hidden;
-}
-/* Per card type — inset shadow fills full width inside border-radius */
-.content-card.card-accent-top {
-  box-shadow:
-    inset 0 var(--card-accent-height) 0 0 var(--card-accent-color),
-    var(--shadow-card);
+  border: var(--card-border);
+  box-shadow: none;
 }
 ```
 
-| Card type | Classes | Accent? |
-|-----------|---------|---------|
+| Card type | Classes | Border |
+|-----------|---------|--------|
 | DIY / Care guides | `.content-card.card-accent-top` | Yes |
-| Care clothes (full row) | `.content-card--span-row` | No |
-| Shopping | `.shop-product-card.card-accent-top` | Yes; faded when `.shop-item-checked` |
+| Care clothes (full row) | `.content-card--span-row` | Yes |
+| Shopping | `.shop-product-card.card-accent-top` | Yes; softer when `.shop-item-checked` |
 | Travel tips | `.travel-tip-card.card-accent-top` | Yes |
-| Month activities | `.activity-card.card-accent-top` | Yes (physical/emotional color) |
+| Month activities | `.activity-card.card-accent-top` | Yes |
 
 Set category color on the element:
 
@@ -448,7 +442,7 @@ Mobile: footer `padding-bottom` clears fixed bottom nav. Print: hidden.
 
 Inside Mom Care (`/mom-care#timeline`):
 
-- Checkable rows reuse `.milestone-item` / `.milestone-check` (same as baby month detail)
+- Read-only bullet lists (`.mom-milestones-list`) — no checkbox tracking
 - Period sections: `.mom-milestones-period` with `.card-accent-top`, lavender accent
 - Hero shows postpartum week/month when `babyBirthDate` is set; banner if missing
 - **Watch for** blocks: short red-flag bullets; never diagnosis — urge provider contact
@@ -789,7 +783,7 @@ Replace animations with instant state changes or simple opacity crossfades.
 ```html
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <link 
-  href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" 
+  href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" 
   rel="stylesheet"
 >
 ```
@@ -855,9 +849,9 @@ Before shipping any UI change:
 | Item | Status |
 |------|--------|
 | Light warm palette | Shipped — `global.css` |
-| General Sans typography | Shipped |
-| Card top accent (`.card-accent-top`) | Shipped |
-| Bezel-less cards + soft shadow | Shipped |
+| Switzer typography | Shipped |
+| Minimal card border (`.card-accent-top`) | Shipped |
+| Full 1px border, no top accent bar | Shipped |
 | Detail modal (scroll, safe area) | Shipped |
 | Dark mode | Deferred |
 | Framer Motion | Not required; CSS transitions only |

@@ -30,9 +30,9 @@
 
 | ID | Label | Icon | Color |
 |----|-------|------|-------|
-| `timeline` | Timeline | `calendar` | `#9B88C0` |
+| `timeline` | Mom Milestones | `calendar` | `#9B88C0` |
 
-Renders `MomMilestonesPanel` (checkable postpartum milestones). No entry in `momCareTips` — content lives in `src/data/momMilestones.js`.
+Renders `MomMilestonesPanel` (read-only postpartum timeline). No entry in `momCareTips` — content lives in `src/data/momMilestones.js`.
 
 ### Topic categories (16)
 
@@ -70,9 +70,11 @@ Renders `MomMilestonesPanel` (checkable postpartum milestones). No entry in `mom
 │ Mom Care                            │  ← hero
 │ Your recovery matters...            │
 ├─────────────────────────────────────┤
-│ [Posture] [Nipple] [Suppl] [Bone]…  │  ← scrollable tabs
+│ [Mom Milestones] [Self-care Guides] │  ← primary sub-nav (separate row)
 ├─────────────────────────────────────┤
-│ Category description (italic)       │
+│ [Mental] [Recovery] [Posture] …     │  ← topic tabs (Guides only)
+├─────────────────────────────────────┤
+│ Section description (italic)        │
 ├─────────────────────────────────────┤
 │ ┌─────────────────────────────────┐ │
 │ │ 🧍 Posture Correction          │ │  ← tip card with accent top
@@ -95,7 +97,10 @@ Renders `MomMilestonesPanel` (checkable postpartum milestones). No entry in `mom
 |-------|---------|
 | `.mom-care-page` | Page container, max-width 1100px |
 | `.mom-care-hero` | Title + subtitle area |
-| `.mom-care-tabs-wrap` | Horizontally scrollable tab container |
+| `.mom-care-subnav` | Primary sub-nav: Mom Milestones vs Self-care Guides |
+| `.mom-care-subnav-tab` | Primary tab button (Community-style) |
+| `.mom-care-topic-tabs-wrap` | Secondary topic tab strip (guides only) |
+| `.mom-care-tabs-wrap` | Horizontally scrollable topic tab container |
 | `.mom-care-tabs` | Extends `.diy-filter-tabs`, no-wrap |
 | `.mom-care-category-desc` | Italic description below tabs |
 | `.mom-care-tip-card` | White card, `border-radius: var(--radius-lg)` |

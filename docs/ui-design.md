@@ -16,7 +16,7 @@
 | `docs/shopping-ui-design.md` | Shopping page grid, cards, images, toolbar |
 | `docs/travel-ui-design.md` | Travel page, type tabs, age-aware tip cards |
 | `docs/mom-care-ui-design.md` | Mom Care page, self-care topic tabs, tip cards |
-| `docs/mom-milestones-ui-design.md` | Mom's postpartum timeline tab (`#timeline`), checkboxes, birth-date personalization |
+| `docs/mom-milestones-ui-design.md` | Mom's postpartum timeline tab (`#timeline`), read-only guidance, birth-date personalization |
 | `docs/month-detail-ui-design.md` | DIY & Care grids, detail modal |
 | `docs/vaccination-ui-design.md` | Vaccination tracker: chart-first timeline, India/CDC/custom, CRUD, reminders/export/print |
 
@@ -29,11 +29,11 @@ Use `:root` tokens from `global.css`:
 - Surfaces: `--white`, `--cream`, `--cream-dark`, `--surface-primary`
 - Text: `--text-primary`, `--text-secondary`, `--text-light`
 - Accent: `--coral-primary`, `--lavender-dark`, `--mint-dark`, `--baby-blue-dark`
-- Card accent: `--card-accent-height` (3px), `--card-accent-color` (from `--cat-color`)
+- Card border: `--card-border` (1px solid `--mushroom`); optional category tint via `--cat-color` on vaccine/status cards
 - Radius: `--radius-sm`, `--radius-md`, `--radius-lg`
 - Shadow: `--shadow-card`, `--shadow-sm`, `--shadow-md`
 
-Font: **General Sans** (Fontshare), app-wide.
+Font: **Switzer** (Fontshare), app-wide.
 
 ---
 
@@ -53,7 +53,7 @@ Spec: [`docs/design-system-2026.md`](design-system-2026.md) — Site footer sect
 
 ---
 
-Category-colored 3px top bar on DIY, Care, Shopping, Travel, Mom Care, and activity cards. Pass `--cat-color` inline from category config. No left border. See [`docs/design-system-2026.md`](design-system-2026.md#cards).
+Minimal **full border** on cards (`.card-accent-top` and shared card types). No top accent bar. Category color remains in badges/icons/chips via `--cat-color`. See [`docs/design-system-2026.md`](design-system-2026.md#cards).
 
 **Exceptions:** Care clothes full-width card (no accent).
 

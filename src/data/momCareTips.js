@@ -19,13 +19,33 @@ export const MOM_CARE_CATEGORIES = [
   'stretchMarks',
 ];
 
-/** Tab order: timeline first, then topic categories */
+/** All valid URL hashes for Mom Care */
 export const MOM_CARE_TAB_IDS = [MOM_CARE_TIMELINE_TAB, ...MOM_CARE_CATEGORIES];
+
+export const MOM_CARE_DEFAULT_TOPIC = MOM_CARE_CATEGORIES[0];
+
+/** Primary sub-nav (separate from topic tabs) */
+export const MOM_CARE_PRIMARY_NAV = [
+  {
+    id: 'milestones',
+    hash: MOM_CARE_TIMELINE_TAB,
+    label: 'Mom Milestones',
+    icon: 'calendar',
+    description: 'Your postpartum milestones week by week — what to expect and when to check in with your doctor.',
+  },
+  {
+    id: 'guides',
+    hash: MOM_CARE_DEFAULT_TOPIC,
+    label: 'Self-care Guides',
+    icon: 'heart',
+    description: 'Evidence-based guides on recovery, mental health, nutrition, and more.',
+  },
+];
 
 export const momCareCategoryConfig = {
   [MOM_CARE_TIMELINE_TAB]: {
     id: MOM_CARE_TIMELINE_TAB,
-    label: 'Timeline',
+    label: 'Mom Milestones',
     icon: 'calendar',
     color: '#9B88C0',
     bg: '#E8E0F0',

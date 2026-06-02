@@ -1,13 +1,9 @@
 import MomCareTips from '../components/MomCareTips';
 
-function MomCare({ birthDate, momMilestoneChecks, toggleMomMilestone }) {
+function MomCare({ birthDate }) {
   return (
     <div className="mom-care-page">
-      <MomCareTips
-        birthDate={birthDate}
-        momMilestoneChecks={momMilestoneChecks}
-        toggleMomMilestone={toggleMomMilestone}
-      />
+      <MomCareTips birthDate={birthDate} />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   momMilestonePeriods,
@@ -7,34 +7,28 @@ import {
 import { momCareCategoryConfig } from '../data/momCareTips';
 import {
   formatPostpartumAge,
-  getOverallMomMilestoneProgress,
-  getPeriodProgress,
+  getDefaultMomMilestonePeriodId,
   isCurrentPeriod,
 } from '../utils/momMilestones';
 import { interact } from '../utils/haptics';
 import { ROUTES } from '../routes';
 import Icon from './Icon';
 
-function MomMilestonesPanel({ birthDate, checkedItems, toggleCheck }) {
+function MomMilestonesPanel({ birthDate }) {
   const navigate = useNavigate();
-  const [justChecked, setJustChecked] = useState(null);
-
   const ageLabel = formatPostpartumAge(birthDate);
-  const overall = useMemo(
-    () => getOverallMomMilestoneProgress(checkedItems),
-    [checkedItems]
+  const defaultPeriodId = useMemo(
+    () => getDefaultMomMilestonePeriodId(birthDate),
+    [birthDate]
   );
-  const overallPct = overall.total > 0 ? (overall.done / overall.total) * 100 : 0;
+  const [selectedPeriodId, setSelectedPeriodId] = useState(defaultPeriodId);
 
-  const handleCheck = (id) => {
-    const wasChecked = checkedItems[id];
-    toggleCheck(id);
-    interact('tap', wasChecked ? 'light' : 'success');
-    if (!wasChecked) {
-      setJustChecked(id);
-      setTimeout(() => setJustChecked(null), 400);
-    }
-  };
+  useEffect(() => {
+    setSelectedPeriodId(defaultPeriodId);
+  }, [defaultPeriodId]);
+
+  const selectedPeriod = momMilestonePeriods.find((p) => p.id === selectedPeriodId)
+    ?? momMilestonePeriods[0];
 
   const goToTopic = (topicId) => {
     if (!topicId) return;
@@ -42,7 +36,18 @@ function MomMilestonesPanel({ birthDate, checkedItems, toggleCheck }) {
     navigate({ pathname: ROUTES.momCare, hash: topicId });
   };
 
+  const selectPeriod = (id) => {
+    interact('tap', 'selection');
+    setSelectedPeriodId(id);
+  };
+
   const timelineCat = momCareCategoryConfig.timeline;
+  const topic = selectedPeriod?.relatedTopic
+    ? momCareCategoryConfig[selectedPeriod.relatedTopic]
+    : null;
+  const showJumpToNow = birthDate
+    && defaultPeriodId
+    && selectedPeriodId !== defaultPeriodId;
 
   return (
     <article
@@ -60,94 +65,90 @@ function MomMilestonesPanel({ birthDate, checkedItems, toggleCheck }) {
             Set baby birth date on <a href={ROUTES.home}>Home</a> to personalize your timeline.
           </p>
         )}
-        <div className="mom-milestones-progress-wrap">
-          <div className="mom-milestones-progress-label">
-            <span>{overall.done} of {overall.total} milestones tracked</span>
-            <span>{Math.round(overallPct)}%</span>
-          </div>
-          <div className="mom-milestones-progress" aria-hidden="true">
-            <div
-              className="mom-milestones-progress-fill"
-              style={{ width: `${overallPct}%` }}
-            />
-          </div>
-        </div>
       </div>
 
-      {momMilestonePeriods.map((period) => {
-        const current = isCurrentPeriod(period, birthDate);
-        const { done, total } = getPeriodProgress(period, checkedItems);
-        const topic = period.relatedTopic
-          ? momCareCategoryConfig[period.relatedTopic]
-          : null;
+      <div className="mom-milestones-layout">
+        <nav className="mom-milestones-ranges" aria-label="Postpartum week and month ranges">
+          {momMilestonePeriods.map((period) => {
+            const current = isCurrentPeriod(period, birthDate);
+            const active = period.id === selectedPeriodId;
+            return (
+              <button
+                key={period.id}
+                type="button"
+                className={`mom-milestones-range-btn${active ? ' active' : ''}${current ? ' is-current' : ''}`}
+                aria-current={active ? 'true' : undefined}
+                onClick={() => selectPeriod(period.id)}
+              >
+                <span className="mom-milestones-range-label">{period.label}</span>
+                {current && <span className="mom-milestones-range-now">Now</span>}
+              </button>
+            );
+          })}
+        </nav>
 
-        return (
+        {selectedPeriod && (
           <section
-            key={period.id}
-            className={`mom-milestones-period${current ? ' is-current' : ''}`}
-            aria-labelledby={`mom-period-${period.id}`}
+            className="mom-milestones-detail"
+            aria-labelledby={`mom-period-${selectedPeriod.id}`}
           >
-            <header className="mom-milestones-period-header" id={`mom-period-${period.id}`}>
-              <div className="mom-milestones-period-meta">
-                <span className="mom-milestones-period-label">{period.label}</span>
-                {current && <span className="mom-milestones-current-badge">Now</span>}
-                <span className="mom-milestones-period-count">{done}/{total}</span>
+            <header className="mom-milestones-detail-header" id={`mom-period-${selectedPeriod.id}`}>
+              <div className="mom-milestones-detail-top">
+                <span className="mom-milestones-period-label">{selectedPeriod.label}</span>
+                {showJumpToNow && (
+                  <button
+                    type="button"
+                    className="mom-milestones-jump-now"
+                    onClick={() => selectPeriod(defaultPeriodId)}
+                  >
+                    Jump to now
+                  </button>
+                )}
               </div>
-              <h2>{period.title}</h2>
-              <p className="mom-milestones-period-summary">{period.summary}</p>
+              <h2>{selectedPeriod.title}</h2>
+              <p className="mom-milestones-period-summary">{selectedPeriod.summary}</p>
             </header>
 
-            <div className="mom-milestones-items">
-              {period.items.map((item) => (
-                <div
-                  key={item.id}
-                  className={`milestone-item ${checkedItems[item.id] ? 'checked-item' : ''} ${justChecked === item.id ? 'just-checked' : ''}`}
-                >
-                  <div
-                    className={`milestone-check ${checkedItems[item.id] ? 'checked' : ''}`}
-                    onClick={() => handleCheck(item.id)}
-                    role="checkbox"
-                    aria-checked={!!checkedItems[item.id]}
-                    tabIndex={0}
-                    onKeyDown={(e) => e.key === 'Enter' && handleCheck(item.id)}
-                  >
-                    {checkedItems[item.id] && <Icon name="check" size={14} />}
-                  </div>
-                  <div className="milestone-text">
-                    <p>{item.text}</p>
+            <div className="mom-milestones-detail-grid">
+              <ul className="mom-milestones-list">
+                {selectedPeriod.items.map((item) => (
+                  <li key={item.id} className="mom-milestones-list-item">
+                    <p className="mom-milestones-list-text">{item.text}</p>
                     {item.tip && (
-                      <span className="tip">
+                      <p className="mom-milestones-list-tip">
                         <Icon name="light-bulb" size={14} /> {item.tip}
-                      </span>
+                      </p>
                     )}
+                  </li>
+                ))}
+              </ul>
+
+              <aside className="mom-milestones-aside">
+                {selectedPeriod.watchFor?.length > 0 && (
+                  <div className="mom-milestones-watch">
+                    <h3><Icon name="warning" size={16} /> Watch for</h3>
+                    <ul>
+                      {selectedPeriod.watchFor.map((line) => (
+                        <li key={line}>{line}</li>
+                      ))}
+                    </ul>
                   </div>
-                </div>
-              ))}
+                )}
+
+                {topic && selectedPeriod.relatedTopic && (
+                  <button
+                    type="button"
+                    className="mom-milestones-learn content-card-cta secondary"
+                    onClick={() => goToTopic(selectedPeriod.relatedTopic)}
+                  >
+                    Learn more: {topic.label} →
+                  </button>
+                )}
+              </aside>
             </div>
-
-            {period.watchFor?.length > 0 && (
-              <div className="mom-milestones-watch">
-                <h3><Icon name="warning" size={16} /> Watch for</h3>
-                <ul>
-                  {period.watchFor.map((line) => (
-                    <li key={line}>{line}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {topic && period.relatedTopic && (
-              <button
-                type="button"
-                className="mom-milestones-learn content-card-cta secondary"
-                onClick={() => goToTopic(period.relatedTopic)}
-              >
-                Learn more: {topic.label} →
-              </button>
-            )}
           </section>
-        );
-      })}
+        )}
+      </div>
 
       <p className="mom-care-disclaimer-inline">{MOM_MILESTONES_DISCLAIMER}</p>
     </article>

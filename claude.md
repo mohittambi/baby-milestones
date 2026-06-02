@@ -6,7 +6,7 @@ Baby Milestone Tracker (React + Vite). See [memory.md](memory.md) for parenting-
 
 - React 19, Vite 8, Vitest
 - Data: `src/data/milestones.js`, `diyActivities.js`, `assistantResponses.js`, `momMilestones.js`, `momCareTips.js`
-- State: `localStorage` keys `babyBirthDate`, `babyMilestoneChecks`, `momMilestoneChecks`
+- State: `localStorage` keys `babyBirthDate`, `babyMilestoneChecks`
 
 ## Parenting Assistant
 
@@ -27,7 +27,7 @@ Baby Milestone Tracker (React + Vite). See [memory.md](memory.md) for parenting-
 | `src/components/MomCareTips.jsx` | Tabs: Timeline + 16 topics |
 | `src/components/MomMilestonesPanel.jsx` | Postpartum timeline (`/mom-care#timeline`) |
 | `src/data/momMilestones.js` | Curated mom milestone periods + items |
-| `src/utils/momMilestones.js` | Postpartum week/month, progress helpers |
+| `src/utils/momMilestones.js` | Postpartum week/month, current period helpers |
 | `docs/mom-milestones-ui-design.md` | Timeline UI spec |
 
 ## Commands

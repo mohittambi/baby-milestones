@@ -3,7 +3,7 @@ import {
   getPostpartumWeek,
   getPostpartumMonth,
   isCurrentPeriod,
-  getOverallMomMilestoneProgress,
+  getDefaultMomMilestonePeriodId,
 } from './momMilestones';
 import { momMilestonePeriods } from '../data/momMilestones';
 
@@ -29,9 +29,8 @@ describe('momMilestones', () => {
     expect(isCurrentPeriod(period, birth)).toBeTypeOf('boolean');
   });
 
-  it('tracks overall progress', () => {
-    const { total, done } = getOverallMomMilestoneProgress({ 'pp-w02-1': true });
-    expect(total).toBeGreaterThan(30);
-    expect(done).toBe(1);
+  it('returns a default period id', () => {
+    const id = getDefaultMomMilestonePeriodId(birth);
+    expect(momMilestonePeriods.some((p) => p.id === id)).toBe(true);
   });
 });

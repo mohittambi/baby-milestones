@@ -4,6 +4,8 @@ import {
   MOM_CARE_TAB_IDS,
   MOM_CARE_TIMELINE_TAB,
   MOM_CARE_CATEGORIES,
+  MOM_CARE_DEFAULT_TOPIC,
+  MOM_CARE_PRIMARY_NAV,
   momCareCategoryConfig,
   momCareTips,
   MOM_CARE_DISCLAIMER,
@@ -13,60 +15,60 @@ import { interact } from '../utils/haptics';
 import { ROUTES } from '../routes';
 import Icon from './Icon';
 
-const DEFAULT_CATEGORY = MOM_CARE_TIMELINE_TAB;
+const DEFAULT_HASH = MOM_CARE_TIMELINE_TAB;
 
 function parseCareHash(hash) {
   const id = hash.replace(/^#/, '');
-  return MOM_CARE_TAB_IDS.includes(id) ? id : DEFAULT_CATEGORY;
+  return MOM_CARE_TAB_IDS.includes(id) ? id : DEFAULT_HASH;
 }
 
-function MomCareTips({ birthDate, momMilestoneChecks, toggleMomMilestone }) {
+function MomCareTips({ birthDate }) {
   const navigate = useNavigate();
   const location = useLocation();
   const activeCategory = parseCareHash(location.hash);
   const isTimeline = activeCategory === MOM_CARE_TIMELINE_TAB;
+  const primarySection = isTimeline ? 'milestones' : 'guides';
 
   useEffect(() => {
     const fromHash = location.hash.replace(/^#/, '');
     if (!fromHash || !MOM_CARE_TAB_IDS.includes(fromHash)) {
-      navigate({ pathname: ROUTES.momCare, hash: DEFAULT_CATEGORY }, { replace: true });
+      navigate({ pathname: ROUTES.momCare, hash: DEFAULT_HASH }, { replace: true });
     }
   }, [location.hash, navigate]);
 
-  const selectCategory = (id) => {
+  const selectHash = (id) => {
     interact('tap', 'selection');
     navigate({ pathname: ROUTES.momCare, hash: id });
   };
 
-  const topicCategories = MOM_CARE_CATEGORIES;
-  const activeTopicIndex = topicCategories.indexOf(
-    isTimeline ? topicCategories[0] : activeCategory
-  );
+  const selectPrimary = (section) => {
+    const target = section.id === 'milestones'
+      ? MOM_CARE_TIMELINE_TAB
+      : (isTimeline ? MOM_CARE_DEFAULT_TOPIC : activeCategory);
+    selectHash(target);
+  };
+
+  const activeTopicIndex = MOM_CARE_CATEGORIES.indexOf(activeCategory);
 
   const { prevCat, nextCat } = useMemo(() => {
-    if (isTimeline) {
-      return {
-        prevCat: momCareCategoryConfig[topicCategories[topicCategories.length - 1]],
-        nextCat: momCareCategoryConfig[topicCategories[0]],
-      };
-    }
-    const prevIdx = activeTopicIndex <= 0 ? topicCategories.length - 1 : activeTopicIndex - 1;
-    const nextIdx = activeTopicIndex >= topicCategories.length - 1 ? 0 : activeTopicIndex + 1;
-    const prevId = activeTopicIndex <= 0 ? MOM_CARE_TIMELINE_TAB : topicCategories[prevIdx];
-    const nextId = activeTopicIndex >= topicCategories.length - 1
-      ? MOM_CARE_TIMELINE_TAB
-      : topicCategories[nextIdx];
+    const prevIdx = activeTopicIndex <= 0
+      ? MOM_CARE_CATEGORIES.length - 1
+      : activeTopicIndex - 1;
+    const nextIdx = activeTopicIndex >= MOM_CARE_CATEGORIES.length - 1
+      ? 0
+      : activeTopicIndex + 1;
     return {
-      prevCat: momCareCategoryConfig[prevId],
-      nextCat: momCareCategoryConfig[nextId],
+      prevCat: momCareCategoryConfig[MOM_CARE_CATEGORIES[prevIdx]],
+      nextCat: momCareCategoryConfig[MOM_CARE_CATEGORIES[nextIdx]],
     };
-  }, [isTimeline, activeTopicIndex, topicCategories]);
+  }, [activeTopicIndex]);
 
-  const goPrev = () => selectCategory(prevCat.id);
-  const goNext = () => selectCategory(nextCat.id);
+  const goPrev = () => selectHash(prevCat.id);
+  const goNext = () => selectHash(nextCat.id);
 
   const cat = momCareCategoryConfig[activeCategory];
   const tips = !isTimeline ? momCareTips[activeCategory] : null;
+  const primaryMeta = MOM_CARE_PRIMARY_NAV.find((s) => s.id === primarySection);
 
   return (
     <div className="mom-care-page-content fade-in">
@@ -77,43 +79,61 @@ function MomCareTips({ birthDate, momMilestoneChecks, toggleMomMilestone }) {
         </p>
       </div>
 
-      <div className="mom-care-tabs-wrap">
-        <div className="diy-filter-tabs mom-care-tabs" role="tablist" aria-label="Mom care sections">
-          {MOM_CARE_TAB_IDS.map((id) => {
-            const cfg = momCareCategoryConfig[id];
-            return (
-              <button
-                key={id}
-                id={`mom-care-tab-${id}`}
-                type="button"
-                role="tab"
-                aria-selected={activeCategory === id}
-                aria-controls={`mom-care-panel-${id}`}
-                className={`diy-filter-btn ${activeCategory === id ? 'active' : ''}`}
-                style={
-                  activeCategory === id
-                    ? { background: cfg.bg, color: cfg.color, borderColor: cfg.color }
-                    : {}
-                }
-                onClick={() => selectCategory(id)}
-              >
-                <Icon name={cfg.icon} size={18} /> {cfg.label}
-              </button>
-            );
-          })}
-        </div>
-      </div>
+      <nav className="mom-care-subnav" role="tablist" aria-label="Mom care sections">
+        {MOM_CARE_PRIMARY_NAV.map((section) => (
+          <button
+            key={section.id}
+            type="button"
+            role="tab"
+            aria-selected={primarySection === section.id}
+            className={`mom-care-subnav-tab${primarySection === section.id ? ' active' : ''}`}
+            onClick={() => selectPrimary(section)}
+          >
+            <Icon name={section.icon} size={18} className="mom-care-subnav-icon" />
+            <span>{section.label}</span>
+          </button>
+        ))}
+      </nav>
 
-      {cat && (
-        <p className="mom-care-category-desc">{cat.description}</p>
+      {!isTimeline && (
+        <div className="mom-care-tabs-wrap mom-care-topic-tabs-wrap">
+          <div
+            className="diy-filter-tabs mom-care-tabs mom-care-topic-tabs"
+            role="tablist"
+            aria-label="Self-care topics"
+          >
+            {MOM_CARE_CATEGORIES.map((id) => {
+              const cfg = momCareCategoryConfig[id];
+              return (
+                <button
+                  key={id}
+                  id={`mom-care-tab-${id}`}
+                  type="button"
+                  role="tab"
+                  aria-selected={activeCategory === id}
+                  aria-controls={`mom-care-panel-${id}`}
+                  className={`diy-filter-btn ${activeCategory === id ? 'active' : ''}`}
+                  style={
+                    activeCategory === id
+                      ? { background: cfg.bg, color: cfg.color, borderColor: cfg.color }
+                      : {}
+                  }
+                  onClick={() => selectHash(id)}
+                >
+                  <Icon name={cfg.icon} size={18} /> {cfg.label}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {primaryMeta && (
+        <p className="mom-care-category-desc">{primaryMeta.description}</p>
       )}
 
       {isTimeline ? (
-        <MomMilestonesPanel
-          birthDate={birthDate}
-          checkedItems={momMilestoneChecks}
-          toggleCheck={toggleMomMilestone}
-        />
+        <MomMilestonesPanel birthDate={birthDate} />
       ) : tips && (
         <article
           id={`mom-care-panel-${activeCategory}`}
